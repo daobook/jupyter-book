@@ -20,8 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python setup.py install
           pip install -r docs/requirements.txt
+          pip install jupyter-book
           conda install -c conda-forge pandoc
           conda install -c conda-forge ipython
           pip install sphinxcontrib-websupport
@@ -34,7 +34,7 @@ jobs:
           cd docs
           jb build --builder custom --custom-builder gettext --path-output _gettext .
           sphinx-intl update -p _gettext/_build/gettext -l zh_CN
-          jb build .
+          jb build . -n -W --keep-going
 
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.6.1
