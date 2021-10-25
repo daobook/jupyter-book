@@ -1,0 +1,719 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Commenting and annotating"
+msgstr ""
+
+msgid ""
+"This is an experimental feature that may change quickly! If you're "
+"interested in trying this out, we recommend using the `master` branch "
+"version of Jupyter Book."
+msgstr ""
+
+msgid ""
+"You can add functionality for web commenting and annotating through a "
+"number of web services and tools. These allow readers of your book to "
+"share conversations, ideas and questions in a centralized location. It is"
+" useful for classes, communities of practice, asking for user feedback, "
+"etc."
+msgstr ""
+
+msgid "Currently, these commenting engines are supported:"
+msgstr ""
+
+msgid ""
+"[Hypothesis](https://hypothes.is/) provides a web overlay that allows you"
+" to annotate and comment collaboratively."
+msgstr ""
+
+msgid ""
+"[utterances](https://utteranc.es/) is a web commenting system that uses "
+"GitHub Issues to store and manage comments."
+msgstr ""
+
+msgid ""
+"Jupyter Book uses the [`sphinx-comments`](https://sphinx-"
+"comments.readthedocs.io/) Sphinx extension for this functionality."
+msgstr ""
+
+msgid "**Documentation for supported services**"
+msgstr ""
+
+msgid ""
+"For examples of each service, as well as instructions on how to activate "
+"it, click on the links for each service in the left navigation bar or "
+"below."
+msgstr ""
+
+msgid "Hypothesis"
+msgstr ""
+
+msgid ""
+"[Hypothesis](https://hypothes.is/) is a centralized web service that "
+"allows you to comment and annotate arbitrary web pages across the web. It"
+" allows your readers to log in and comment on your book."
+msgstr ""
+
+msgid ""
+"Hypothesis is activated on this page. You can see the web overlay by "
+"clicking on the `<` button in the upper-right corner of this page."
+msgstr ""
+
+msgid "Activate `Hypothesis`"
+msgstr ""
+
+msgid ""
+"You can activate `Hypothesis` by adding the following to your `_conf.yml`"
+" file:"
+msgstr ""
+
+msgid ""
+"This will add a [Hypothesis overlay](https://web.hypothes.is/) to your "
+"documentation. This extension simply activates the Hypothesis JavaScript "
+"bundle on your Sphinx site."
+msgstr ""
+
+msgid ""
+"When you build your documentation, you will see the Hypothesis overlay to"
+" the right of your screen."
+msgstr ""
+
+msgid "Utterances"
+msgstr ""
+
+msgid ""
+"Utterances is a commenting engine built on top of GitHub Issues. It "
+"embeds a comment box in your page that users (with a GitHub account) can "
+"use to ask questions. These become comments in a GitHub issue in a "
+"repository of your choice."
+msgstr ""
+
+msgid ""
+"Utterances is activated on this page. You can see the comment box at the "
+"bottom of this page's content. Click the \"log in\" button and you'll be "
+"able to post comments!"
+msgstr ""
+
+msgid "To enable comments using Utterances you need to do the following:"
+msgstr ""
+
+msgid "Make sure the repository is public, so that others can comment."
+msgstr ""
+
+msgid ""
+"Install the [utterances app](https://github.com/apps/utterances) on the "
+"repo."
+msgstr ""
+
+msgid "Activate `utteranc.es`"
+msgstr ""
+
+msgid ""
+"You can activate `utteranc.es` by adding the following to your "
+"`_conf.yml` file:"
+msgstr ""
+
+msgid ""
+"Note that the `utterances` UI will not show up when you are previewing "
+"your book locally, it must be hosted somewhere on the web to function."
+msgstr ""
+
+msgid "Configure `utterances`"
+msgstr ""
+
+msgid ""
+"You can pass optional extra configuration for utterances. You may do so "
+"by providing `key:val` pairs alongside `repo:` in the configuration. See "
+"[the utterances documentation for your "
+"options](https://utteranc.es/#configuration)."
+msgstr ""
+
+msgid ""
+"When you build your documentation, pages will now have a comment box at "
+"the bottom. If readers log in via GitHub they will be able to post "
+"comments that will then map onto issues in your GitHub repository."
+msgstr ""
+
+msgid "Hide or remove content"
+msgstr ""
+
+msgid ""
+"It's possible to control which content shows up in your book. For "
+"example, you may want to display a complex visualization to illustrate an"
+" idea, but don't want the page to be cluttered with a large code cell "
+"that generated the visualization. In other cases, you may want to remove "
+"a code cell entirely."
+msgstr ""
+
+msgid "In this case, you have two options:"
+msgstr ""
+
+msgid "**Hiding** content provides a button that lets readers reveal the content."
+msgstr ""
+
+msgid ""
+"**Removing** content prevents it from making it into your book. It will "
+"be entirely gone (though still present in the source files)"
+msgstr ""
+
+msgid "There are two ways to hide content:"
+msgstr ""
+
+msgid "To hide Markdown, use the `{toggle}` directive."
+msgstr ""
+
+msgid "To hide or remove code cells or their outputs, use **notebook cell tags**."
+msgstr ""
+
+msgid "We'll cover each alternative below."
+msgstr ""
+
+msgid "[](jupyter-cell-tags)"
+msgstr ""
+
+msgid "Hide Markdown using MyST Markdown"
+msgstr ""
+
+msgid "There are two ways to hide Markdown content"
+msgstr ""
+
+msgid "you can use the `{toggle}` directive to hide arbitrary blocks of content"
+msgstr ""
+
+msgid ""
+"you can use the `dropdown` class with admonitions to turn them into "
+"dropdowns"
+msgstr ""
+
+msgid ""
+"Both allow you to wrap chunks of Markdown in a button that lets users "
+"show and hide the content."
+msgstr ""
+
+msgid "The `{toggle}` directive"
+msgstr ""
+
+msgid ""
+"You can activate a toggleable behavior in Markdown with the `{toggle}` "
+"directive like so:"
+msgstr ""
+
+msgid "This results in:"
+msgstr ""
+
+msgid "Some hidden toggle content!"
+msgstr ""
+
+msgid "![](../images/cool.jpg)"
+msgstr ""
+
+msgid ""
+"Note that if you'd like to **show the toggle content by default**, you "
+"can add the `:show:` flag when you use `{toggle}`, like so:"
+msgstr ""
+
+msgid "Toggle admonition content with dropdowns"
+msgstr ""
+
+msgid ""
+"You can also **add toggle buttons to admonition blocks**, effectively "
+"making them dropdown blocks. Users will see the admonition title, but "
+"will need to click in order to reveal the content. To do so, add the "
+"`dropdown` class to any admonition. For example, the code"
+msgstr ""
+
+msgid "results in:"
+msgstr ""
+
+msgid "Click the button to reveal!"
+msgstr ""
+
+msgid ""
+"See {ref}`content/toggle-admonitions` for more information on admonition "
+"dropdowns."
+msgstr ""
+
+msgid "Hide code cell content"
+msgstr ""
+
+msgid ""
+"You can hide most cell elements of a page. The sections below describe "
+"how to hide each using cell tags in MyST Markdown. If you're working with"
+" `.ipynb` files, see [the cell tags guide](jupyter-cell-tags) on adding "
+"cell tags to notebooks in Jupyter Notebook or JupyterLab."
+msgstr ""
+
+msgid ""
+"If an element is hidden, Jupyter Book will display a small button to the "
+"right of the old location for the hidden element. If a user clicks the "
+"button, the element will be displayed."
+msgstr ""
+
+msgid "Hide cell inputs"
+msgstr ""
+
+msgid ""
+"If you add the tag `hide-input` to a cell, then Jupyter Book will hide "
+"the cell but display the outputs."
+msgstr ""
+
+msgid ""
+"Here's an example of cell metadata that would trigger the \"hide code\" "
+"behavior:"
+msgstr ""
+
+msgid "For example, notice the cell below contains the `hide-input` tag:"
+msgstr ""
+
+msgid ""
+"Note how we only see the output by default. Now try clicking the button "
+"to the right of the empty spot above!"
+msgstr ""
+
+msgid "Hide cell outputs"
+msgstr ""
+
+msgid ""
+"You can also hide the *outputs* of a cell. For example, if you'd like to "
+"ask users to think about what the output will look like first before "
+"viewing an answer. To do so, add the following tag to your cell:"
+msgstr ""
+
+msgid "Hide entire code cells"
+msgstr ""
+
+msgid ""
+"If you'd like to hide the whole code cell (both inputs and outputs) just "
+"add this tag to the cell metadata, like so:"
+msgstr ""
+
+msgid "Removing code cell content"
+msgstr ""
+
+msgid ""
+"In the above examples, we are only *hiding* parts of the cell, with the "
+"option that readers can reveal them if they wish. However, if you'd like "
+"to completely **remove** the respective parts, so that their contents do "
+"not make it into the book's HTML, you may use the appropriate `remove-` "
+"tags, i.e. `remove-input`, `remove-output` and `remove-cell`."
+msgstr ""
+
+msgid "Remove cell inputs"
+msgstr ""
+
+msgid ""
+"The following cell has its inputs removed with `remove-input`. Note that "
+"in this case, there is no button available to show the input contents, "
+"the entire input cell is gone!"
+msgstr ""
+
+msgid "Remove cell outputs"
+msgstr ""
+
+msgid ""
+"Similar to hiding inputs, it is also possible to hide the outputs of a "
+"cell with `remove-output`:"
+msgstr ""
+
+msgid "Remove an entire code cell"
+msgstr ""
+
+msgid ""
+"You can also remove **both** the inputs and outputs of a cell, in which "
+"case it won't show up in your book at all. These cells remain in the "
+"notebook file itself, so they'll show up if readers click on a "
+"{term}`JupyterHub` or {term}`Binder` link from a page."
+msgstr ""
+
+msgid ""
+"To remove both the inputs and outputs of a cell, add the tag `remove-"
+"cell` to the tags of the cell. Here's an example of cell metadata that "
+"would trigger the \"remove cell\" behavior:"
+msgstr ""
+
+msgid ""
+"These cells will be entirely removed from each book page - remember that "
+"if you'd like to optionally display the inputs of a cell instead, you "
+"should use the `hide-input` tag."
+msgstr ""
+
+msgid ""
+"For example, there's a cell below this text that won't make it into the "
+"final book, because it has been removed!"
+msgstr ""
+
+msgid "Remove empty cells"
+msgstr ""
+
+msgid ""
+"You don't need to do anything to remove empty cells from your pages. "
+"Jupyter Book will remove these automatically. Any cell with *only* "
+"whitespace will be removed."
+msgstr ""
+
+msgid ""
+"For example, in the notebook for this page there are two cells above this"
+" text. Both only contain whitespace. Both are gone from the final output."
+msgstr ""
+
+msgid "Interactive data visualizations"
+msgstr ""
+
+msgid ""
+"Jupyter Notebook has support for many kinds of interactive outputs, "
+"including the ipywidgets ecosystem as well as many interactive "
+"visualization libraries. These are supported in Jupyter Book, with the "
+"right configuration. This page has a few common examples."
+msgstr ""
+
+msgid "First off, we'll download a little bit of data and show its structure:"
+msgstr ""
+
+msgid "Altair"
+msgstr ""
+
+msgid ""
+"Interactive outputs will work under the assumption that the outputs they "
+"produce have self-contained HTML that works without requiring any "
+"external dependencies to load. See the [`Altair` installation "
+"instructions](https://altair-"
+"viz.github.io/getting_started/installation.html#installation) to get set "
+"up with Altair. Below is some example output."
+msgstr ""
+
+msgid "Plotly"
+msgstr ""
+
+msgid ""
+"Plotly is another interactive plotting library that provides a high-level"
+" API for visualization. See the [Plotly JupyterLab "
+"documentation](https://plotly.com/python/getting-started/#JupyterLab-"
+"Support-(Python-3.5+)) to get started with Plotly in the notebook."
+msgstr ""
+
+msgid ""
+"Plotly uses [renderers to output different kinds of "
+"information](https://plotly.com/python/renderers/) when you display a "
+"plot. Experiment with renderers to get the output you want."
+msgstr ""
+
+msgid "Below is some example output."
+msgstr ""
+
+msgid ""
+"For these plots to show, it may be necessary to load `require.js`, in "
+"your `_config.yml`:"
+msgstr ""
+
+msgid "Bokeh"
+msgstr ""
+
+msgid ""
+"Bokeh provides several options for interactive visualizations, and is "
+"part of the PyViz ecosystem. See [the Bokeh with Jupyter "
+"documentation](https://docs.bokeh.org/en/latest/docs/user_guide/jupyter.html"
+"#userguide-jupyter) to get started."
+msgstr ""
+
+msgid ""
+"Below is some example output. First we'll initialized Bokeh with "
+"`output_notebook()`. This needs to be in a separate cell to give the "
+"JavaScript time to load."
+msgstr ""
+
+msgid "Now we'll make our plot."
+msgstr ""
+
+msgid "ipywidgets"
+msgstr ""
+
+msgid ""
+"You may also run code for Jupyter Widgets in your document, and the "
+"interactive HTML outputs will embed themselves in your site. See [the "
+"ipywidgets "
+"documentation](https://ipywidgets.readthedocs.io/en/latest/user_install.html)"
+" for how to get set up in your own environment."
+msgstr ""
+
+msgid "Widgets often need a kernel"
+msgstr ""
+
+msgid ""
+"Note that `ipywidgets` tend to behave differently from other interactive "
+"visualization libraries. They interact both with Javascript, and with "
+"Python. Some functionality in `ipywidgets` may not work in default "
+"Jupyter Book pages (because no Python kernel is running). You may be able"
+" to get around this with [tools for remote kernels, like "
+"thebe](https://thebelab.readthedocs.org)."
+msgstr ""
+
+msgid "Here are some simple widget elements rendered below."
+msgstr ""
+
+#, python-format
+msgid ""
+"You can find [a list of existing Jupyter "
+"Widgets](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html)"
+" in the jupyter-widgets documentation."
+msgstr ""
+
+msgid "Launch into interactive computing interfaces"
+msgstr ""
+
+msgid ""
+"Because Jupyter Books are built with Jupyter notebooks, you can allow "
+"users to launch live Jupyter sessions in the cloud directly from your "
+"book. This lets readers quickly interact with your content in a "
+"traditional coding interface. They do so by clicking a **Launch Button** "
+"that takes them to an interactive environment."
+msgstr ""
+
+msgid ""
+"There are numerous online notebook services - a good comparison is "
+"provided [in this article](https://www.dataschool.io/cloud-services-for-"
+"jupyter-notebook) - and the following sections describes the available "
+"integrations provided by Jupyter Book."
+msgstr ""
+
+msgid "Common launch button configuration"
+msgstr ""
+
+msgid ""
+"In the case of each interactive service, you'll need to tell Jupyter Book"
+" where your book content lives online. To do so, use this configuration "
+"in `_config.yml`:"
+msgstr ""
+
+msgid "A quick description of each option is below:"
+msgstr ""
+
+msgid ""
+"`url`:   A GitHub repository that includes your source files used to "
+"build the Jupyter Book.   These files can either be in the root of the "
+"repository, or in a sub-folder (in which case you should use "
+"`path_to_book`)."
+msgstr ""
+
+msgid ""
+"`path_to_book`:   A path, relative to your repository's root, to your "
+"book's source files.   Use this if your book is in a sub-folder of your "
+"repository (e.g. `docs/` or `book/`)."
+msgstr ""
+
+msgid ""
+"`branch`:   The branch where your book's **source files** are stored (not"
+" your book's _build files_, which generally exist in `gh-pages/` branch)."
+msgstr ""
+
+msgid "Control the notebook interface that opens"
+msgstr ""
+
+msgid ""
+"Binder and JupyterHub sessions can be opened using either the \"classic\""
+" Jupyter Notebook or the new JupyterLab interface backend (see "
+"[jupyter.org](https://jupyter.org) for more details). This is configured "
+"using:"
+msgstr ""
+
+msgid ""
+"One thing to take into account when choosing the interface is that "
+"notebooks written in the [MyST Markdown](../file-types/myst-notebooks.md)"
+" text-based format will not be opened as notebooks out-of-the-box.  If "
+"you wish for these files to be opened as notebooks then firstly you must "
+"ensure that "
+"[`jupytext>=0.16`](https://jupytext.readthedocs.io/en/latest/formats.html"
+"#myst-markdown) is installed in the Binder/JupyterHub environment for "
+"your book (no support for this feature exists in Google Colab). You then "
+"have two options:"
+msgstr ""
+
+msgid ""
+"Use the \"classic\" interface, which will then immediately open these "
+"files as notebooks."
+msgstr ""
+
+msgid ""
+"The \"jupyterlab\" interface (at the time of writing) has not yet "
+"implemented this behaviour, and so you will need to instruct readers to "
+"right-click the Markdown file and click \"Open in notebook editor\"."
+msgstr ""
+
+msgid "Add a Launch on {term}`Binder` button"
+msgstr ""
+
+msgid ""
+"{term}`BinderHub` can be used to build the environment needed to run a "
+"repository, and provides a link that lets others interact with that "
+"repository. If your Jupyter Book is hosted online on GitHub, you can "
+"automatically insert buttons that link to the Jupyter Notebook running in"
+" a BinderHub. When a user clicks the button, they'll be taken to a live "
+"version of the page. If your code doesn't require a significant amount of"
+" CPU or RAM, you can use the free, public BinderHub running at "
+"https://mybinder.org."
+msgstr ""
+
+msgid ""
+"To automatically include Binder link buttons in each page of your Jupyter"
+" Book, use the following configuration in `_config.yml`:"
+msgstr ""
+
+msgid ""
+"By adding this configuration, along with the repository url configuration"
+" above, Jupyter Book will insert Binder links to any pages that were "
+"built from notebook content."
+msgstr ""
+
+msgid "Add a Launch on {term}`JupyterHub` button"
+msgstr ""
+
+msgid ""
+"JupyterHub lets you host an online service that gives users their own "
+"Jupyter servers with an environment that you specify for them. It allows "
+"you to give users access to resources and hardware that you provision in "
+"the cloud, and allows you to authenticate users in order to control who "
+"has access to your hardware."
+msgstr ""
+
+msgid ""
+"Similar to Binder link buttons, you can also automatically include "
+"interact links that send your readers to a JupyterHub that is running a "
+"live, interactive version of your page. This is accomplished using the "
+"[nbgitpuller](https://github.com/jupyterhub/nbgitpuller) server "
+"extension."
+msgstr ""
+
+msgid ""
+"You can configure the location of the JupyterHub (which you may set up on"
+" your own using a guide such as [zero to jupyterhub for "
+"kubernetes](https://z2jh.jupyter.org) or [the littlest "
+"jupyterhub](https://tljh.jupyter.org)) with the following configuration:"
+msgstr ""
+
+msgid "On your JupyterHub server, you need two dependencies installed:"
+msgstr ""
+
+msgid ""
+"To clone the notebook with the launch link, the server needs "
+"[`nbgitpuller`](https://jupyterhub.github.io/nbgitpuller/)."
+msgstr ""
+
+msgid ""
+"To open myst-markdown as notebooks, the server needs "
+"[`jupytext>=0.16`](https://jupytext.readthedocs.io/en/latest/formats.html"
+"#myst-markdown)."
+msgstr ""
+
+msgid "You can add the following line to your `DockerFile`:"
+msgstr ""
+
+msgid "Add a Launch on {term}`Google Colab` button"
+msgstr ""
+
+msgid ""
+"If your Jupyter Book is hosted online on GitHub, you can automatically "
+"insert buttons that link to the Jupyter Notebook running on [Google "
+"Colab](https://colab.research.google.com/). When a user clicks the "
+"button, they'll be taken to a live version of the page."
+msgstr ""
+
+msgid ""
+"Similar to Binder link buttons, you can automatically include Google "
+"Colab link buttons with the following configuration in `_config.yml`:"
+msgstr ""
+
+msgid ""
+"Google Colab links will only work for pages that have the `.ipynb` "
+"extension."
+msgstr ""
+
+msgid "Make your code cells executable"
+msgstr ""
+
+msgid ""
+"This section describes how to bring interactivity to your book. This lets"
+" users run code and see outputs *without leaving the page*. Interactivity"
+" is provided by a kernel running on the public "
+"[**MyBinder**](https://mybinder.org) service."
+msgstr ""
+
+msgid ""
+"For an example, click the {fa}`rocket` --> {guilabel}`Live Code` button "
+"above on this page, and run the code below."
+msgstr ""
+
+msgid ""
+"This is an experimental feature, and may change in the future or work "
+"unexpectedly."
+msgstr ""
+
+msgid "Activate Thebe"
+msgstr ""
+
+msgid ""
+"To make your content interactive without requiring readers to leave the "
+"current page, you can use a project called "
+"[Thebe](https://github.com/executablebooks/thebe). This provides you with"
+" a {guilabel}`Live Code` button that, when clicked, will convert each "
+"code cell into an **interactive** cell that can be edited. It also adds a"
+" \"run\" button to each cell, and connects to a Binder kernel running in "
+"the cloud."
+msgstr ""
+
+msgid "To add a Thebe button to your Jupyter Book pages, take these steps:"
+msgstr ""
+
+msgid ""
+"First, [add the common launch button "
+"configuration](launchbuttons/configuration). This makes it possible for "
+"`thebe/` to use the correct environment and file paths for your content."
+msgstr ""
+
+msgid "Activate Thebe integration with the following configuration:"
+msgstr ""
+
+msgid "Configure Thebe"
+msgstr ""
+
+msgid ""
+"In addition, you can configure the Binder settings that are used to "
+"provide a kernel for Thebe to run the code. These use the same "
+"configuration fields as the BinderHub interact buttons described above. "
+"For information about how to do this, see [the BinderHub launch button "
+"documentation](launchbuttons/binder)."
+msgstr ""
+
+msgid "Pre-execute cells when Thebe is initialized"
+msgstr ""
+
+msgid ""
+"Sometimes you'd like to run some code cells *immediately* when a kernel "
+"is requested. This might be code that you then hide from the user in "
+"order to narrow the focus of what they interact with. This is possible by"
+" using **cell tags** for the Jupyter Notebook."
+msgstr ""
+
+msgid ""
+"Adding the tag {guilabel}`thebe-init` to any code cell will cause Thebe "
+"to run this cell after it has received a kernel. Any subsequent Thebe "
+"cells will have access to the same environment (e.g. any module imports "
+"made in the initialization cell)."
+msgstr ""
+
+msgid ""
+"You can then pair this with something like {guilabel}`hide-input` in "
+"order to run initialization code that your user doesn't immediately see. "
+"For example, below we'll initialize a variable in a hidden cell, and then"
+" tell another cell to print the output of that variable."
+msgstr ""
+

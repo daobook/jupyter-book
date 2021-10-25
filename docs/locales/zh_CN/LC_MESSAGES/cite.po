@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Cite Jupyter Book"
+msgstr ""
+
+msgid ""
+"Jupyter Book is developed by many people across academia and industry. "
+"Moreover, Jupyter Book is powered by an ecosystem of open source tools, "
+"most notably within the [Executable Books "
+"Project](https://executablebooks.org)."
+msgstr ""
+
+msgid ""
+"Rather than citing each tool, we choose to use a single blanket citation "
+"for the entire project and all of its community members."
+msgstr ""
+
+msgid ""
+"To cite Jupyter Book in publications, please use the following Zenodo "
+"reference:"
+msgstr ""
+
+msgid "[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.5281/zenodo.2561065)"
+msgstr ""
+
+msgid "DOI"
+msgstr ""
+
+msgid ""
+"The full author list is available by viewing the [contributors graph on "
+"GitHub](https://github.com/executablebooks/jupyter-"
+"book/graphs/contributors). To get the full picture, you should look at "
+"this for all projects within [the Executable Books "
+"organization](https://github.com/executablebooks)."
+msgstr ""
+

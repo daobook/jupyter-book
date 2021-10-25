@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Tutorials"
+msgstr ""
+
+msgid "Topic Guides"
+msgstr ""
+
+msgid "Reference"
+msgstr ""
+
+msgid "About Jupyter Book"
+msgstr ""
+
+msgid "Books with Jupyter <img src=\"images/logo-square.svg\" width=40 />"
+msgstr ""
+
+msgid ""
+"[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.5281/zenodo.2561065)"
+" [![Jupyter Book Badge](images/badge.svg)](https://jupyterbook.org)"
+msgstr ""
+
+msgid "DOI"
+msgstr ""
+
+msgid "Jupyter Book Badge"
+msgstr ""
+
+msgid ""
+"Jupyter Book is an open source project for building beautiful, "
+"publication-quality books and documents from computational material."
+msgstr ""
+
+msgid "Here are some of the features of Jupyter Book:"
+msgstr ""
+
+msgid "**[Publication-quality content](file-types:markdown)** ✍"
+msgstr ""
+
+msgid ""
+"Write in either Jupyter Markdown, MyST Markdown for more [publishing "
+"features](content/myst), [reStructuredText](file-types:rst), [Jupyter "
+"Notebooks](file-types:notebooks), or [any Jupytext format](file-"
+"types:custom). Includes support for rich syntax such as [citations and "
+"cross-references](content/citations), [math and equations](content/math),"
+" and [figures](content/figures)."
+msgstr ""
+
+msgid "**[Execute, cache, and insert computational content](content/execute)** 🚀"
+msgstr ""
+
+msgid ""
+"Execute notebook cells, then [format and insert the latest "
+"outputs](content:code-outputs) into your book. [Cache outputs to save "
+"time in re-building later](execute/cache). Even [save notebook outputs "
+"and insert them into other pages](content:code-outputs:glue)."
+msgstr ""
+
+msgid ""
+"**[Add interactivity to content and outputs](interactive/launchbuttons)**"
+" ✨"
+msgstr ""
+
+msgid ""
+"Create interactive content blocks such as [](content:tabs), "
+"[](content:dropdowns). [Toggle cell visibility](interactive/hiding) and "
+"include [interactive cell outputs](interactive/interactive) with Jupyter "
+"notebooks. [Launch interactive sessions](interactive/launchbuttons) with "
+"Binder or Colab, [make your code executable with Thebe](launch:thebe), or"
+" [connect with commenting services like "
+"Hypothes.is](interactive:comments)."
+msgstr ""
+
+msgid "**[Build books and articles in many formats](start/build)** 🎁"
+msgstr ""
+
+msgid ""
+"Build [multi-page books](structure:book) or [single "
+"articles](structure:article), and generate many kinds of outputs from "
+"them, such as [HTML websites](start/build) or [PDF "
+"outputs](advanced/pdf). Jupyter Book uses [the Sphinx Documentation "
+"engine](https://sphinx-doc.org) which supports [a variety of output "
+"types](https://www.sphinx-doc.org/en/master/usage/builders/index.html)."
+msgstr ""
+
+msgid "This documentation is organized into a few major sections."
+msgstr ""
+
+msgid "**Tutorials** are step-by-step introductory guides to Jupyter Book."
+msgstr ""
+
+msgid ""
+"**Topic Guides** cover specific areas in more depth, and are organized as"
+" discrete \"how-to\" sections."
+msgstr ""
+
+msgid ""
+"**Reference** sections describe the API/syntax/etc of Jupyter Book in "
+"detail."
+msgstr ""
+
+msgid ""
+"This website is built with Jupyter Book! Explore the chapters to the left"
+" to learn more!"
+msgstr ""
+
+msgid "Learn more and get involved"
+msgstr ""
+
+msgid ""
+"💡 [Open an issue](https://github.com/executablebooks/jupyter-"
+"book/issues/new/choose)"
+msgstr ""
+
+msgid ""
+"We track enhancement requests, bug-reports, and to-do items via GitHub "
+"issues."
+msgstr ""
+
+msgid ""
+"💬 [Join the "
+"discussion](https://github.com/executablebooks/meta/discussions)"
+msgstr ""
+
+msgid ""
+"We have community discussions, talk about ideas, and share general "
+"questions and feedback in our [community "
+"forum](https://github.com/executablebooks/meta/discussions)."
+msgstr ""
+
+msgid "👍 [Vote for new features](ebp:feature-note)"
+msgstr ""
+
+msgid ""
+"The community provides feedback by adding a 👍 reaction to issues in our "
+"repositories. You can find a list of the top issues [in the Executable "
+"Books issue leader board](ebp:feature-note)."
+msgstr ""
+
+msgid "🙌 [Join the community](contribute/intro.md)"
+msgstr ""
+
+msgid ""
+"Jupyter Book is developed by the [Executable Books "
+"community](https://executablebooks.org). We welcome anyone to join us in "
+"improving Jupyter Book and helping one another learn and create their "
+"books. To join, check out our [contributing guide](contribute/intro.md)."
+msgstr ""
+
+msgid "Find the right documentation resources"
+msgstr ""
+
+msgid "Here are a few pointers to help you get started."
+msgstr ""
+
+msgid "**Get started**"
+msgstr ""
+
+msgid "**[](start/your-first-book.md)**: a step-by-step tutorial to get started."
+msgstr ""
+
+msgid "**[](create-a-template-book)**: get started with a simple template book."
+msgstr ""
+
+msgid "**Learn more**"
+msgstr ""
+
+msgid "**[](structure:index)**: Learn how to structure and organize your content."
+msgstr ""
+
+msgid "**[](content/index.md)**: Learn how to write rich narrative content."
+msgstr ""
+
+msgid "**[](content/executable/index.md)**: Write computational content."
+msgstr ""
+
+msgid "**Be inspired**"
+msgstr ""
+
+msgid ""
+"[**The Jupyter Book Gallery**](http://gallery.jupyterbook.org): A gallery"
+" of community books that have been created with Jupyter Book."
+msgstr ""
+
+msgid ""
+"[**The QuantEcon Python "
+"Lectures**](https://python.quantecon.org/intro.html): A full mathematical"
+" textbook built with a customer Jupyter Book theme."
+msgstr ""
+
+msgid "Acknowledgements"
+msgstr ""
+
+msgid ""
+"Jupyter Book is supported by an [open community of "
+"contributors](https://github.com/executablebooks/jupyter-"
+"book/graphs/contributors), many of whom come from [the Executable Books "
+"Community](https://executablebooks.org) and [the Jupyter "
+"community](https://jupyter.org/community)."
+msgstr ""
+
+msgid ""
+"Many thanks to the Sloan Foundation, which [provides support for the "
+"Executable Books Project](https://sloan.org/grant-detail/9231)."
+msgstr ""
+

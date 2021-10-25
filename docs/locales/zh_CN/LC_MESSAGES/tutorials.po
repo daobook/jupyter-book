@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Get started with references"
+msgstr ""
+
+msgid ""
+"References allow you to refer to other content in your book or to "
+"external content. They allow you to automatically generate links to that "
+"content, or to add extra information like *numbers* to the reference."
+msgstr ""
+
+msgid ""
+"Citations and bibliographies allow you to cite scholarly work and provide"
+" bibliographies that allow readers to follow the references."
+msgstr ""
+
+msgid ""
+"This tutorial covers the basics of setting up **references** as well as "
+"**citations and bibliographies** for your book."
+msgstr ""
+
+msgid ""
+"For more information about citation and reference syntax, see the "
+"[`sphinxcontrib-bibtex` documentation](https://sphinxcontrib-"
+"bibtex.readthedocs.io/en/latest/usage.html#roles-and-directives). Note "
+"that this documentation is written with rST syntax in mind and you'll "
+"need to adapt the directive/role syntax for your Markdown content."
+msgstr ""
+
+msgid "Prerequisites"
+msgstr ""
+
+msgid ""
+"This tutorial assumes that you've either created a demo Jupyter Book from"
+" [](../start/your-first-book.md), or that you've got your own Jupyter "
+"Book to work from."
+msgstr ""
+
+msgid "Basic structure of a reference"
+msgstr ""
+
+msgid "Cross-references in Jupyter Book usually involve two things:"
+msgstr ""
+
+msgid ""
+"Create a **label** for something. This is the thing you'll refer to later"
+" in your reference."
+msgstr ""
+
+msgid ""
+"Create a reference with a **target**. This target is usually the label "
+"you created in `#1`."
+msgstr ""
+
+msgid "Create a label"
+msgstr ""
+
+msgid ""
+"First, we'll create a label. Labels must come just before headers. You "
+"can then refer to them elsewhere in your text."
+msgstr ""
+
+msgid ""
+"To start with, create a new markdown file in your book (or edit a pre-"
+"existing one). Add a markdown header with a label like so:"
+msgstr ""
+
+msgid ""
+"This is how you specify a label called `my-label` that points to the "
+"header just below (`## My header`)."
+msgstr ""
+
+msgid "You can also reference labels in this way with the following syntax:"
+msgstr ""
+
+msgid "Refer to your label"
+msgstr ""
+
+msgid ""
+"Now that you've created a label, you can refer to it from elsewhere. Try "
+"adding the following markdown on the same page (or some other page)."
+msgstr ""
+
+msgid "Now re-build your book's HTML:"
+msgstr ""
+
+msgid ""
+"You should see that your reference has been replaced with a link to the "
+"right spot on the page."
+msgstr ""
+
+msgid "Create a citation"
+msgstr ""
+
+msgid "Next, we'll add a *citation*."
+msgstr ""
+
+msgid "Create a bibtex file"
+msgstr ""
+
+msgid ""
+"You'll need a [bibtex](http://www.bibtex.org/) file to store the "
+"information for your citations. In this case, we'll create an empty "
+"bibtex file and populate it with one reference."
+msgstr ""
+
+msgid "Next, configure your book to include this bibtex file, like so:"
+msgstr ""
+
+msgid ""
+"This will activate the [`sphinxcontrib.bibtex` extension](https"
+"://sphinxcontrib-bibtex.readthedocs.io/en/latest/)"
+msgstr ""
+
+msgid ""
+"Finally, note that the default reference style is `label` which shows up "
+"as an in-line link in the rendered HTML as [ABC21]; it is [described in "
+"detail here](https://sphinxcontrib-"
+"bibtex.readthedocs.io/en/latest/usage.html#referencing-style) along with "
+"other styles. You can adjust the reference style in your book's "
+"`_config.yml` file like so:"
+msgstr ""
+
+msgid "Add your references"
+msgstr ""
+
+msgid "Add some references to your BibTex file. Here's an example citation:"
+msgstr ""
+
+msgid ""
+"See [the BibTex documentation](http://www.bibtex.org/Using/) for "
+"information on the BibTex reference style."
+msgstr ""
+
+msgid "Add a citation"
+msgstr ""
+
+msgid "In your content, add the following syntax to include a citation:"
+msgstr ""
+
+msgid "Re-build your book, and it should look like this:"
+msgstr ""
+
+msgid "Here is my nifty citation {cite}`perez2011python`."
+msgstr ""
+
+msgid "Add multiple citations at once"
+msgstr ""
+
+msgid ""
+"Now try adding multiple citations at once by separating each one with a "
+"comma."
+msgstr ""
+
+msgid "Add the following text to your page:"
+msgstr ""
+
+msgid "when you build your book, it should look like this:"
+msgstr ""
+
+msgid ""
+"Here are multiple citations "
+"{cite}`perez2011python,holdgraf_rapid_2016,RePEc:the:publsh:1367,caporaso2010qiime`!"
+msgstr ""
+
+msgid "Add a bibliography"
+msgstr ""
+
+msgid ""
+"Finally, we'll generate a bibliography for our citations. Links to this "
+"bibliography will automatically be created when you cite something."
+msgstr ""
+
+msgid ""
+"We'll use the `{bibliography}` directive to add one to our book. Add the "
+"following to your page:"
+msgstr ""
+
+msgid ""
+"This will generate the bibliography of all citations in your book. See "
+"the bibliography below for an example."
+msgstr ""
+
+msgid ""
+"For more information about configuring and using citations and "
+"bibliographies, see [](content:references)."
+msgstr ""
+
+msgid "Bibliography"
+msgstr ""
+
+msgid "An example bibliography, for reference:"
+msgstr ""
+

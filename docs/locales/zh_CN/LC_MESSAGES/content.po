@@ -1,0 +1,3370 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Citations and bibliographies"
+msgstr ""
+
+msgid ""
+"You can add citations and bibliographies using references that are stored"
+" in a `bibtex` file that is in your book's folder. You can then add a "
+"citation in-line in your Markdown with the `{cite}` role, and include the"
+" bibliography from your bibtex file with the `{bibliography}` directive."
+msgstr ""
+
+msgid ""
+"This functionality uses the excellent [sphinxcontrib-bibtex](https"
+"://sphinxcontrib-bibtex.readthedocs.io/en/latest/) extension."
+msgstr ""
+
+msgid "Basic citations"
+msgstr ""
+
+msgid ""
+"To get started with citations in Jupyter Book, check out "
+"[](tutorials:references)."
+msgstr ""
+
+msgid "Change the in-line citation style"
+msgstr ""
+
+msgid ""
+"There are a few alternatives roles that you can use to change the in-line"
+" citation style. Below are a few examples:"
+msgstr ""
+
+msgid ""
+"The citation `` {cite:p}`perez2011python` `` results in "
+"{cite:p}`perez2011python`"
+msgstr ""
+
+msgid ""
+"The citation `` {cite:t}`perez2011python` `` results in "
+"{cite:t}`perez2011python`"
+msgstr ""
+
+msgid ""
+"The citation `` {cite:ps}`perez2011python` `` results in "
+"{cite:ps}`perez2011python`"
+msgstr ""
+
+msgid ""
+"The citation `` {cite:ts}`perez2011python` `` results in "
+"{cite:ts}`perez2011python`"
+msgstr ""
+
+msgid ""
+"For a more complete list of in-line citation styles, check out [the "
+"`sphinxcontrib-bibtex` docs](https://sphinxcontrib-"
+"bibtex.readthedocs.io/en/latest/usage.html#roles-and-directives)."
+msgstr ""
+
+msgid "Select your bibliography style"
+msgstr ""
+
+msgid ""
+"You can also optionally customize the style of your references. By "
+"default, references are displayed in the `alpha` style. Other currently "
+"supported styles include `plain`, `unsrt`, and `unsrtalpha`. These styles"
+" create the following bibliography formatting:"
+msgstr ""
+
+msgid ""
+"`alpha`: Use alphanumeric reference labels, citations are sorted by "
+"author, year."
+msgstr ""
+
+msgid ""
+"`plain`: Use numeric reference labels, citations are sorted by author, "
+"year."
+msgstr ""
+
+msgid ""
+"`unsrt`: Use numeric reference labels, citations are sorted by order of "
+"appearance."
+msgstr ""
+
+msgid ""
+"`unsrtalpha`: Use alphanumeric reference labels, citations are sorted by "
+"order of appearance."
+msgstr ""
+
+msgid "To set your reference style, use the style option:"
+msgstr ""
+
+msgid "Change the reference style"
+msgstr ""
+
+msgid ""
+"To set the reference style, use the `bibtex_reference_style` field in "
+"your book's `_config.yml` file."
+msgstr ""
+
+msgid ""
+"There are a few options for your in-line citation style such as `label`, "
+"`super`, and `author-year`."
+msgstr ""
+
+msgid ""
+"For a list of configuration options and more detail about this, see [the "
+"`sphinxcontrib-bibtex` docs](https://sphinxcontrib-"
+"bibtex.readthedocs.io/en/latest/usage.html#referencing-style)"
+msgstr ""
+
+msgid "Local bibliographies"
+msgstr ""
+
+msgid ""
+"You may wish to include a bibliography listing at the end of each "
+"document rather than having a single bibliography contained in a separate"
+" document. Having multiple bibliography directives, however, can cause "
+"`sphinx` to issue `duplicate citation warnings`."
+msgstr ""
+
+msgid "A common fix is to add a filter to the bibliography directives:"
+msgstr ""
+
+msgid ""
+"See `sphinxcontrib-bibtex` documentation on [local bibliographies](https"
+"://sphinxcontrib-bibtex.readthedocs.io/en/latest/usage.html#section-"
+"local-bibliographies)."
+msgstr ""
+
+msgid "Example Bibliography"
+msgstr ""
+
+msgid "An example bibliography, for reference:"
+msgstr ""
+
+msgid "Formatting code outputs"
+msgstr ""
+
+msgid ""
+"The formatting of code outputs is highly configurable. Below we give "
+"examples of how to format particular outputs and even insert outputs into"
+" other locations of the document."
+msgstr ""
+
+msgid ""
+"The [MyST cheat sheet](myst_cheatsheet) provides a [list of `code-cell` "
+"tags available](myst_cheatsheet:code-cell:tags)"
+msgstr ""
+
+msgid ""
+"The [MyST-NB documentation](myst-nb:use/format/cutomise), for how to "
+"fully customize the output renderer."
+msgstr ""
+
+msgid "Library output formatting"
+msgstr ""
+
+msgid ""
+"Many libraries support their own HTML output formatting, and this "
+"generally carries over to Jupyter Book outputs as well."
+msgstr ""
+
+msgid ""
+"For example, the following cell uses Pandas to format cells based on "
+"their values:"
+msgstr ""
+
+msgid ""
+"See the [Pandas Styling docs](https://pandas.pydata.org/pandas-"
+"docs/stable/user_guide/style.html) for more information about styling "
+"DataFrames, and check out the documentation of your library of choice to "
+"see if they support similar features."
+msgstr ""
+
+msgid "Scrolling cell outputs"
+msgstr ""
+
+msgid ""
+"The traditional Jupyter Notebook interface allows you to toggle **output "
+"scrolling** for your cells. This allows you to visualize part of a long "
+"output without it taking up the entire page."
+msgstr ""
+
+msgid ""
+"You can trigger this behavior in Jupyter Book by adding the following tag"
+" to a cell's metadata:"
+msgstr ""
+
+msgid ""
+"For example, the following cell has a long output, but will be scrollable"
+" in the book:"
+msgstr ""
+
+msgid "Images"
+msgstr ""
+
+msgid ""
+"For any image types output by the code, we can apply formatting *via* "
+"cell metadata. Then for the image we can apply all the variables of the "
+"standard [image "
+"directive](https://docutils.sourceforge.io/docs/ref/rst/directives.html#image):"
+msgstr ""
+
+msgid "Units of length are: 'em', 'ex', 'px', 'in', 'cm', 'mm', 'pt', 'pc'"
+msgstr ""
+
+msgid "**width**: length or percentage (%) of the current line width"
+msgstr ""
+
+msgid "**height**: length"
+msgstr ""
+
+msgid "**scale**: integer percentage (the \"%\" symbol is optional)"
+msgstr ""
+
+msgid ""
+"**align**: \"top\", \"middle\", \"bottom\", \"left\", \"center\", or "
+"\"right\""
+msgstr ""
+
+msgid "**classes**: space separated strings"
+msgstr ""
+
+msgid "**alt**: string"
+msgstr ""
+
+msgid ""
+"We can also set a caption (which is rendered as "
+"[CommonMark](https://commonmark.org/)) and name by which to reference the"
+" figure. The code"
+msgstr ""
+
+msgid "produces the following code cell and figure:"
+msgstr ""
+
+msgid ""
+"Now we can link to the image from anywhere in our documentation: [swim to"
+" the fish](fun-fish)"
+msgstr ""
+
+msgid "[](jupyter-cell-tags)"
+msgstr ""
+
+msgid "Markdown"
+msgstr ""
+
+msgid ""
+"Markdown output is parsed by MyST-Parser, currently with the parsing set "
+"to strictly [CommonMark](https://commonmark.org/)."
+msgstr ""
+
+msgid ""
+"The parsed Markdown is then integrated into the wider context of the "
+"document. This means it is possible, for example, to include internal "
+"references:"
+msgstr ""
+
+msgid "and even internal images can be rendered, as the code below exemplifies:"
+msgstr ""
+
+msgid "ANSI outputs"
+msgstr ""
+
+msgid ""
+"By default, the standard output/error streams and text/plain MIME outputs"
+" may contain ANSI escape sequences to change the text and background "
+"colors."
+msgstr ""
+
+msgid ""
+"This uses the built-in {py:class}`~myst-"
+"nb:myst_nb.ansi_lexer.AnsiColorLexer` [pygments "
+"lexer](https://pygments.org/). You can change the lexer used in the "
+"`_config.yml`, for example to turn off lexing:"
+msgstr ""
+
+msgid ""
+"The following code shows the 8 basic ANSI colors it is based on. Each of "
+"the 8 colors has an “intense” variation, which is used for bold text."
+msgstr ""
+
+msgid ""
+"ANSI also supports a set of 256 indexed colors. This is currently not "
+"supported, but we hope to introduce it at a later date (raise an issue on"
+" the repository if you require it!)."
+msgstr ""
+
+msgid "Render priority"
+msgstr ""
+
+msgid ""
+"When Jupyter executes a code cell it can produce multiple outputs, and "
+"each of these outputs can contain multiple [MIME media "
+"types](https://developer.mozilla.org/en-"
+"US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) to use with different output "
+"formats (like HTML or LaTeX)."
+msgstr ""
+
+msgid ""
+"MyST-NB stores a default priority dictionary for most of the common "
+"[output builders](https://www.sphinx-"
+"doc.org/en/master/usage/builders/index.html), which you can also update "
+"in your `_config.yml`. For example, this is the default priority list for"
+" HTML:"
+msgstr ""
+
+msgid "Special content blocks"
+msgstr ""
+
+msgid ""
+"A common use of directives and roles is to designate \"special blocks\" "
+"of your content. This allows you to include more complex information such"
+" as warnings and notes, citations, and figures. This section covers a few"
+" common ones."
+msgstr ""
+
+msgid "MyST syntax extensions"
+msgstr ""
+
+msgid ""
+"{term}`MyST Markdown` has a base syntax that it supports, and additional "
+"syntax can be enabled to add extra functionality. By default, Jupyter "
+"Book enables a few extra syntax pieces for MyST in order to more closely "
+"resemble the Markdown experience in Jupyter Notebooks and interfaces. "
+"These extensions are:"
+msgstr ""
+
+msgid "`dollarmath`"
+msgstr ""
+
+msgid "To support `$$` and `$` syntax for math blocks. See [](./math.md)."
+msgstr ""
+
+msgid "`linkify`"
+msgstr ""
+
+msgid ""
+"To auto-detect HTML-like links in your markdown and convert them to "
+"hyperlinks."
+msgstr ""
+
+msgid "`substitution`"
+msgstr ""
+
+msgid ""
+"To allow you to define markdown \"variables\" and substitute text in "
+"using them. See [](content:substitutions)."
+msgstr ""
+
+msgid "`colon_fence`"
+msgstr ""
+
+msgid ""
+"To allow you to use `:::` fences for admonitions, in order to make them "
+"easier to render in interfaces that do not support MyST. See "
+"[](admonitions:colons)."
+msgstr ""
+
+msgid ""
+"To enable your own syntax extensions, use the following configuration "
+"pattern:"
+msgstr ""
+
+msgid ""
+"Note that this will **override** the default Jupyter Book extension list."
+" You should include all of the extensions that you want to be enabled."
+msgstr ""
+
+msgid ""
+"For a list of syntax extensions in MyST, see [the MyST "
+"documentation](https://myst-parser.readthedocs.io/en/latest/using/syntax-"
+"optional.html)."
+msgstr ""
+
+msgid "Notes, warnings, and other admonitions"
+msgstr ""
+
+msgid ""
+"Let's say you wish to highlight a particular block of text that exists "
+"slightly apart from the narrative of your page. You can use the "
+"**`{note}`** directive for this."
+msgstr ""
+
+msgid "For example, the following text:"
+msgstr ""
+
+msgid "Results in the following output:"
+msgstr ""
+
+msgid "Here is a note!"
+msgstr ""
+
+msgid "A note on nesting"
+msgstr ""
+
+msgid ""
+"You can nest admonitions (and other content blocks) inside one another. "
+"For example:"
+msgstr ""
+
+msgid "Here's a note block inside a margin block"
+msgstr ""
+
+msgid "See {ref}`markdown/nesting` for instructions to do this."
+msgstr ""
+
+msgid ""
+"There are a number of similarly-styled blocks of text. For example, here "
+"is a `{warning}` block:"
+msgstr ""
+
+msgid "Here's a warning! It was created with:"
+msgstr ""
+
+msgid ""
+"For a complete list of options, see [the `sphinx-book-theme` "
+"documentation](https://sphinx-book-"
+"theme.readthedocs.io/en/latest/reference/kitchen-sink/paragraph-"
+"markup.html#admonitions)."
+msgstr ""
+
+msgid "Blocks of text with custom titles"
+msgstr ""
+
+msgid ""
+"You can also choose the title of your message box by using the "
+"**`{admonition}`** directive. For example, the following text:"
+msgstr ""
+
+msgid "Here's your admonition"
+msgstr ""
+
+msgid "Here's the admonition content"
+msgstr ""
+
+msgid ""
+"If you'd like to **style these blocks**, then use the `:class:` option. "
+"For example:"
+msgstr ""
+
+msgid "This admonition was styled..."
+msgstr ""
+
+msgid "Using the following pattern:"
+msgstr ""
+
+msgid "Markdown-friendly directives with `:::`"
+msgstr ""
+
+msgid ""
+"The admonition syntax above utilises the general [directives "
+"syntax](content:myst/directives). However, if you're using an interface "
+"that does not support {term}`MyST Markdown`, it will render as a raw "
+"literal block. Many directives contain markdown inside, and if you'd like"
+" this markdown to render \"normally\", you may also use `:::` fences "
+"rather than ` ``` ` fences to define the directive. As a result, the "
+"contents of the directive will be rendered as markdown."
+msgstr ""
+
+msgid "For example:"
+msgstr ""
+
+msgid "This text is **standard** _Markdown_"
+msgstr ""
+
+msgid "Similar to normal directives, these admonitions can also be nested:"
+msgstr ""
+
+msgid ""
+"You can use this syntax for any kind of directive, though it is generally"
+" recommended to use only with directives that contain pure markdown in "
+"their content."
+msgstr ""
+
+msgid "Insert code cell outputs into admonitions"
+msgstr ""
+
+msgid ""
+"If you'd like to insert the outputs of running code *inside* admonition "
+"blocks, we recommend using [`glue` functionality](content:code-"
+"outputs:glue). For example, we'll insert one of the outputs that was "
+"glued into the book from the [code outputs page](./code-outputs.md)."
+msgstr ""
+
+msgid "The code below:"
+msgstr ""
+
+msgid "generates:"
+msgstr ""
+
+msgid "Here's my figure: {glue:}`sorted_means_fig`"
+msgstr ""
+
+msgid ""
+"See [](content:code-outputs:glue) for more information on how to use "
+"`glue` to insert your outputs directly into your content."
+msgstr ""
+
+msgid ""
+"To hide code input and output that generated the variable you are "
+"inserting, use the `remove_cell` tag. See [](../interactive/hiding.md) "
+"for more information and other tag options."
+msgstr ""
+
+msgid "HTML admonitions"
+msgstr ""
+
+msgid ""
+"A drawback of admonition syntax is that it will not render in interfaces "
+"that do not support this syntax (e.g., GitHub). If you'd like to use "
+"admonitions that are defined *purely with HTML*, MyST can parse them via "
+"the `html_admonitions` extension. To use it, first enable it with the "
+"following configuration:"
+msgstr ""
+
+msgid "Then, you may define admonitions in your book like so:"
+msgstr ""
+
+msgid "Markdown Input"
+msgstr ""
+
+msgid "Rendered Output"
+msgstr ""
+
+msgid "This is the **title**"
+msgstr ""
+
+msgid "This is the *content*"
+msgstr ""
+
+msgid ""
+"See [](myst-parser:syntax/html-admonition) for more information about "
+"HTML admonitions."
+msgstr ""
+
+msgid "Panels"
+msgstr ""
+
+msgid ""
+"Panels provide an easy way for you to organize chunks of content into "
+"flexible containers on your page. They are useful for creating card-like "
+"layouts, flexible columns, and grids. Panels are based off of [Bootstrap "
+"CSS](https://getbootstrap.com/docs/4.5/components/card/), and utilize "
+"Bootstrap's classes to control the look and feel of panels."
+msgstr ""
+
+msgid "Here is an example that creates two panels:"
+msgstr ""
+
+msgid "`---` separates each panel"
+msgstr ""
+
+msgid "`^^^` defines the panel header"
+msgstr ""
+
+msgid "`+++` defines the panel footer"
+msgstr ""
+
+msgid ""
+"Panel headers and footers are optional. If you don't include `^^^` or "
+"`+++` in your panel, they will not show up."
+msgstr ""
+
+msgid ""
+"You can embed all kinds of content inside of panels. For example, the "
+"following panels:"
+msgstr ""
+
+msgid "Content of the left panel."
+msgstr ""
+
+msgid "{badge}`example-badge,badge-primary`"
+msgstr ""
+
+msgid "were created with:"
+msgstr ""
+
+msgid ""
+"See the [Sphinx Panels card layout documentation](https://sphinx-"
+"panels.readthedocs.io/en/latest/#card-layout) for more information."
+msgstr ""
+
+msgid "Controlling the look and feel of panels"
+msgstr ""
+
+msgid ""
+"You can control the look and feel of panels by passing attaching "
+"bootstrap classes to panel headers/body/footers. You do this by passing "
+"configuration options to your  `{panels}` directive."
+msgstr ""
+
+msgid ""
+"See the [Panels card styling documentation](https://sphinx-"
+"panels.readthedocs.io/en/latest/#card-styling) for more information."
+msgstr ""
+
+msgid ""
+"For example, you can control how many columns are in your panels by using"
+" [Bootstrap column "
+"classes](https://getbootstrap.com/docs/4.0/layout/grid/). These panels:"
+msgstr ""
+
+msgid "Header A"
+msgstr ""
+
+msgid "Body A"
+msgstr ""
+
+msgid "Header B"
+msgstr ""
+
+msgid "Body B"
+msgstr ""
+
+msgid "Header C"
+msgstr ""
+
+msgid "Body C"
+msgstr ""
+
+msgid "Were created by this code:"
+msgstr ""
+
+msgid "Dropdowns"
+msgstr ""
+
+msgid ""
+"Dropdowns allows you to hide content behind a title and a button. There "
+"are two kinds of dropdowns in Jupyter Book:"
+msgstr ""
+
+msgid "The `{dropdown}` directive"
+msgstr ""
+
+msgid ""
+"Use the `{dropdown}` directive to create a clickable dropdown with a "
+"title."
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "result"
+msgstr ""
+
+msgid "And here's my dropdown content"
+msgstr ""
+
+msgid "Dropdown admonitions"
+msgstr ""
+
+msgid ""
+"You can also hide the body of your admonition blocks so that users must "
+"click a button to reveal their content. This is helpful if you'd like to "
+"include some text that isn't immediately visible to the user."
+msgstr ""
+
+msgid ""
+"To turn an admonition into a dropdown, add the `dropdown` class to them. "
+"For example:"
+msgstr ""
+
+msgid "The note body will be hidden!"
+msgstr ""
+
+msgid ""
+"You can use this in conjunction with `{admonition}` directives to include"
+" your own titles and stylings. For example:"
+msgstr ""
+
+msgid "Click here!"
+msgstr ""
+
+msgid "Here's what's inside!"
+msgstr ""
+
+msgid ""
+"Admonition dropdowns require JavaScript to be enabled on the browser "
+"which they are viewed. By contrast, the [dropdown "
+"directive](content/panels) below works purely *via* HTML+CSS."
+msgstr ""
+
+msgid "Definition lists"
+msgstr ""
+
+msgid ""
+"Definition lists are enabled by defining the following setting in your "
+"`_config.yml`:"
+msgstr ""
+
+msgid ""
+"Definition lists utilise the [markdown-it-py deflist plugin](https"
+"://markdown-it-py.readthedocs.io/en/latest/plugins.html), which itself is"
+" based on the [Pandoc definition list "
+"specification](http://johnmacfarlane.net/pandoc/README.html#definition-"
+"lists)."
+msgstr ""
+
+msgid "Here's an example:"
+msgstr ""
+
+msgid "Term 1"
+msgstr ""
+
+msgid "Definition"
+msgstr ""
+
+msgid "Term 2"
+msgstr ""
+
+msgid ""
+"From the [Pandoc documentation](https://pandoc.org/MANUAL.html"
+"#definition-lists):"
+msgstr ""
+
+msgid ""
+"Each term must fit on one line, which may optionally be followed by a "
+"blank line, and must be followed by one or more definitions. A definition"
+" begins with a colon or tilde, which may be indented one or two spaces."
+msgstr ""
+
+msgid ""
+"A term may have multiple definitions, and each definition may consist of "
+"one or more block elements (paragraphs, code blocks, lists, etc.)"
+msgstr ""
+
+msgid "Here is a more complex example, demonstrating some of these features:"
+msgstr ""
+
+msgid "Term *with Markdown*"
+msgstr ""
+
+msgid "Definition [with reference](content/definition-lists)"
+msgstr ""
+
+msgid "A second paragraph"
+msgstr ""
+
+msgid "A second definition"
+msgstr ""
+
+msgid "Definition 2a"
+msgstr ""
+
+msgid "Definition 2b"
+msgstr ""
+
+msgid "Term 3"
+msgstr ""
+
+msgid "A quote"
+msgstr ""
+
+msgid "A final definition, that can even include images:"
+msgstr ""
+
+msgid "fishy"
+msgstr ""
+
+msgid "This was created with the following Markdown:"
+msgstr ""
+
+msgid "Quotations and epigraphs"
+msgstr ""
+
+msgid ""
+"Quotations and epigraphs provide ways to highlight information given by "
+"others."
+msgstr ""
+
+msgid "Quotations"
+msgstr ""
+
+msgid ""
+"**Regular quotations** are controlled with standard Markdown syntax, "
+"i.e., by inserting a caret (`>`) symbol in front of one or more lines of "
+"text. For example:"
+msgstr ""
+
+msgid "Here is a cool quotation."
+msgstr ""
+
+msgid "From me, Jo the Jovyan"
+msgstr ""
+
+msgid "Epigraphs"
+msgstr ""
+
+msgid ""
+"**Epigraphs** draw more attention to a quote and highlight its author. "
+"You should keep these relatively short so that they don't take up too "
+"much vertical space. Here's how an epigraph looks:"
+msgstr ""
+
+msgid ""
+"You can provide an **attribution** to an epigraph by adding `--` to the "
+"final line, followed by the quote author. For example:"
+msgstr ""
+
+msgid "Jo the Jovyan"
+msgstr ""
+
+msgid "Glossaries"
+msgstr ""
+
+msgid ""
+"Glossaries allow you to define terms in a glossary so you can then link "
+"back to it throughout your content. You can create a glossary with the "
+"following syntax:"
+msgstr ""
+
+msgid "which creates:"
+msgstr ""
+
+msgid "Term one"
+msgstr ""
+
+msgid "An indented explanation of term 1"
+msgstr ""
+
+msgid "A second term"
+msgstr ""
+
+msgid "An indented explanation of term2"
+msgstr ""
+
+msgid ""
+"To reference terms in your glossary, use the `{term}` role. For example, "
+"`` {term}`Term one` `` becomes {term}`Term one` and `` {term}`A second "
+"term` `` becomes {term}`A second term`."
+msgstr ""
+
+msgid "Tabbed content"
+msgstr ""
+
+msgid ""
+"You can also use [`sphinx-panels`](sphinx-panels:panels/usage) to produce"
+" [**tabbed content**](sphinx-panels:components-tabbed). This allows you "
+"to display a variety of tabbed content blocks that users can click on."
+msgstr ""
+
+msgid ""
+"For example, here's a group of tabs showing off code in a few different "
+"languages:"
+msgstr ""
+
+msgid "c++"
+msgstr ""
+
+msgid "python"
+msgstr ""
+
+msgid "java"
+msgstr ""
+
+msgid "julia"
+msgstr ""
+
+msgid "fortran"
+msgstr ""
+
+msgid ""
+"You can use this functionality with the `{tabbed}` directive. You can "
+"provide a sequence of `{tabbed}` directives, and each one will be used to"
+" generate a new tab (unless the `:new-group:` option is added to a "
+"`{tabbed}` directive.)"
+msgstr ""
+
+msgid "For example, the following code:"
+msgstr ""
+
+msgid "produces"
+msgstr ""
+
+msgid "Tab 1 title"
+msgstr ""
+
+msgid "My first tab"
+msgstr ""
+
+msgid "Tab 2 title"
+msgstr ""
+
+msgid "My second tab with `some code`!"
+msgstr ""
+
+msgid ""
+"**Insert code outputs in your tabs** with the [`glue` "
+"functionality](glue/gluing)."
+msgstr ""
+
+msgid ""
+"For example, the following tabs use this functionality to glue images and"
+" tables generated somewhere else in these docs:"
+msgstr ""
+
+msgid "A histogram"
+msgstr ""
+
+msgid ""
+"This is a **caption**, with an embedded `{glue:text}` element: "
+"{glue:text}`boot_mean:.2f`!"
+msgstr ""
+
+msgid "A table"
+msgstr ""
+
+msgid "A caption for a pandas table."
+msgstr ""
+
+msgid "Code to generate this"
+msgstr ""
+
+msgid ""
+"See the [`sphinx-panels` tabbed](sphinx-panels:components-tabbed) "
+"documentation for more information on how to use this."
+msgstr ""
+
+msgid "Substitutions and variables in markdown"
+msgstr ""
+
+msgid ""
+"Substitutions allow you to define **variables** in the front-matter of "
+"your page, and then **insert** those variables into your content "
+"throughout."
+msgstr ""
+
+msgid ""
+"To use a substitution, first add front-matter content to the top of a "
+"page like so:"
+msgstr ""
+
+msgid ""
+"You can use these substitutions inline or as blocks, and you can even "
+"nest substitutions in other substitutions (but circular references are "
+"prohibited):"
+msgstr ""
+
+msgid "Inline: {{ key1 }}"
+msgstr ""
+
+msgid "Block level:"
+msgstr ""
+
+msgid "I'm a **substitution**"
+msgstr ""
+
+msgid ""
+"You can also insert substitutions inside of other markdown structures "
+"like tables:"
+msgstr ""
+
+msgid ""
+"For more information about Substitutions, see [](myst-"
+"parser:syntax/substitutions)."
+msgstr ""
+
+msgid "Define substitutions for your whole book"
+msgstr ""
+
+msgid ""
+"You can also define book-level substitution variables with the following "
+"configuration:"
+msgstr ""
+
+msgid ""
+"These substitutions will be available throughout your book. For example, "
+"the global substitution key `my-global-substitution` is defined in this "
+"book's `_config.yml` file, and it produces: {{ sub3 }}."
+msgstr ""
+
+msgid "Formatting substitutions"
+msgstr ""
+
+msgid ""
+"MyST substitutions use {{ jinja }} in order to substite in key / values. "
+"This means that you can apply any standard Jinja formatting to your "
+"substitutions. For example, you can **replace text in your "
+"substitutions** like so:"
+msgstr ""
+
+msgid "The original key1: {{ key1 }}"
+msgstr ""
+
+msgid "I'm **the best substitution**"
+msgstr ""
+
+msgid "Using substitutions in links"
+msgstr ""
+
+msgid ""
+"If you'd like to use substitutions to insert and modify **links** in your"
+" book, here are two options to explore:"
+msgstr ""
+
+msgid "**Define the entire markdown link as a variable**. For example:"
+msgstr ""
+
+msgid "Here's my link: {{ repo_url }}"
+msgstr ""
+
+msgid ""
+"Use Jinja features to insert the variable. Because substitutions use {{ "
+"jinja }}, you also have access to **Python formatting** operations in "
+"your substitution. For example:"
+msgstr ""
+
+msgid ""
+"Here's my link: {{ '[my repo: "
+"`{repo}`](https://github.com/executablebooks/{repo})'.format(repo=repo_name)"
+" }}"
+msgstr ""
+
+msgid "Citations and cross-references"
+msgstr ""
+
+msgid ""
+"You can add citations and cross-references to your book. See "
+"{doc}`citations` for more information on how to do this."
+msgstr ""
+
+msgid "Figures"
+msgstr ""
+
+msgid ""
+"You can thoroughly customise the look of figures in your book. See "
+"{doc}`figures` for more information."
+msgstr ""
+
+msgid "Page layout and sidebar content"
+msgstr ""
+
+msgid ""
+"You can also use MyST to control various aspects of the page layout. For "
+"more information on this, see {doc}`layout`."
+msgstr ""
+
+msgid "Footnotes"
+msgstr ""
+
+msgid ""
+"You can include footnotes in your book using standard Markdown syntax. "
+"This will include a numbered reference to the footnote in-line, and "
+"append the footnote to a list of footnotes at the bottom of the page."
+msgstr ""
+
+msgid ""
+"To create a footnote, first insert a reference in-line with this syntax: "
+"`[^mylabel]`. Then, define the text for that label like so:"
+msgstr ""
+
+msgid ""
+"You can define `[^mylabel]` anywhere in the page, though its definition "
+"will always be placed at the bottom of your built page. For example, "
+"here's a footnote [^mynote] and here's another one [^mynote2]. You can "
+"click either of them to see the footnotes at the bottom of this page."
+msgstr ""
+
+msgid "Custom `<div>` blocks"
+msgstr ""
+
+msgid ""
+"You can add custom `div` blocks along with whatever classes you'd like "
+"using the `{div}` directive. The `{div}` directive will wrap everything "
+"inside in a single `<div>` with the classes you provide. For example:"
+msgstr ""
+
+msgid "Will result in the following HTML when your book is built:"
+msgstr ""
+
+msgid ""
+"This can be useful if you'd like to style your book with [custom CSS or "
+"JavaScript](custom-assets)."
+msgstr ""
+
+msgid "Here's the text of my first note."
+msgstr ""
+
+msgid ""
+"And the text of my second note.         Note that         [you can "
+"include Markdown footnote definitions](https://executablebooks.org)."
+msgstr ""
+
+msgid "Write executable content"
+msgstr ""
+
+msgid ""
+"This section covers topics related to **executing** your content and "
+"interweaving **computational material** with your narrative. For example,"
+" if you're writing your content as _Jupyter Notebooks_ and wish for the "
+"output of cells to be included with your book."
+msgstr ""
+
+msgid "See the sections below to get started."
+msgstr ""
+
+msgid "Store code outputs and insert into content"
+msgstr ""
+
+msgid ""
+"You often wish to run analyses in one notebook and insert them in your "
+"documents elsewhere. For example, if you'd like to include a figure, or "
+"if you want to cite an analysis that you have run."
+msgstr ""
+
+msgid "Currently, `glue` only works with Python."
+msgstr ""
+
+msgid ""
+"The `glue` tool from [MyST-NB](https://myst-nb.readthedocs.io/) allows "
+"you to add a key to variables in a notebook, then display those variables"
+" in your book by referencing the key. It follows a two-step process:"
+msgstr ""
+
+msgid ""
+"**Glue a variable to a name**. Do this by using the `myst_nb.glue` "
+"function on a variable that you'd like to re-use elsewhere in the book. "
+"You'll give the variable a name that can be referenced later."
+msgstr ""
+
+msgid ""
+"**Reference that variable from your page's content**. Then, when you are "
+"writing your content, insert the variable into your text by using a "
+"`{glue:}` role."
+msgstr ""
+
+msgid "We'll cover each step in more detail below."
+msgstr ""
+
+msgid "For more information about roles, see [](../myst.md)."
+msgstr ""
+
+msgid "Gluing variables in your notebook"
+msgstr ""
+
+msgid ""
+"You can use `myst_nb.glue()` to assign the value of a variable to a key "
+"of your choice. `glue` will store all of the information that is normally"
+" used to **display** that variable (i.e., whatever happens when you "
+"display the variable by putting it at the end of a code cell). Choose a "
+"key that you will remember, as you will use it later."
+msgstr ""
+
+msgid ""
+"The following code glues a variable inside the notebook to the key "
+"`\"cool_text\"`:"
+msgstr ""
+
+msgid ""
+"You can then insert it into your text. Adding `` {glue:}`cool_text` `` to"
+" your content results in the following: {glue:}`cool_text`."
+msgstr ""
+
+msgid "Gluing numbers, plots, and tables"
+msgstr ""
+
+msgid ""
+"You can glue anything in your notebook and display it later with "
+"`{glue:}`. Here we'll show how to glue and paste **numbers and images**. "
+"We'll simulate some data and run a simple bootstrap on it. We'll hide "
+"most of this process below, to focus on the glueing part."
+msgstr ""
+
+msgid ""
+"In the cell below, `data` contains our data, and `bootstrap_indices` is a"
+" collection of sample indices in each bootstrap. Below we'll calculate a "
+"few statistics of interest, and **`glue()`** them into the notebook."
+msgstr ""
+
+msgid ""
+"By default, `glue` will display the value of the variable you are gluing."
+" This is useful for sanity-checking its value at glue-time. If you'd like"
+" to **prevent display**, use the `display=False` option. Note that below,"
+" we also *overwrite* the value of `boot_chi` (but using the same value):"
+msgstr ""
+
+msgid ""
+"You can also glue visualizations, such as Matplotlib figures (here we use"
+" `display=False` to ensure that the figure isn't plotted twice):"
+msgstr ""
+
+msgid ""
+"The same can be done for `DataFrame`s (or other table-like objects) as "
+"well."
+msgstr ""
+
+msgid ""
+"Since we are going to paste this figure into our document at a later "
+"point, you may wish to remove the output here, using the `remove-output` "
+"tag (see {ref}`hiding/remove-content`)."
+msgstr ""
+
+msgid "Pasting glued variables into your page"
+msgstr ""
+
+msgid ""
+"Once you have glued variables to their names, you can then **paste** "
+"those variables into your text in your book anywhere you like (even on "
+"other pages). These variables can be pasted using one of the roles or "
+"directives in the `glue` *family*."
+msgstr ""
+
+msgid "The `glue` role/directive"
+msgstr ""
+
+msgid ""
+"The simplest role and directive is `glue:any`, which pastes the glued "
+"output in-line or as a block respectively, with no additional formatting."
+" Simply add this:"
+msgstr ""
+
+msgid ""
+"For example, we'll paste the plot we generated above with the following "
+"text:"
+msgstr ""
+
+msgid "Here's how it looks:"
+msgstr ""
+
+msgid "Or we can paste in-line objects like so:"
+msgstr ""
+
+msgid "In-line text; {glue:}`boot_mean`, and a figure: {glue:}`boot_fig`."
+msgstr ""
+
+msgid ""
+"We recommend using wider, shorter figures when plotting in-line, with a "
+"ratio around 6x2. For example, here's an in-line figure of sorted means "
+"from our bootstrap: {glue:}`sorted_means_fig`. It can be used to make a "
+"visual point that isn't too complex! For more ideas, check out [how "
+"sparklines are used](https://en.wikipedia.org/wiki/Sparkline)."
+msgstr ""
+
+msgid ""
+"Next we'll cover some more specific pasting functionality, which gives "
+"you more control over how the pasted outputs look in your pages."
+msgstr ""
+
+msgid "Controlling the pasted outputs"
+msgstr ""
+
+msgid ""
+"You can control the pasted outputs by using a sub-command of `{glue:}`. "
+"These are used like so: `` {glue:subcommand}`key` ``. These subcommands "
+"allow you to control more of the look, feel, and content of the pasted "
+"output."
+msgstr ""
+
+msgid ""
+"When you use `{glue:}` you are actually using shorthand for `{glue:any}`."
+" This is a generic command that doesn't make many assumptions about what "
+"you are gluing."
+msgstr ""
+
+msgid "The `glue:text` role"
+msgstr ""
+
+msgid ""
+"The `glue:text` role is specific to text outputs. For example, the "
+"following text:"
+msgstr ""
+
+#, python-format
+msgid ""
+"Is rendered as: The mean of the bootstrapped distribution was "
+"{glue:text}`boot_mean` (95% confidence interval "
+"{glue:text}`boot_clo`/{glue:text}`boot_chi`)"
+msgstr ""
+
+msgid ""
+"`glue:text` only works with glued variables that contain a `text/plain` "
+"output."
+msgstr ""
+
+msgid ""
+"With `glue:text` we can **add formatting to the output**. This is "
+"particularly useful if you are displaying numbers and want to round the "
+"results. To add formatting, use this syntax:"
+msgstr ""
+
+msgid "`` {glue:text}`mykey:formatstring` ``"
+msgstr ""
+
+msgid ""
+"For example, ``My rounded mean: {glue:text}`boot_mean:.2f` `` will be "
+"rendered like this: My rounded mean: {glue:text}`boot_mean:.2f` (95% CI: "
+"{glue:text}`boot_clo:.2f`/{glue:text}`boot_chi:.2f`)."
+msgstr ""
+
+msgid "The `glue:figure` directive"
+msgstr ""
+
+msgid ""
+"With `glue:figure` you can apply more formatting to figure-like objects, "
+"such as giving them a caption and referenceable label. For example,"
+msgstr ""
+
+msgid "produces the following figure:"
+msgstr ""
+
+msgid "Later, the code"
+msgstr ""
+
+msgid "can be used to reference the figure."
+msgstr ""
+
+msgid "Here is a {ref}`reference to the figure <fig-boot>`"
+msgstr ""
+
+msgid "Here's a table:"
+msgstr ""
+
+msgid "which gets rendered as"
+msgstr ""
+
+msgid "The `glue:math` directive"
+msgstr ""
+
+msgid ""
+"The `glue:math` directive is specific to LaTeX math outputs (glued "
+"variables that contain a `text/latex` MIME type), and works similarly to "
+"the [Sphinx math directive](https://www.sphinx-"
+"doc.org/en/1.8/usage/restructuredtext/directives.html#math). For example,"
+" with this code we glue an equation:"
+msgstr ""
+
+msgid "and now we can use the following code:"
+msgstr ""
+
+msgid "to insert the equation here:"
+msgstr ""
+
+msgid ""
+"`glue:math` only works with glued variables that contain a `text/latex` "
+"output."
+msgstr ""
+
+msgid "Advanced `glue` use-cases"
+msgstr ""
+
+msgid "Here are a few more specific and advanced uses of the `glue` submodule."
+msgstr ""
+
+msgid "Pasting into tables"
+msgstr ""
+
+msgid ""
+"In addition to pasting blocks of outputs, or in-line with text, you can "
+"also paste directly into tables. This allows you to compose complex "
+"collections of structured data using outputs that were generated in other"
+" cells or other notebooks. For example, the following Markdown table:"
+msgstr ""
+
+msgid "Results in:"
+msgstr ""
+
+msgid "name"
+msgstr ""
+
+msgid "plot"
+msgstr ""
+
+msgid "mean"
+msgstr ""
+
+msgid "ci"
+msgstr ""
+
+msgid "histogram and raw text"
+msgstr ""
+
+msgid "{glue:}`boot_fig`"
+msgstr ""
+
+msgid "{glue:}`boot_mean`"
+msgstr ""
+
+msgid "{glue:}`boot_clo`-{glue:}`boot_chi`"
+msgstr ""
+
+msgid "sorted means and formatted text"
+msgstr ""
+
+msgid "{glue:}`sorted_means_fig`"
+msgstr ""
+
+msgid "{glue:text}`boot_mean:.3f`"
+msgstr ""
+
+msgid "{glue:text}`boot_clo:.3f`-{glue:text}`boot_chi:.3f`"
+msgstr ""
+
+msgid "Execute and cache your pages"
+msgstr ""
+
+msgid ""
+"Jupyter Book can automatically run and cache any notebook pages. "
+"Notebooks can either be run each time the documentation is built, or "
+"cached locally so that notebooks will only be re-run when the code cells "
+"in a notebook have changed."
+msgstr ""
+
+msgid ""
+"Caching behaviour is controlled with the `execute:` section [in your "
+"`_config.yml` file](../customize/config.md). See the sections below for "
+"each configuration option and its effect."
+msgstr ""
+
+msgid ""
+"If you'd like to execute code that is in your Markdown files, you can use"
+" the `{code-cell}` directive in MyST Markdown. See [](../file-types/myst-"
+"notebooks.md) for more information."
+msgstr ""
+
+msgid "Trigger notebook execution"
+msgstr ""
+
+msgid ""
+"By default, Jupyter Book will execute any content files that have a "
+"notebook structure and that are missing at least one output. This is "
+"equivalent to the following configuration in _config.yml`:"
+msgstr ""
+
+msgid ""
+"This will only execute notebooks that are missing at least one output. If"
+" the notebook has *all* of its outputs populated, then it will not be "
+"executed."
+msgstr ""
+
+msgid ""
+"**To force the execution of all notebooks, regardless of their outputs**,"
+" change the above configuration value to:"
+msgstr ""
+
+msgid ""
+"**To cache execution outputs with [jupyter-cache]**, change the above "
+"configuration value to:"
+msgstr ""
+
+msgid "See {ref}`execute/cache` for more information."
+msgstr ""
+
+msgid ""
+"**To turn off notebook execution**, change the above configuration value "
+"to:"
+msgstr ""
+
+msgid "Exclude files from execution"
+msgstr ""
+
+msgid ""
+"**To exclude certain file patterns from execution**, use the following "
+"configuration:"
+msgstr ""
+
+msgid ""
+"Any file that matches one of the items in `exclude_patterns` will not be "
+"executed."
+msgstr ""
+
+msgid ""
+"To auto-exclude all files outside of your table of contents, see "
+"[](config:exclude-non-toc-files)"
+msgstr ""
+
+msgid "Caching the notebook execution"
+msgstr ""
+
+msgid ""
+"You may also **cache the results of executing a notebook page** using "
+"[jupyter-cache]. In this case, when a page is executed, its outputs will "
+"be stored in a local database. This allows you to be sure that the "
+"outputs in your documentation are up-to-date, while saving time avoiding "
+"unnecessary re-execution. It also allows you to store your `.ipynb` files"
+" in your `git` repository *without their outputs*, but still leverage a "
+"cache to save time when building your site."
+msgstr ""
+
+msgid "When you re-build your site, the following will happen:"
+msgstr ""
+
+msgid ""
+"Notebooks that have not seen changes to their **code cells** since the "
+"last build will not be re-executed. Instead, their outputs will be pulled"
+" from the cache and inserted into your site."
+msgstr ""
+
+msgid ""
+"Notebooks that **have had any change to their code cells** will be re-"
+"executed and the cache will be updated with the new outputs."
+msgstr ""
+
+msgid "To enable caching of notebook outputs, use the following configuration:"
+msgstr ""
+
+msgid ""
+"By default, the cache will be placed in the parent of your build folder. "
+"Generally, this is in `_build/.jupyter_cache`."
+msgstr ""
+
+msgid ""
+"You may also specify a path to the location of a jupyter cache you'd like"
+" to use:"
+msgstr ""
+
+msgid ""
+"The path should point to an **empty folder**, or a folder where a "
+"**jupyter cache already exists**."
+msgstr ""
+
+msgid "Execution configuration"
+msgstr ""
+
+msgid ""
+"You can control notebook execution and how output content is handled at a"
+" project level using your `_config.yml` but, in some cases, also at a "
+"notebook and code cell level. Below we explore a number of ways to "
+"achieve this."
+msgstr ""
+
+msgid "[](jupyter-cell-tags) and [](./code-outputs.md)."
+msgstr ""
+
+msgid "The execution working directory"
+msgstr ""
+
+msgid ""
+"The default behaviour of `cache` is now to run in the local directory. "
+"This is a change from `v0.7`."
+msgstr ""
+
+msgid ""
+"By default, the command working directory (cwd) in which a notebook runs "
+"will be the directory in which it is located (for both `auto` and "
+"`cache`). This means that notebooks requiring access to assets in "
+"relative paths will work."
+msgstr ""
+
+msgid ""
+"Alternatively, if you wish for your notebooks to isolate your notebook "
+"execution in a temporary folder, you can use the following `_config.yml` "
+"setting:"
+msgstr ""
+
+msgid "Setting execution timeout"
+msgstr ""
+
+msgid ""
+"Execution timeout defines the maximum time (in seconds) each notebook "
+"cell is allowed to run for. If the execution takes longer an exception "
+"will be raised. The default is 30 seconds, so in cases of long-running "
+"cells you may want to specify a higher value. The timeout option can also"
+" be set to -1, to remove any restriction on execution time."
+msgstr ""
+
+msgid "You can set the timeout for all notebook executions in your `_config.yml`:"
+msgstr ""
+
+msgid ""
+"This global value can also be overridden per notebook by adding this to "
+"your notebook metadata:"
+msgstr ""
+
+msgid "Dealing with code that raises errors"
+msgstr ""
+
+msgid ""
+"In some cases, you may want to intentionally show code that doesn't work "
+"(e.g., to show the error message)."
+msgstr ""
+
+msgid "You can allow errors for all notebooks in your `_config.yml`:"
+msgstr ""
+
+msgid ""
+"Lastly, you can allow errors at a cell level, by adding a `raises-"
+"exception` tag to your code cell. This can be done via a Jupyter "
+"interface, or via the `{code-cell}` directive like so:"
+msgstr ""
+
+msgid "Which produces:"
+msgstr ""
+
+msgid "Dealing with code that produces stderr"
+msgstr ""
+
+msgid "You may also wish to control how stderr outputs are dealt with."
+msgstr ""
+
+msgid ""
+"Alternatively, you can configure how stdout is dealt with at a global "
+"configuration level, using the `nb_output_stderr` configuration value."
+msgstr ""
+
+msgid ""
+"You can configure the default behaviour for all notebooks in your "
+"`_config.yml`:"
+msgstr ""
+
+msgid "Where the value is one of:"
+msgstr ""
+
+msgid ""
+"`\"show\"` (default): show all stderr (unless a `remove-stderr` tag is "
+"present)"
+msgstr ""
+
+msgid "`\"remove\"`: remove all stderr"
+msgstr ""
+
+msgid "`\"remove-warn\"`: remove all stderr, but log a warning if any found"
+msgstr ""
+
+msgid ""
+"`\"warn\"`, `\"error\"` or `\"severe\"`: log the stderr at a certain "
+"level, if any found."
+msgstr ""
+
+msgid ""
+"You can also remove stderr at a cell level, using the `remove-stderr` "
+"[cell tag](https://jupyter-"
+"notebook.readthedocs.io/en/stable/changelog.html#cell-tags), like so:"
+msgstr ""
+
+msgid "which produces"
+msgstr ""
+
+msgid "Dealing with code that produces stdout"
+msgstr ""
+
+msgid ""
+"Similar to stderr, you can remove stdout at a cell level with the "
+"`remove-stdout` tag, by which"
+msgstr ""
+
+msgid "produces the following:"
+msgstr ""
+
+msgid "Merging stdout and stderr output"
+msgstr ""
+
+msgid ""
+"Code contained in code cells may print outputs through both the `stdout` "
+"and `stderr` stream."
+msgstr ""
+
+msgid ""
+"These outputs may appear in a mixed order and you may want them to be "
+"grouped and sorted to display the correct `logical` ordering."
+msgstr ""
+
+msgid ""
+"This can be achieved using the [nb_merge_streams feature contained in "
+"`myst_nb`](myst-nb:use/format/group-stderr-stdout)."
+msgstr ""
+
+msgid "You can enable this in your `_config.yml`:"
+msgstr ""
+
+msgid "Execution statistics"
+msgstr ""
+
+msgid ""
+"As notebooks are executed, certain statistics are stored on the build "
+"environment by MyST-NB. The simplest way to access and visualise this "
+"data is using the `{nb-exec-table}` directive."
+msgstr ""
+
+msgid ""
+"The [MyST-NB documentation](myst-nb:execute/statistics), for creating "
+"your own directives to manipulate this data."
+msgstr ""
+
+msgid "The simple directive"
+msgstr ""
+
+msgid "produces:"
+msgstr ""
+
+msgid "Images and figures"
+msgstr ""
+
+msgid ""
+"MyST Markdown provides a few different syntaxes for including images in "
+"your documents, as explained below."
+msgstr ""
+
+msgid "The first is the standard Markdown syntax, by which"
+msgstr ""
+
+msgid "results in"
+msgstr ""
+
+msgid "![fishy](../images/fun-fish.png)"
+msgstr ""
+
+msgid ""
+"This will correctly copy the image to the build folder and will render it"
+" in all output formats (HTML, TeX, etc). However, it is limited in the "
+"configuration that can be applied. For example, the image width cannot be"
+" set with this syntax."
+msgstr ""
+
+msgid ""
+"As discussed in [this section](content:myst/directives), MyST allows for "
+"directives such as `image` and `figure` to be used (see [the Sphinx "
+"documentation](sphinx:rst-primer) for available options)."
+msgstr ""
+
+msgid "As an example,"
+msgstr ""
+
+msgid "will include the following _customized_ figure:"
+msgstr ""
+
+msgid ""
+"These directives allow you to control aspects of the image with "
+"[directive arguments](directive-arguments)."
+msgstr ""
+
+msgid "Raw HTML images"
+msgstr ""
+
+msgid ""
+"The image syntax described above gives you more customizability, but note"
+" that this syntax will not show the image in common Markdown viewers (for"
+" example when the files are viewed on GitHub)."
+msgstr ""
+
+msgid ""
+"A workaround is to use HTML directly, and MyST can parse HTML images "
+"directly via the `html_image` extension."
+msgstr ""
+
+msgid ""
+"Using raw HTML is usually a bad choice (see [this explanation](raw-html-"
+"in-markdown)), so be careful before doing so!"
+msgstr ""
+
+msgid ""
+"To parse raw HTML image syntax, enable the `html_image` extension to your"
+" list of extensions in `_config.yml`:"
+msgstr ""
+
+msgid "HTML images will be parsed like any other image. For example:"
+msgstr ""
+
+msgid "will correctly render"
+msgstr ""
+
+msgid "This will also be output in PDF LaTeX builds!"
+msgstr ""
+
+msgid ""
+"Allowed attributes are equivalent to the `image` directive: `src`, `alt`,"
+" `class`, `width` and `height`. Any other attributes will be ignored."
+msgstr ""
+
+msgid "Supported image formats"
+msgstr ""
+
+msgid ""
+"Standard rasterized image formats, such as `.png` and `jpg`, are "
+"supported for both HTML and LaTeX/PDF output formats. By contrast, vector"
+" formats such as `.svg`, `.pdf` and `.eps` are normally builder specific."
+" See the `supported_image_types` specification for each Sphinx builder "
+"[here](sphinx:builders)."
+msgstr ""
+
+msgid ""
+"To support multiple builders, Jupyter Book allows you to use a `*` "
+"asterisk as the extension. For example, with the HTML"
+msgstr ""
+
+msgid ""
+"all images matching the provided pattern will then be searched for and "
+"each builder chooses the best image out of the available candidates."
+msgstr ""
+
+msgid "The code above produced the following image:"
+msgstr ""
+
+msgid ""
+"You can use a tool such as [imagemagick](https://imagemagick.org), to "
+"convert your images to multiple formats prior to building your book."
+msgstr ""
+
+msgid "Alternatively, you may wish to check out these Sphinx extensions:"
+msgstr ""
+
+msgid "[sphinx.ext.imgconverter](sphinx:sphinx.ext.imgconverter)"
+msgstr ""
+
+msgid ""
+"[sphinxcontrib-"
+"svg2pdfconverter](https://github.com/missinglinkelectronics"
+"/sphinxcontrib-svg2pdfconverter)"
+msgstr ""
+
+msgid ""
+"MyST Markdown also lets you include **figures** in your page. Figures are"
+" like images, except that they are easier to reference elsewhere in your "
+"book, and they include things like captions. To include a figure, use "
+"this syntax:"
+msgstr ""
+
+msgid "which will produce the following:"
+msgstr ""
+
+msgid "Here is my figure caption!"
+msgstr ""
+
+msgid ""
+"You can also include figures that were generated by your code in "
+"notebooks. To do so, see [](content:code-outputs:glue)."
+msgstr ""
+
+msgid "Markdown figures"
+msgstr ""
+
+msgid ""
+"Markdown figures combine [colon style admonitions](admonitions:colons) "
+"and [HTML image parsing](figures:raw-html), to produce a \"Markdown "
+"friendly\" syntax for figures, with equivalent behaviour to the `figure` "
+"directive above."
+msgstr ""
+
+msgid ""
+"Using this feature requires that [HTML image parsing is enabled](figures"
+":raw-html)."
+msgstr ""
+
+msgid ""
+"The figure block must contain **only** two components; an image, in "
+"either Markdown or HTML syntax, and a single paragraph for the caption. "
+"See below for an example."
+msgstr ""
+
+msgid ""
+"As with admonitions, the figure can have additional classes set. The "
+"\"title\" of the admonition is used as the label that can be targeted by "
+"your cross-references."
+msgstr ""
+
+msgid "For example, the code"
+msgstr ""
+
+msgid "generates this figure:"
+msgstr ""
+
+msgid "This is a caption in **Markdown**!"
+msgstr ""
+
+msgid "As we see here, we can reference the figure:"
+msgstr ""
+
+msgid "[Go to the fish!](markdown-fig)"
+msgstr ""
+
+msgid "We just have to use the title of the admonition as target:"
+msgstr ""
+
+msgid "Referencing figures"
+msgstr ""
+
+msgid ""
+"You can then refer to your figures by using the `{ref}` role or Markdown "
+"style references like:"
+msgstr ""
+
+msgid "which will replace the reference with the figure caption like so:"
+msgstr ""
+
+msgid "{ref}`directive-fig`"
+msgstr ""
+
+msgid "[](markdown-fig)"
+msgstr ""
+
+msgid "Numbered references"
+msgstr ""
+
+msgid ""
+"Another convenient way to create cross-references is with the `{numref}` "
+"role, which referes to the labelled objects by the numbers they "
+"automatically get. For example, `` {numref}`directive-fig` `` will "
+"produce a reference like: {numref}`directive-fig`."
+msgstr ""
+
+msgid ""
+"If an explicit text is provided, this caption will serve as the title of "
+"the reference. For example,"
+msgstr ""
+
+msgid "produces the following cross-references:"
+msgstr ""
+
+msgid "{ref}`Fly to the droid <directive-fig>`"
+msgstr ""
+
+msgid "[Swim to the fish](markdown-fig)"
+msgstr ""
+
+#, python-format
+msgid ""
+"With `numref` you can also access the figure number and caption "
+"individually: the sequences \"%s\" and \"{number}\" will be replaced with"
+" the figure number, while \"{name}\" will be replaced with the figure "
+"caption."
+msgstr ""
+
+msgid ""
+"For example, ``{numref}`Figure {number}: {name} <directive-fig>` `` will "
+"produce {numref}`Figure {number}: {name} <directive-fig>`."
+msgstr ""
+
+msgid "Margin captions and figures"
+msgstr ""
+
+msgid ""
+"You can include a figure caption on the margin using `:figclass: margin-"
+"caption`, as seen in {numref}`margin_caption_figure`:"
+msgstr ""
+
+msgid ""
+"Another option is to include figures on the margin by using `:figclass: "
+"margin` as seen in {numref}`margin_figure`:"
+msgstr ""
+
+msgid "Figure scaling and aligning"
+msgstr ""
+
+msgid ""
+"Figures can also be aligned by using the option `:align: right` or "
+"`:align: left`. By default, figures are aligned to the center (see "
+"{numref}`directive-fig`)."
+msgstr ""
+
+msgid "To align a figure on the left, you'd write"
+msgstr ""
+
+msgid "to get"
+msgstr ""
+
+msgid "Similarly, if you write"
+msgstr ""
+
+msgid "your figure becomes right-aligned:"
+msgstr ""
+
+msgid "Figure parameters"
+msgstr ""
+
+msgid "The following options are supported:"
+msgstr ""
+
+msgid "`scale` : _integer percentage_"
+msgstr ""
+
+msgid ""
+"Uniformly scale the figure. The default is \"100\" which indicates no "
+"scaling. The symbol \"%\" is optional."
+msgstr ""
+
+msgid "`width` : _length or percentage_"
+msgstr ""
+
+msgid ""
+"You can set the figure width in the following units: \"em\", \"ex\", "
+"\"px\",\"in\" ,\"cm\", \"mm\", \"pt\", \"pc\", \"%\"."
+msgstr ""
+
+msgid "`height` : _length_"
+msgstr ""
+
+msgid ""
+"You can set the figure height in the following units: \"em\", \"ex\", "
+"\"px\", \"in\", \"cm\", \"mm\", \"pt\", \"pc\"."
+msgstr ""
+
+msgid "`alt` : _text_"
+msgstr ""
+
+msgid ""
+"Text to be displayed if the figure cannot be displayed or if the reader "
+"is using assistive technologies. Generally entails a short description of"
+" the figure."
+msgstr ""
+
+msgid "`align` : _\"left\", \"center\", or \"right\"_"
+msgstr ""
+
+msgid "Align the figure left, center, or right. Default alignment is center."
+msgstr ""
+
+msgid "`name` : _text_"
+msgstr ""
+
+msgid ""
+"A unique identifier for your figure that you can use to reference it with"
+" `{ref}` or `{numref}` roles. Cannot contain spaces or special "
+"characters."
+msgstr ""
+
+msgid "`figclass` : _text_"
+msgstr ""
+
+msgid ""
+"Value of the figure's class attribute which can be used to add custom CSS"
+" or JavaScript. Predefined options include:"
+msgstr ""
+
+msgid "_\"margin\"_ : Display figure on the margin"
+msgstr ""
+
+msgid "_\"margin-caption\"_ : Display figure caption on the margin"
+msgstr ""
+
+msgid "Write narrative content"
+msgstr ""
+
+msgid ""
+"In this section we'll cover the many ways that you can write content for "
+"your book. You can write book content in a variety of markup languages "
+"and file formats, and create special kinds of content for your book with "
+"MyST Markdown."
+msgstr ""
+
+msgid "Control the page layout"
+msgstr ""
+
+msgid ""
+"Many of the features on this page are experimental and may change at any "
+"time."
+msgstr ""
+
+msgid ""
+"There are a few ways to control the layout of a page with Jupyter Book. "
+"Many of these ideas take inspiration from the [Edward Tufte layout CSS "
+"guide](https://edwardtufte.github.io/tufte-css/)."
+msgstr ""
+
+msgid ""
+"Let's begin with a sample plot. You can click the toggle button to the "
+"right to see the code that generated it."
+msgstr ""
+
+msgid "Sidebar content"
+msgstr ""
+
+msgid ""
+"Adding sidebar elements allow you to provide contextual information that "
+"doesn't break up the flow of your main content. It is one of the main "
+"patterns recommended in the [Tufte style "
+"guide](https://edwardtufte.github.io/tufte-css/)."
+msgstr ""
+
+msgid ""
+"There are two kinds of sidebars supported by Jupyter Book. We'll describe"
+" them below."
+msgstr ""
+
+msgid ""
+"Some sidebar content behaves differently depending on the screen size. If"
+" the screen is narrow enough, the sidebar content will exist in-line with"
+" your content. Make the screen wider and it'll pop out to the right."
+msgstr ""
+
+msgid "Sidebars within content"
+msgstr ""
+
+msgid "Here is some sidebar content"
+msgstr ""
+
+msgid ""
+"It spans a bit of your main content, as well as the margin, as seen by "
+"the note block below:"
+msgstr ""
+
+msgid "Here's a note block within the sidebar!"
+msgstr ""
+
+msgid ""
+"If you use a sidebar within your content, the sidebar will stay in-line "
+"with your page's content. However, it will be placed to the right, "
+"allowing your content to wrap around it. This prevents the sidebar from "
+"breaking up the flow of your content. This is particularly useful if "
+"you've got tall-and-long blocks of content or images that you would like "
+"to provide context to throughout your content."
+msgstr ""
+
+msgid "To add a sidebar to your content, use the following syntax:"
+msgstr ""
+
+msgid "Margin content"
+msgstr ""
+
+msgid "To add content to the margin with MyST Markdown, use this syntax:"
+msgstr ""
+
+msgid "**For example**"
+msgstr ""
+
+msgid "Here's some margin content! It was created by using the"
+msgstr ""
+
+msgid ""
+"directive in a Markdown cell. Jupyter Book automatically converts these "
+"cells into helpful margin content."
+msgstr ""
+
+msgid ""
+"Controlling margin content with code cells uses a slightly different "
+"syntax, which we'll cover below."
+msgstr ""
+
+msgid "Margins with code cells"
+msgstr ""
+
+msgid ""
+"You can make a code cell move to the right margin by adding `margin` to "
+"your cell's tags."
+msgstr ""
+
+msgid "Jupyter Notebook"
+msgstr ""
+
+msgid "Here's what the cell metadata for a margin cell looks like:"
+msgstr ""
+
+msgid "MyST Text File"
+msgstr ""
+
+msgid "For a MyST text file these tags can be added to the `code-cell`"
+msgstr ""
+
+msgid ""
+"For example, we'll re-display the figure above, and add a `margin` tag to"
+" the code cell."
+msgstr ""
+
+msgid ""
+"This can be combined with other tags like `remove-input` to **only "
+"display the figure**."
+msgstr ""
+
+msgid "Full-width content"
+msgstr ""
+
+msgid ""
+"Sometimes, you'd like to use **all** of the horizontal space available to"
+" you. This allows you to highlight particular ideas, visualizations, etc."
+msgstr ""
+
+msgid "Full-width code cells"
+msgstr ""
+
+msgid ""
+"You can specify that a code cell's inputs and/or outputs should take up "
+"all of the horizontal space (including the margin to the right) using the"
+" following cell metadata tag:"
+msgstr ""
+
+msgid ""
+"For tips on how to add cell metadata to your notebooks, see [](jupyter-"
+"cell-tags)."
+msgstr ""
+
+msgid ""
+"For example, let's take a look at the figure in the margin above in a "
+"cell with `full-width` set. We'll tell Matplotlib to make it a bit wider "
+"so we can take advantage of the extra space!"
+msgstr ""
+
+msgid "Full-width markdown content"
+msgstr ""
+
+msgid ""
+"If you'd like to make your markdown content full-width, you cannot do so "
+"via cell tags. Instead, you have a few options:"
+msgstr ""
+
+msgid ""
+"**Use the `{div}` directive with a `full-width` class.**. Any content "
+"with a `full-width` class will take up the full width of the screen. For "
+"example, the following code:"
+msgstr ""
+
+msgid "results in:"
+msgstr ""
+
+msgid "Here's a note that will take the full width"
+msgstr ""
+
+msgid "For more information on `<div>` blocks, see [](custom-div-blocks)."
+msgstr ""
+
+msgid ""
+"**Add a `full-width` class to directives that support classes**. Many "
+"directives allow you to directly add a CSS class to them."
+msgstr ""
+
+msgid "For example, the `{note}` directive above allows for this:"
+msgstr ""
+
+msgid ""
+"Check the documentation of the directive to see if it supports adding "
+"your own classes, or use the `{div}` directive as described above."
+msgstr ""
+
+msgid "**Mixing margins and full-width content**"
+msgstr ""
+
+msgid ""
+"Be careful when mixing margins and full-width content. Sometimes these "
+"can conflict with one another in visual space. You should use them "
+"relatively sparingly in order for them to have their full effect of "
+"highlighting information."
+msgstr ""
+
+msgid "Math and equations"
+msgstr ""
+
+msgid ""
+"Jupyter Book uses [MathJax](http://docs.mathjax.org/) for typesetting "
+"math in your HTML book build. This allows you to have LaTeX-style "
+"mathematics in your online content. This page shows you a few ways to "
+"control this."
+msgstr ""
+
+msgid ""
+"For more information about equation numbering, see the [MathJax equation "
+"numbering documentation](http://docs.mathjax.org/en/v2.7-latest/tex.html"
+"#automatic-equation-numbering)."
+msgstr ""
+
+msgid ""
+"By default MathJax version 2 is currently used. If you are using a lot of"
+" math, you may want to try using version 3, which claims to improve load "
+"speeds by 60 - 80%:"
+msgstr ""
+
+msgid "See the [Sphinx documentation](sphinx:sphinx.ext.mathjax) for details."
+msgstr ""
+
+msgid "In-line math"
+msgstr ""
+
+msgid ""
+"To insert in-line math use the `$` symbol within a Markdown cell. For "
+"example, the text `$this_{is}^{inline}$` will produce: "
+"$this_{is}^{inline}$."
+msgstr ""
+
+msgid "Math blocks"
+msgstr ""
+
+msgid ""
+"You can also include math blocks for separate equations. This allows you "
+"to focus attention on more complex or longer equations, as well as link "
+"to them in your pages. To use a block equation, wrap the equation in "
+"either `$$` or `\\begin` statements."
+msgstr ""
+
+msgid "For example,"
+msgstr ""
+
+msgid ""
+"\n"
+"  \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = \\frac{\\pi^4}{15}\n"
+msgstr ""
+
+msgid "Latex-style math"
+msgstr ""
+
+msgid ""
+"You can enable parsing LaTeX-style math blocks with the `amsmath` MyST "
+"extension. Enable it by adding the following to `_config.yml`"
+msgstr ""
+
+msgid "Once enabled, you can define math blocks like so:"
+msgstr ""
+
+msgid "which results in:"
+msgstr ""
+
+msgid ""
+"\\begin{gather*}\n"
+"a_1=b_1+c_1\\\\\n"
+"a_2=b_2+c_2-d_2+e_2\n"
+"\\end{gather*}"
+msgstr ""
+
+msgid ""
+"\\begin{align}\n"
+"a_{11}& =b_{11}&\n"
+"  a_{12}& =b_{12}\\\\\n"
+"a_{21}& =b_{21}&\n"
+"  a_{22}& =b_{22}+c_{22}\n"
+"\\end{align}"
+msgstr ""
+
+msgid ""
+"The MyST guides to [dollar math syntax](myst-parser:syntax/math), [LaTeX "
+"math syntax](myst-parser:syntax/amsmath), and [how MyST-Parser works with"
+" MathJax](myst-parser:syntax/mathjax)."
+msgstr ""
+
+msgid ""
+"For advanced use, also see how to [define MathJax TeX Macros](sphinx/tex-"
+"macros)."
+msgstr ""
+
+msgid "Numbering equations"
+msgstr ""
+
+msgid ""
+"If you'd like to number equations so that you can refer to them later, "
+"use the **math directive**. It looks like this:"
+msgstr ""
+
+msgid "will generate"
+msgstr ""
+
+msgid "w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}"
+msgstr ""
+
+msgid "Alternatively you can use the dollar math syntax with a prefixed label:"
+msgstr ""
+
+msgid "which generates"
+msgstr ""
+
+msgid ""
+"\n"
+"  w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\n"
+msgstr ""
+
+msgid ""
+"Labels cannot start with an integer, or they won't be able to be "
+"referenced and will throw a warning message if referenced. For example, "
+"`:label: 1` and `:label: 1eq` cannot be referenced."
+msgstr ""
+
+msgid "Linking to equations"
+msgstr ""
+
+msgid ""
+"If you have created an equation with a label, you can link to it from "
+"within your text (and across pages!)."
+msgstr ""
+
+msgid ""
+"You can refer to the equation using the label that you've provided by "
+"using the `{eq}` role. For example:"
+msgstr ""
+
+msgid "A link to an equation directive: {eq}`my_label`"
+msgstr ""
+
+msgid "A link to a dollar math block: {eq}`my_other_label`"
+msgstr ""
+
+msgid ""
+"`\\labels` inside LaTeX environment are not currently identified, and so "
+"cannot be referenced. We hope to implement this in a future update (see "
+"[executablebooks/MyST-Parser#202](https://github.com/executablebooks"
+"/MyST-Parser/issues/202))!"
+msgstr ""
+
+msgid "Add metadata to your book pages"
+msgstr ""
+
+msgid ""
+"Metadata is information about a book or its content. It is often used to "
+"control the behavior of Jupyter Book and its features. This is a short "
+"guide to how metadata is added to various kinds of content in Jupyter "
+"Book."
+msgstr ""
+
+msgid "Add metadata to notebooks"
+msgstr ""
+
+msgid ""
+"You can control the behaviour of Jupyter Book by putting custom tags in "
+"the metadata of your cells. This allows you to do things like "
+"{doc}`automatically hide code cells <../interactive/hiding>` as well as "
+"{ref}`add interactive widgets to cells <launch:thebe>`."
+msgstr ""
+
+msgid "Adding tags using notebook interfaces"
+msgstr ""
+
+msgid "There are two straightforward ways to add metadata to cells:"
+msgstr ""
+
+msgid ""
+"**Use the Jupyter Notebook cell tag editor**. The Jupyter Notebook ships "
+"with a cell tag editor by default. This lets you add cell tags to each "
+"cell quickly."
+msgstr ""
+
+msgid ""
+"To enable the cell tag editor, click `View -> Cell Toolbar -> Tags`. This"
+" will enable the tags UI. Here's what the menu looks like."
+msgstr ""
+
+msgid "![tags_notebook](../images/tags_notebook.png)"
+msgstr ""
+
+msgid "tags_notebook"
+msgstr ""
+
+msgid ""
+"**Use the JupyterLab Cell Tags plugin**. JupyterLab is an IDE-like "
+"Jupyter environment that runs in your browser. It has a \"cell tags\" "
+"plugin built-in, which exposes a user interface that lets you quickly "
+"insert cell tags."
+msgstr ""
+
+msgid ""
+"You'll find tags under the \"wrench\" menu section. Here's what the tags "
+"UI in JupyterLab looks like."
+msgstr ""
+
+msgid "![tags_jupyterlab](../images/tags_jupyterlab.png)"
+msgstr ""
+
+msgid "tags_jupyterlab"
+msgstr ""
+
+msgid ""
+"Tags are actually just a special section of cell level metadata. There "
+"are three levels of metadata:"
+msgstr ""
+
+msgid ""
+"For notebook level: in the Jupyter Notebook Toolbar go to `Edit -> Edit "
+"Notebook Metadata`"
+msgstr ""
+
+msgid ""
+"For cell level: in the Jupyter Notebook Toolbar go to `View -> Cell "
+"Toolbar -> Edit Metadata` and a button will appear above each cell."
+msgstr ""
+
+msgid ""
+"For output level: using e.g. "
+"`IPython.display.display(obj,metadata={\"tags\": [])`, you can set "
+"metadata specific to a certain output (but Jupyter Book does not utilize "
+"this just yet)."
+msgstr ""
+
+msgid "![NB Metadata GIF](../images/metadata_edit.*)"
+msgstr ""
+
+msgid "NB Metadata GIF"
+msgstr ""
+
+msgid "Add tags using MyST Markdown notebooks"
+msgstr ""
+
+msgid ""
+"If you're writing notebooks with MyST Markdown, then you can add tags to "
+"each code cell when you write the `{code-cell}` block. For example, below"
+" we:"
+msgstr ""
+
+msgid ""
+"Will create a code cell with those three tags attached to it. For more "
+"information about MyST Markdown notebooks, see [](../file-types/myst-"
+"notebooks.md)."
+msgstr ""
+
+msgid "Add tags using Python code"
+msgstr ""
+
+msgid ""
+"Sometimes you'd like to quickly scan through a notebook's cells in order "
+"to add tags based on the content of the cell. For example, you might want"
+" to hide any cell with an import statement in it using the `remove-input`"
+" tag."
+msgstr ""
+
+msgid ""
+"Here's a short Python snippet to accomplish something close to this. "
+"First change directories into the root of your book folder, and then run "
+"the script below as a Python script or within a Jupyter Notebook "
+"(modifying as necessary for your use case). Finally, check the changes "
+"that will be made and commit them to your repository."
+msgstr ""
+
+msgid "Add metadata to notebook cells"
+msgstr ""
+
+msgid "Stuff about tags etc"
+msgstr ""
+
+msgid "MyST Markdown overview"
+msgstr ""
+
+msgid ""
+"In addition to [Jupyter Notebook Markdown](../file-"
+"types/notebooks.ipynb), Jupyter Book also supports a special flavour of "
+"Markdown called **MyST (or Markedly Structured Text)**. It was designed "
+"to make it easier to create publishable computational documents written "
+"with Markdown notation. It is a superset of [CommonMark "
+"Markdown](https://commonmark.org/) and draws heavy inspiration from the "
+"fantastic [RMarkdown language from "
+"RStudio](https://rmarkdown.rstudio.com/)."
+msgstr ""
+
+msgid ""
+"For those who are familiar with Sphinx, MyST Markdown is basically "
+"CommonMark + Markdown extensions + Sphinx roles and directives"
+msgstr ""
+
+msgid ""
+"Whether you write your book's content in Jupyter notebooks (`.ipynb`) or "
+"in regular Markdown files (`.md`), you'll write in the same flavour of "
+"**MyST Markdown**. Jupyter Book will know how to parse both of them."
+msgstr ""
+
+msgid ""
+"This page contains a few pieces of information about MyST Markdown and "
+"how it relates to Jupyter Book. You can find much more information about "
+"this flavour of Markdown at [the Myst Parser documentation](myst-"
+"parser:example_syntax)."
+msgstr ""
+
+msgid "Want to use RMarkdown directly?"
+msgstr ""
+
+msgid "See [](../file-types/jupytext.md)"
+msgstr ""
+
+msgid "Directives and roles"
+msgstr ""
+
+msgid ""
+"Roles and directives are two of the most powerful tools in Jupyter Book. "
+"They are kind of like *functions*, but written in a markup language. They"
+" both serve a similar purpose, but **roles are written in one line** "
+"whereas **directives span many lines**. They both accept different kinds "
+"of inputs, and what they do with those inputs depends on the specific "
+"role or directive being used."
+msgstr ""
+
+msgid "Directives"
+msgstr ""
+
+msgid ""
+"Directives customize the look, feel, and behaviour of your book. They are"
+" kind of like *functions*, and come in a variety of names with different "
+"behaviour. This section covers how to structure and use them."
+msgstr ""
+
+msgid "At its simplest, you can use directives in your book like so:"
+msgstr ""
+
+msgid ""
+"This will only work if a directive with name `mydirectivename` already "
+"exists (which it doesn't). There are many pre-defined directives "
+"associated with Jupyter Book. For example, to insert a note box into your"
+" content, you can use the following directive:"
+msgstr ""
+
+msgid "This results in:"
+msgstr ""
+
+msgid "Here is a note"
+msgstr ""
+
+msgid "being inserted in your built book."
+msgstr ""
+
+msgid ""
+"For more information on using directives, see the [MyST documentation"
+"](myst-parser:syntax/directives)."
+msgstr ""
+
+msgid "More arguments and metadata in directives"
+msgstr ""
+
+msgid ""
+"Many directives allow you to control their behaviour with extra pieces of"
+" information. In addition to the directive name and the directive "
+"content, directives allow two other configuration points:"
+msgstr ""
+
+msgid ""
+"**directive arguments** - a list of words that come just after the "
+"`{directivename}`."
+msgstr ""
+
+msgid "Here's an example usage of directive arguments:"
+msgstr ""
+
+msgid ""
+"**directive keywords** - a collection of flags or key/value pairs that "
+"come just underneath `{directivename}`."
+msgstr ""
+
+msgid ""
+"There are two ways to write directive keywords, either as `:key: val` "
+"pairs, or as `key: val` pairs enclosed by `---` lines. They both work the"
+" same way:"
+msgstr ""
+
+msgid "Here's an example of directive keywords using the `:key: val` syntax:"
+msgstr ""
+
+msgid ""
+"and here's an example of directive keywords using the enclosing `---` "
+"syntax:"
+msgstr ""
+
+msgid ""
+"Remember, specifying directive keywords with `:key:` or `---` will make "
+"no difference. We recommend using `---` if you have many keywords you "
+"wish to specify, or if some values will span multiple lines. Use the "
+"`:key: val` syntax as a shorthand for just one or two keywords."
+msgstr ""
+
+msgid "For examples of how this is used, see the sections below."
+msgstr ""
+
+msgid "Roles"
+msgstr ""
+
+msgid ""
+"Roles are very similar to directives, but they are less complex and "
+"written entirely in one line. You can use a role in your book with this "
+"syntax:"
+msgstr ""
+
+msgid ""
+"Again, roles will only work if `rolename` is a valid role name. For "
+"example, the `doc` role can be used to refer to another page in your "
+"book. You can refer directly to another page by its relative path. For "
+"example, the syntax `` {doc}`../intro` `` will result in: "
+"{doc}`../intro`."
+msgstr ""
+
+msgid ""
+"It is currently a requirement for roles to be on the **same line** in "
+"your source file. It will not be parsed correctly if it spans more than "
+"one line. Progress towards supporting roles that span multiple lines can "
+"be tracked [by this issue](https://github.com/executablebooks/MyST-"
+"Parser/issues/269)"
+msgstr ""
+
+msgid ""
+"For more information on using roles, see the [MyST documentation](myst-"
+"parser:syntax/roles)."
+msgstr ""
+
+msgid "What roles and directives are available?"
+msgstr ""
+
+msgid ""
+"There is currently no single list of roles / directives to use as a "
+"reference, but this section tries to give as much as information as "
+"possible. For those who are familiar with the Sphinx ecosystem, **you may"
+" use any directive / role that is available in Sphinx**. This is because "
+"Jupyter Book uses Sphinx to build your book, and MyST Markdown supports "
+"all syntax that Sphinx supports (think of it as a Markdown version of "
+"reStructuredText)."
+msgstr ""
+
+msgid ""
+"If you search the internet (and the links below) for information about "
+"roles and directives, the documentation will generally be written with "
+"reStructuredText in mind. MyST Markdown is different from "
+"reStructuredText, but all of the functionality should be the same. See "
+"[the MyST Sphinx parser documentation](myst-parser:intro/get-started) for"
+" more information about the differences between MyST and rST."
+msgstr ""
+
+msgid ""
+"For a list of directives that are available to you, there are three "
+"places to check:"
+msgstr ""
+
+msgid ""
+"[The Sphinx directives page](sphinx:usage/restructuredtext/directives) "
+"has a list of directives that are available by default in Sphinx."
+msgstr ""
+
+msgid ""
+"[The reStructuredText directives "
+"page](https://docutils.sourceforge.io/docs/ref/rst/directives.html) has a"
+" list of directives in the Python \"docutils\" module."
+msgstr ""
+
+msgid ""
+"This documentation has several additional directives that are specific to"
+" Jupyter Book."
+msgstr ""
+
+msgid "What if it exists in rST but not MyST?"
+msgstr ""
+
+msgid ""
+"In some unusual cases, MyST may be incompatible with a certain role or "
+"directive. In this case, you can use the special `eval-rst` directive, to"
+" directly parse reStructuredText:"
+msgstr ""
+
+msgid "A note written in reStructuredText."
+msgstr ""
+
+msgid ""
+"The MyST-Parser documentation on [how directives parse content](myst-"
+"parser:syntax/directives/parsing), and its use for [including rST files "
+"into a Markdown file](myst-parser:howto/include-rst), and [using "
+"`sphinx.ext.autodoc` in Markdown files](myst-parser:howto/autodoc)."
+msgstr ""
+
+msgid "Nesting content blocks in Markdown"
+msgstr ""
+
+msgid ""
+"If you'd like to nest content blocks inside one another in Markdown (for "
+"example, to put a `{note}` inside of a `{margin}`), you may do so by "
+"adding extra backticks (`` ` ``) to the outer-most block. This works for "
+"literal code blocks as well."
+msgstr ""
+
+msgid "For example, the following syntax:"
+msgstr ""
+
+msgid "yields"
+msgstr ""
+
+msgid ""
+"Thus, if you'd like to nest directives inside one another, you can take "
+"the same approach. For example, the following syntax:"
+msgstr ""
+
+msgid "Here's my note!"
+msgstr ""
+
+msgid "Other MyST Markdown syntax"
+msgstr ""
+
+msgid ""
+"In addition to roles and directives, there are numerous other kinds of "
+"syntax that MyST Markdown supports. MyST supports all syntax of "
+"CommonMark Markdown (the kind of Markdown that Jupyter notebooks use), as"
+" well as an extended syntax that is used for scientific publishing."
+msgstr ""
+
+msgid ""
+"The [MyST-Parser](myst-parser:intro/get-started) is the tool that Jupyter"
+" Book uses to allow you to write your book content in MyST. It is also a "
+"good source of information about the MyST syntax. Here are some links you"
+" can use as a reference:"
+msgstr ""
+
+msgid "[CommonMark block syntax](myst-parser:commonmark-block-tokens)"
+msgstr ""
+
+msgid "[Extended MyST block syntax in MyST](myst-parser:extended-block-tokens)"
+msgstr ""
+
+msgid "[CommonMark in-line syntax](myst-parser:commonmark-span-tokens)"
+msgstr ""
+
+msgid "[Extended in-line syntax in MyST](myst-parser:extended-span-tokens)"
+msgstr ""
+
+msgid ""
+"For information about enabling extended MyST syntax, see [](content-"
+"blocks:myst-extensions). In addition, see other examples of this extended"
+" syntax (and how to enable each) throughout this documentation."
+msgstr ""
+
+msgid "What can I create with MyST Markdown?"
+msgstr ""
+
+msgid ""
+"See [](./content-blocks.md) for an introduction to what you can do with "
+"MyST Markdown in Jupyter Book. In addition, the other pages in this site "
+"cover many more use-cases for how to use directives with MyST."
+msgstr ""
+
+msgid "Tools for writing MyST Markdown"
+msgstr ""
+
+msgid ""
+"There is some support for MyST Markdown in tools across the community. "
+"Here we include a few prominent ones."
+msgstr ""
+
+msgid "Jupyter interfaces"
+msgstr ""
+
+msgid ""
+"While MyST Markdown does not (yet) render in traditional Jupyter "
+"interfaces, most of its syntax should \"gracefully degrade\", meaning "
+"that you can still work with MyST in Jupyter, and then build your book "
+"with Jupyter Book."
+msgstr ""
+
+msgid "Jupytext and text sync"
+msgstr ""
+
+msgid ""
+"For working with Jupyter notebook and Markdown files, we recommend "
+"[jupytext](https://jupytext.readthedocs.io/en/latest), an open source "
+"tool for two-way conversion between `.ipynb` and text files. Jupytext "
+"[supports the MyST Markdown "
+"format](https://jupytext.readthedocs.io/en/latest/formats.html#myst-"
+"markdown)."
+msgstr ""
+
+msgid ""
+"For full compatibility with `myst-parser`, it is necessary to use "
+"`jupytext>=1.6.0`."
+msgstr ""
+
+msgid "See also [](file-types:custom:jupytext)."
+msgstr ""
+
+msgid "VS Code"
+msgstr ""
+
+msgid ""
+"If editing the Markdown files using VS Code, the [VS Code MyST Markdown "
+"extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject"
+".myst-highlight) provides syntax highlighting and other features."
+msgstr ""
+
+msgid "Proofs, Theorems, and Algorithms"
+msgstr ""
+
+msgid ""
+"Infrastructure to support items such as `proof` and `algorithm` style "
+"formatting is provided by the [sphinx-"
+"proof](https://github.com/executablebooks/sphinx-proof) extension."
+msgstr ""
+
+msgid "This extension supports the `html` and `pdflatex` builders."
+msgstr ""
+
+msgid ""
+"[sphinx-proof](https://github.com/executablebooks/sphinx-proof) includes "
+"support for the following `directives`:"
+msgstr ""
+
+msgid ""
+"[Algorithms](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#algorithms)"
+msgstr ""
+
+msgid "[Axioms](https://sphinx-proof.readthedocs.io/en/latest/syntax.html#axioms)"
+msgstr ""
+
+msgid ""
+"[Conjectures](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#conjectures)"
+msgstr ""
+
+msgid ""
+"[Corollaries](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#corollaries)"
+msgstr ""
+
+msgid ""
+"[Criteria](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#criteria)"
+msgstr ""
+
+msgid ""
+"[Definitions](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#definitions)"
+msgstr ""
+
+msgid ""
+"[Examples](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#examples)"
+msgstr ""
+
+msgid "[Lemmas](https://sphinx-proof.readthedocs.io/en/latest/syntax.html#lemmas)"
+msgstr ""
+
+msgid ""
+"[Observations](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#observations)"
+msgstr ""
+
+msgid ""
+"[Properties](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#properties)"
+msgstr ""
+
+msgid ""
+"[Propositions](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#propositions)"
+msgstr ""
+
+msgid "[Proofs](https://sphinx-proof.readthedocs.io/en/latest/syntax.html#proofs)"
+msgstr ""
+
+msgid ""
+"[Remarks](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#remarks)"
+msgstr ""
+
+msgid ""
+"[Theorems](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#theorems)"
+msgstr ""
+
+msgid "Installation"
+msgstr ""
+
+msgid ""
+"This is **not** currently a default package in `jupyter-book` as is a "
+"relatively new package."
+msgstr ""
+
+msgid "It needs to be enabled through the `_config.yml` after installation."
+msgstr ""
+
+msgid "To install you can use `pip`:"
+msgstr ""
+
+msgid "Adding extension through `_config.yml`"
+msgstr ""
+
+msgid "Open `_config.yml` and add `sphinx_proof` to:"
+msgstr ""
+
+msgid "Using [sphinx-proof](https://github.com/executablebooks/sphinx-proof)"
+msgstr ""
+
+msgid "This package uses a `prf` sphinx domain."
+msgstr ""
+
+msgid ""
+"All markup objects follow the `{prf:<typeset>}` (such as `{prf:proof}`) "
+"pattern and allows the directives to be referenced using the inline role "
+"`{prf:ref}`."
+msgstr ""
+
+msgid ""
+"When referencing directives in [sphinx-"
+"proof](https://github.com/executablebooks/sphinx-proof) you need to use "
+"the ```{prf:ref}`<label>` ``` inline role. Using other cross-referencing "
+"facilities will **not** work such as `[](<label>)`"
+msgstr ""
+
+msgid "Below we show an example using the `{prf:algorithm}` directive."
+msgstr ""
+
+msgid ""
+"A similar pattern can be followed for [the other syntax supported by "
+"`sphinx-proof`](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html)."
+msgstr ""
+
+msgid ""
+"In MyST Markdown, you can add an `algorithm` to your document using the "
+"`algorithm` directive:"
+msgstr ""
+
+msgid "will be rendered as"
+msgstr ""
+
+msgid "(Ford–Fulkerson)"
+msgstr ""
+
+msgid ""
+"**Inputs** Given a Network $G=(V,E)$ with flow capacity $c$, a source "
+"node $s$, and a sink node $t$"
+msgstr ""
+
+msgid "**Output** Compute a flow $f$ from $s$ to $t$ of maximum value"
+msgstr ""
+
+msgid "$f(u, v) \\leftarrow 0$ for all edges $(u,v)$"
+msgstr ""
+
+msgid ""
+"While there is a path $p$ from $s$ to $t$ in $G_{f}$ such that "
+"$c_{f}(u,v)>0$  for all edges $(u,v) \\in p$:"
+msgstr ""
+
+msgid "Find $c_{f}(p)= \\min \\{c_{f}(u,v):(u,v)\\in p\\}$"
+msgstr ""
+
+msgid "For each edge $(u,v) \\in p$"
+msgstr ""
+
+msgid "$f(u,v) \\leftarrow f(u,v) + c_{f}(p)$ *(Send flow along the path)*"
+msgstr ""
+
+msgid ""
+"$f(u,v) \\leftarrow f(u,v) - c_{f}(p)$ *(The flow might be \"returned\" "
+"later)*"
+msgstr ""
+
+msgid ""
+"and can be referenced using the `label` assigned to the algorithm such as"
+" ```{prf:ref}`ford-fulkerson` ``` which will provide a link such as "
+"{prf:ref}`ford-fulkerson`."
+msgstr ""
+
+msgid ""
+"The `proof` directive does not support `:label:` so it is currently "
+"recommended to use [targets](https://myst-"
+"parser.readthedocs.io/en/latest/using/syntax.html#targets-and-cross-"
+"referencing) defined by `MyST` for cross-referencing `proof` directives. "
+"See [documentation](https://sphinx-"
+"proof.readthedocs.io/en/latest/syntax.html#proofs)"
+msgstr ""
+
+msgid "Additional Documentation"
+msgstr ""
+
+msgid ""
+"Further [documentation for sphinx-proof](https://sphinx-"
+"proof.readthedocs.io/en/latest/) is also available."
+msgstr ""
+
+msgid "References and cross-references"
+msgstr ""
+
+msgid ""
+"Because `jupyter-book` is built on top of {term}`Sphinx`, there are many "
+"ways to reference content within your book (or even across other books, "
+"or Sphinx websites)."
+msgstr ""
+
+msgid ""
+"Referencing is accomplished with **roles** or with **markdown link "
+"syntax**, depending on your use-case. There are a few ways to reference "
+"content from your book, depending on what kind of content you'd like to "
+"reference."
+msgstr ""
+
+msgid ""
+"If you're getting started, check out [](../tutorials/references.md) for "
+"more information."
+msgstr ""
+
+msgid "Reference section labels"
+msgstr ""
+
+msgid ""
+"Labels are a way to add tags to parts of your content so that you can "
+"reference them later on. This is helpful if you want to quickly insert "
+"links to other parts of your book. Labels can be added before major "
+"elements of a page, such as titles or figures."
+msgstr ""
+
+msgid ""
+"To add a label, use the following pattern **before** the element you wish"
+" to label:"
+msgstr ""
+
+msgid ""
+"For example, we've added the following label above the header for this "
+"section with:"
+msgstr ""
+
+msgid ""
+"You can insert cross-references to labels in your content with two kinds "
+"of syntax:"
+msgstr ""
+
+msgid "`` {ref}`label-text` ``"
+msgstr ""
+
+msgid "`[](label-text)`"
+msgstr ""
+
+msgid ""
+"For example, the syntax `` {ref}`content:references:labels` `` or "
+"`[](content:references:labels)` results in a link to this section like "
+"so: {ref}`content:references:labels`."
+msgstr ""
+
+msgid "Reference figures"
+msgstr ""
+
+msgid ""
+"To reference a figure in your book, first add a figure and ensure that it"
+" has both a `name` as well as a caption associated with it:"
+msgstr ""
+
+msgid "My figure title."
+msgstr ""
+
+msgid "Then, reference the figure by its `:name:` value. For example:"
+msgstr ""
+
+msgid "`` Here is {ref}`my-fig-ref` ``"
+msgstr ""
+
+msgid "Here is {ref}`my-fig-ref`"
+msgstr ""
+
+msgid "`` Here is {ref}`My cool fig <my-fig-ref>` ``"
+msgstr ""
+
+msgid "Here is {ref}`My cool fig <my-fig-ref>`"
+msgstr ""
+
+msgid "`` Here is [](my-fig-ref) ``"
+msgstr ""
+
+msgid "Here is [](my-fig-ref)"
+msgstr ""
+
+msgid "`` Here is [My cool fig](my-fig-ref) ``"
+msgstr ""
+
+msgid "Here is [My cool fig](my-fig-ref)"
+msgstr ""
+
+msgid "`` Here is {numref}`my-fig-ref` ``"
+msgstr ""
+
+msgid "Here is {numref}`my-fig-ref`"
+msgstr ""
+
+#, python-format
+msgid "`` Here is {numref}`Custom Figure %s text ` ``"
+msgstr ""
+
+#, python-format
+msgid "Here is {numref}`Custom Figure %s text <my-fig-ref>`"
+msgstr ""
+
+msgid "Reference tables"
+msgstr ""
+
+msgid ""
+"To reference a table, first create a table and ensure that it has a "
+"`:name:` and a title:"
+msgstr ""
+
+msgid "My table title"
+msgstr ""
+
+msgid "Here are several ways to reference this content:"
+msgstr ""
+
+msgid "`` Here is {ref}`my-table-ref` ``"
+msgstr ""
+
+msgid "Here is {ref}`my-table-ref`"
+msgstr ""
+
+msgid "`` Here is {ref}`My cool table <my-table-ref>` ``"
+msgstr ""
+
+msgid "Here is {ref}`My cool table <my-table-ref>`"
+msgstr ""
+
+msgid "`` Here is [](my-table-ref) ``"
+msgstr ""
+
+msgid "Here is [](my-table-ref)"
+msgstr ""
+
+msgid "`` Here is [My cool table](my-table-ref) ``"
+msgstr ""
+
+msgid "Here is [My cool table](my-table-ref)"
+msgstr ""
+
+msgid "`` Here is {numref}`my-table-ref` ``"
+msgstr ""
+
+msgid "Here is {numref}`my-table-ref`"
+msgstr ""
+
+#, python-format
+msgid "`` Here is {numref}`Custom Table %s text ` ``"
+msgstr ""
+
+#, python-format
+msgid "Here is {numref}`Custom Table %s text <my-table-ref>`"
+msgstr ""
+
+msgid "Reference content files"
+msgstr ""
+
+msgid ""
+"To reference other files of book content, use the `{doc}` role, or link "
+"directly to another file with Markdown link syntax. For exmaple:"
+msgstr ""
+
+msgid "`` Here is {doc}`../file-types/myst-notebooks.md` ``"
+msgstr ""
+
+msgid "Here is {doc}`../file-types/myst-notebooks`"
+msgstr ""
+
+msgid "`` Here is {doc}`A different page <../file-types/myst-notebooks.md>` ``"
+msgstr ""
+
+msgid "Here is {doc}`A different page <../file-types/myst-notebooks>`"
+msgstr ""
+
+msgid "`` Here is [](../file-types/myst-notebooks.md) ``"
+msgstr ""
+
+msgid "Here is [](../file-types/myst-notebooks.md)"
+msgstr ""
+
+msgid "`` Here is [A different page](../file-types/myst-notebooks.md) ``"
+msgstr ""
+
+msgid "Here is [A different page](../file-types/myst-notebooks.md)"
+msgstr ""
+
+msgid "Reference equations"
+msgstr ""
+
+msgid "To reference equations, first insert an equation with a label like so:"
+msgstr ""
+
+msgid "rendered"
+msgstr ""
+
+msgid ""
+"To reference equations, use the `{eq}` role. It will automatically insert"
+" the number of the equation. Note that you cannot modify the text of "
+"equation links."
+msgstr ""
+
+msgid ""
+"`` See Equation {eq}`my-math-ref` `` results in: See Equation {eq}`my-"
+"math-ref`"
+msgstr ""
+
+msgid ""
+"`` See Equation [](my-math-ref) `` results in: See Equation [](my-math-"
+"ref)."
+msgstr ""
+
+msgid "Choose the reference text"
+msgstr ""
+
+msgid ""
+"If you'd like to choose the text of the rendered reference link, use the "
+"following pattern:"
+msgstr ""
+
+msgid ""
+"Above, `reference-target` is the reference to which you are referring, "
+"and `your text here` will be the displayed text on the page."
+msgstr ""
+
+msgid "For example, see the following references:"
+msgstr ""
+
+msgid "Raw text"
+msgstr ""
+
+msgid "Rendered text"
+msgstr ""
+
+msgid "``{ref}`Here's another references section <content:references:labels>` ``"
+msgstr ""
+
+msgid "{ref}`Here's another references section <content:references:labels>`"
+msgstr ""
+
+msgid "``{doc}`Here's the code outputs section <code-outputs>` ``"
+msgstr ""
+
+msgid "{doc}`Here's the code outputs section <code-outputs>`"
+msgstr ""
+
+msgid "Number your references"
+msgstr ""
+
+#, python-format
+msgid ""
+"You can add **numbered references** to either [tables](references:tables)"
+" or [figures](references:figures). To add a numbered reference to a table"
+" or figure, use the `{numref}` role. If you wish to [use custom "
+"text](references:custom-text), add `%s` as a placeholder for the number."
+msgstr ""
+
+msgid "See the examples in each section below for usage."
+msgstr ""
+
+msgid "Reference with markdown link syntax"
+msgstr ""
+
+msgid ""
+"If you wish to use Markdown style syntax, then MyST Markdown will try to "
+"find a reference from any of the above reference types (and more!)."
+msgstr ""
+
+msgid ""
+"This has an advantage, in that you can used nested markdown syntax in "
+"your text, for example:"
+msgstr ""
+
+msgid "[A **bolded _reference_** to a page](./myst.md)"
+msgstr ""
+
+msgid "[A reference to a header](content:references:labels)"
+msgstr ""
+
+msgid ""
+"Leaving the title empty will mean the reference uses the target as text, "
+"for example the syntax"
+msgstr ""
+
+msgid "will link to a section and use its header text as the link text itself:"
+msgstr ""
+
+msgid "[](./myst.md)"
+msgstr ""
+
+msgid "Internal vs. External URLs"
+msgstr ""
+
+msgid ""
+"You can control how MyST Markdown distinguishes between internal "
+"references and external URLs in your `_config.yml`. For example,"
+msgstr ""
+
+msgid ""
+"means that `[Jupyter Book](https://jupyterbook.org)` will be recognised "
+"as a URL, but `[Citations](content:citations)` will not:"
+msgstr ""
+
+msgid "[Jupyter Book](https://jupyterbook.org)"
+msgstr ""
+
+msgid "[Citations](content:citations)"
+msgstr ""
+
+msgid "Check for missing references"
+msgstr ""
+
+msgid ""
+"You can check for missing references when building a Jupyter Book. To do "
+"so, use the following options:"
+msgstr ""
+
+msgid ""
+"This will check for missing references (`-n`) and turn them into errors "
+"(`-W`), but will still attempt to run the full build (`--keep-going`), so"
+" that you can see all errors in one run."
+msgstr ""
+

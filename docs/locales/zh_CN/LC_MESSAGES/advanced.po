@@ -1,0 +1,865 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Developer workflows"
+msgstr ""
+
+msgid "API reference from docstrings"
+msgstr ""
+
+msgid ""
+"If you are using Jupyter Book for package documentation, it can be time-"
+"saving to use [the sphinx autodoc extension](https://www.sphinx-"
+"doc.org/en/master/usage/extensions/autodoc.html) to automatically "
+"generate the API reference documentation. To do so, you first need to add"
+" the `autodoc` extension to `_config.yaml`:"
+msgstr ""
+
+msgid ""
+"Then, you can either use the [MyST eval_rst directive](https://myst-"
+"parser.readthedocs.io/en/latest/using/howto.html?highlight=rst#use-"
+"sphinx-ext-autodoc-in-markdown-files), or create a separate .rst file for"
+" the API reference page. This file can be called anything (e.g. "
+"`api.rst`) as long as it is referenced in `_toc.yml`, and it should look "
+"something like this:"
+msgstr ""
+
+msgid ""
+"The next time you build your book, `autodoc` will extract all the "
+"docstrings from that module and create a single documentation page for "
+"all of them. If you want more control and the table of contents in the "
+"right margin, you can add headings and functions individually:"
+msgstr ""
+
+msgid ""
+"If your docstrings are written per the NumPy or Google conventions, you "
+"can add [the napoleon extension](https://www.sphinx-"
+"doc.org/en/master/usage/extensions/napoleon.html#module-"
+"sphinx.ext.napoleon) to parse and render them correctly. Another useful "
+"extension can insert a link to the source code for each function and "
+"there is an option to shorten the function names to just the basename:"
+msgstr ""
+
+msgid ""
+"If you have a more complex project structure and want to recursively "
+"extract docstrings of all submodules and their functions, you can use "
+"[the autosummary extension](https://www.sphinx-"
+"doc.org/en/master/usage/extensions/autosummary.html) with the "
+"`:recursive:` option (since Sphinx 3.1)."
+msgstr ""
+
+msgid "Your `api.rst` file should now look like this:"
+msgstr ""
+
+msgid ""
+"To insert clickable links from the summary page to each functions "
+"docstring, you are currently [required to modify the default "
+"templates](https://stackoverflow.com/a/62613202/2166823), and [links will"
+" not be enabled by default until at least Sphinx 4](https://github.com"
+"/sphinx-doc/sphinx/issues/7912). Another option to generate clickable "
+"links to functions recursively is the [autoapi extension](https://sphinx-"
+"autoapi.readthedocs.io/en/latest/tutorials.html#setting-up-automatic-api-"
+"documentation-generation), which can be installed via pip and requires "
+"less customization than the above."
+msgstr ""
+
+msgid "Advanced HTML outputs"
+msgstr ""
+
+msgid "Custom CSS or JavaScript"
+msgstr ""
+
+msgid ""
+"If you'd like to include custom CSS rules or JavaScript scripts in your "
+"book, add them to a folder called `_static` in your book's folder. Any "
+"files that end in `.css` or `.js` in this folder will automatically be "
+"copied into your built book HTML and linked in the header of each page."
+msgstr ""
+
+msgid ""
+"For example, to include a custom CSS file `myfile.css` in a Jupyter Book "
+"folder with the following structure:"
+msgstr ""
+
+msgid "Add the static file here:"
+msgstr ""
+
+msgid ""
+"The rules should then automatically be applied to your site. In general, "
+"these CSS and JS files will be loaded *after* others are loaded on your "
+"page, so they should overwrite pre-existing rules and behaviour."
+msgstr ""
+
+msgid "An example: justify the text"
+msgstr ""
+
+msgid ""
+"If you want the text of you book to be justified instead of left aligned "
+"then create `myfile.css` under `mybook/_static` with the following CSS:"
+msgstr ""
+
+msgid "Enable Google Analytics"
+msgstr ""
+
+msgid ""
+"If you have a Google account, you can use Google Analytics to collect "
+"some information on the traffic to your Jupyter Book. With this tool, you"
+" can find out how many people are using your book, where they come from "
+"and how they access it, whether they are using the desktop or the mobile "
+"version etc."
+msgstr ""
+
+msgid ""
+"To add Google Analytics to your Jupyter Book, navigate to [Google "
+"Analytics](https://analytics.google.com/analytics/web/), create a new "
+"Google Analytics account and add the url of your Jupyter Book to a new "
+"*property*. Once you have set everything up, your Google Analytics "
+"property will have a so-called Tracking-ID, that typically starts with "
+"the letters UA. All that you need to do is to copy this ID and paste it "
+"into your configuration file:"
+msgstr ""
+
+msgid "Check external links in your book"
+msgstr ""
+
+msgid ""
+"If you'd like to make sure that the links outside of your book are valid,"
+" run the Sphinx link checker with Jupyter Book. This will check each of "
+"your external links and ensure that they resolve."
+msgstr ""
+
+msgid ""
+"Note that you must ensure each link is the *right* target, the link "
+"checker will only ensure that it resolves."
+msgstr ""
+
+msgid "To run the link checker, use the following command:"
+msgstr ""
+
+msgid ""
+"It will print the status of each link in your book so that you may "
+"resolve any incorrect links later on."
+msgstr ""
+
+msgid "Use raw HTML in Markdown"
+msgstr ""
+
+msgid ""
+"Jupyter Notebook Markdown allows you to use raw HTML in Markdown cells. "
+"This is discouraged in most cases, because it will usually just be passed"
+" through the build process as raw text, and so will not be subject to "
+"processes like:"
+msgstr ""
+
+msgid "relative path corrections"
+msgstr ""
+
+msgid "copying of assets to the build folder"
+msgstr ""
+
+msgid "multiple output type formatting (e.g. it will not show in PDFs!)."
+msgstr ""
+
+msgid "So, for instance, below we add:"
+msgstr ""
+
+msgid "and you will find that the HTML link is broken:"
+msgstr ""
+
+msgid "<a href=\"../intro.md\">Go Home HTML!</a>"
+msgstr ""
+
+msgid "[Go Home Markdown!](../intro.md)"
+msgstr ""
+
+msgid ""
+"Note that MyST Markdown now has some extended syntax features, which can "
+"allow you to use certain HTML elements in the correct manner."
+msgstr ""
+
+msgid "For example, the raw HTML image tag"
+msgstr ""
+
+msgid "becomes"
+msgstr ""
+
+msgid "the fun fish!"
+msgstr ""
+
+msgid "See the [image section](content-blocks-images) for details."
+msgstr ""
+
+msgid "Adding extra HTML to your book"
+msgstr ""
+
+msgid ""
+"There are a few places in Jupyter Book where you can add extra arbitrary "
+"HTML. In all cases, this is done with a configuration value in your "
+"`_config.yml` file."
+msgstr ""
+
+msgid "Extra HTML in your footer"
+msgstr ""
+
+msgid "To add extra HTML in your book's footer, use the following configuration:"
+msgstr ""
+
+msgid ""
+"The contents of `extra_footer` will be inserted into your page's HTML "
+"after all other footer content."
+msgstr ""
+
+msgid "Extra HTML to your left navbar"
+msgstr ""
+
+msgid ""
+"To add extra HTML in your book's left navbar, use the following "
+"configuration:"
+msgstr ""
+
+msgid ""
+"The contents of `extra_navbar` will be inserted into your page's HTML "
+"after all other HTML content."
+msgstr ""
+
+msgid "Adding a license to your HTML footer"
+msgstr ""
+
+msgid ""
+"If you'd like to add a more detailed license for your book, or would like"
+" to add a link to an external page for a license, the easiest way to do "
+"so is to use a custom footer for this. You can disable the \"copyright\" "
+"text that is automatically added to each footer, and add whatever footer "
+"HTML you'd like."
+msgstr ""
+
+msgid "For example, see this configuration:"
+msgstr ""
+
+msgid "Note that this may not work in PDF builds of your page generated by LaTeX."
+msgstr ""
+
+msgid "Manually specify extra files/folders to be included in a website"
+msgstr ""
+
+msgid ""
+"Jupyter Book will copy over any files that are linked from within its "
+"pages so that the links work in the built website. However, sometimes "
+"you'd like to manually ensure that files and folders are included in your"
+" built website. For example, if you'd like to link to them from *outside*"
+" your built documentation, but not from within your built documentation."
+msgstr ""
+
+msgid ""
+"To manually specify items to copy over, use the [`html_extra_path` Sphinx"
+" configuration](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-html_extra_path). You "
+"can configure this with Jupyter Book like so:"
+msgstr ""
+
+msgid ""
+"When you build your book's HTML, Jupyter Book will ensure that all files "
+"and folders _inside_ the folders specified in `html_extra_path` will be "
+"copied over to your built website."
+msgstr ""
+
+msgid "For example, if you have a folder structure in your book like so:"
+msgstr ""
+
+msgid "and the following Jupyter Book configuration:"
+msgstr ""
+
+msgid ""
+"Then the dataset will be accessible at "
+"`yourwebsite.com/data/mydataset.csv`."
+msgstr ""
+
+msgid "Configuring to Improve Accessibility"
+msgstr ""
+
+msgid ""
+"Declaring the primary language used in your book assists screen reader "
+"and browser translation tools."
+msgstr ""
+
+msgid ""
+"Language can be configured by providing the appropriate [language "
+"code](https://www.w3schools.com/tags/ref_language_codes.asp) to the "
+"`language` option, under `sphinx` configuration in your `_config.yml` "
+"file:"
+msgstr ""
+
+msgid ""
+"This example will set the book language to English, which would be "
+"represented in your book's HTML as `<html lang=\"en\">...</html>`."
+msgstr ""
+
+msgid "Advanced Jupyter Book Usage"
+msgstr ""
+
+msgid ""
+"These sections cover a few ways to customize and configure Jupyter Book "
+"that require extra knowledge about the Sphinx ecosystem, more challenging"
+" workflows, etc."
+msgstr ""
+
+msgid "Build a PDF"
+msgstr ""
+
+msgid ""
+"It is possible to build a single PDF that contains all of your book's "
+"content. This page describes a couple ways to do so."
+msgstr ""
+
+msgid "PDF building is experimental, and may change or have bugs."
+msgstr ""
+
+msgid "There are two approaches to building PDF files."
+msgstr ""
+
+msgid "Build a PDF from your book HTML"
+msgstr ""
+
+msgid ""
+"It is possible to build a single PDF from your book's HTML. This starts "
+"by converting all of your book's content into a single HTML file, and "
+"then renders it as a PDF by emulating a browser from the command-line."
+msgstr ""
+
+msgid "Installation"
+msgstr ""
+
+msgid ""
+"Your system will need to use `pyppeteer` to parse the generated HTML for "
+"conversion to PDF."
+msgstr ""
+
+msgid "You can install it like so:"
+msgstr ""
+
+msgid ""
+"You may also need to install this bundle of packages below (on *nix "
+"systems):"
+msgstr ""
+
+msgid ""
+"In addition, if you get errors about libraries that don't exist, check "
+"out [these install "
+"commands](https://circleci.com/orbs/registry/orb/threetreeslight/puppeteer)"
+" to see if that fixes it. We warned you it was an experimental feature "
+":-)"
+msgstr ""
+
+msgid "Build"
+msgstr ""
+
+msgid "To build a single PDF from your book's HTML, use the following command:"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid ""
+"If you get a \"MaxRetryError\" and see mentions of SSL in the error "
+"message when building the PDF, this could be due to a bug in `pyppeteer` "
+"as it downloads Chromium for the first time. See [this GitHub "
+"comment](https://github.com/miyakogi/pyppeteer/issues/258#issuecomment-563075764)"
+" for a potential fix, and [this Jupyter Book "
+"issue](https://github.com/executablebooks/jupyter-book/issues/593) where "
+"we're tracking the issue."
+msgstr ""
+
+msgid "Control the look of PDF via HTML"
+msgstr ""
+
+msgid ""
+"Because you are using HTML as an intermediary for your book's PDF, you "
+"can control the look and feel of the HTML via your own CSS rules. Most "
+"CSS changes that you make to your HTML website will also persist in the "
+"PDF version of that website. For information about how to define your own"
+" CSS rules, see [](custom-assets)."
+msgstr ""
+
+msgid ""
+"To add CSS rules that **only apply to the printed PDF**, use the `@media "
+"print` CSS pattern to define print-specific rules. These will *only* be "
+"applied when the HTML is being printed, and will not show up in your non-"
+"PDF website."
+msgstr ""
+
+msgid ""
+"For example, to **hide the right table of contents** at print time, you "
+"could add this rule:"
+msgstr ""
+
+msgid ""
+"The right Table of Contents would be present in your live website, but "
+"hidden when someone printed a PDF of your website."
+msgstr ""
+
+msgid "Build a PDF using LaTeX"
+msgstr ""
+
+msgid ""
+"You can also use LaTeX to build a PDF of your book. This can behave "
+"differently depending on your operating system and `tex` setup. This "
+"section tries to recommend a few best-practices."
+msgstr ""
+
+msgid ""
+"We recommend using the [texlive](https://www.tug.org/texlive/) "
+"distribution"
+msgstr ""
+
+msgid ""
+"The default is to build your project as a single PDF file, however it is "
+"possible to build individual PDF files for each page of the project by "
+"enabling the `--individualpages` option when using the `pdflatex` "
+"builder."
+msgstr ""
+
+msgid ""
+"For `Debian`-based `Linux` platforms it is recommended to install the "
+"following packages:"
+msgstr ""
+
+msgid ""
+"Alternatively you can install the full [TeX "
+"Live](https://www.tug.org/texlive/quickinstall.html) distribution."
+msgstr ""
+
+msgid ""
+"For `OSX` you may want to use [MacTeX](http://www.tug.org/mactex/) which "
+"is a more user friendly approach. Alternatively you may also use [TeX "
+"Live](https://www.tug.org/texlive/quickinstall.html)."
+msgstr ""
+
+msgid ""
+"For `Windows` users, please install [TeX "
+"Live](https://www.tug.org/texlive/windows.html)."
+msgstr ""
+
+msgid ""
+"`jupyter-book` uses the [sphinx-jupyterbook-"
+"latex](https://github.com/executablebooks/sphinx-jupyterbook-latex) "
+"package which handles much of the customised LaTeX infrastructure. A "
+"feature list of this package can be found "
+"[here](https://github.com/executablebooks/sphinx-jupyterbook-"
+"latex/blob/master/docs/intro.md#feature-list)."
+msgstr ""
+
+msgid ""
+"This package enables building `pdf` files with full support for the "
+"`file` and `part/chapter` [structures that are defined in the "
+"_toc.yml](https://jupyterbook.org/customize/toc.html). This builds `pdf` "
+"files that are similar in structure to the `html` output."
+msgstr ""
+
+msgid ""
+"If you need to **turn off** this package, the following config is "
+"required:"
+msgstr ""
+
+msgid "To build a PDF of your project using LaTeX, use the following command:"
+msgstr ""
+
+msgid "If you would just like to generate the **latex** file you may use:"
+msgstr ""
+
+msgid "**Individual PDF Files:**"
+msgstr ""
+
+msgid ""
+"The current implementation of `--individualpages` does **not** make use "
+"of the improvements introduced by [sphinx-jupyterbook-"
+"latex](https://github.com/executablebooks/sphinx-jupyterbook-latex) and "
+"uses the default `latex` writer included with Sphinx. We are currently "
+"working on making improvements to how `--individualpages` are "
+"constructed. You can track progress "
+"[here](https://github.com/executablebooks/sphinx-jupyterbook-"
+"latex/issues/41)"
+msgstr ""
+
+msgid ""
+"To build PDF files for each page of the project, you can specify the "
+"option `--individualpages` for `--builder=pdflatex`."
+msgstr ""
+
+msgid ""
+"The individual PDF files will be available in the `_build/latex` build "
+"folder. These files will have the same name as the source file or, if "
+"nested in folders, will be named `{folder}-{filename}.pdf`."
+msgstr ""
+
+msgid ""
+"When specifying a page using the `build` command, the `--individualpages`"
+" will automatically be set to `True`."
+msgstr ""
+
+msgid ""
+"In the future we intend for this to produce latex documents more suitable"
+" to single pages (see [issue #904](https://github.com/executablebooks"
+"/jupyter-book/issues/904))."
+msgstr ""
+
+msgid "Updating the name of the Global PDF file"
+msgstr ""
+
+msgid ""
+"To update the name of your `PDF` file you can set the following in "
+"`_config.yml`"
+msgstr ""
+
+msgid ""
+"This will act as an automatic `override` when Sphinx builds the "
+"[latex_documents](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-latex_documents). It "
+"is typically inferred by `Sphinx` but when using `jupyter-book` naming "
+"the file in the `_config.yml` generally makes it easier to find."
+msgstr ""
+
+msgid "Using a different LaTeX engine"
+msgstr ""
+
+msgid "The current default is to use `xelatex` to build `pdf` files."
+msgstr ""
+
+msgid "The `--individualpages` option currently uses `pdflatex` by default."
+msgstr ""
+
+msgid ""
+"Some users may want to switch to using a different LaTeX engine such as "
+"`pdflatex`. To revert the `LaTeX` engine to `pdflatex` you can add the "
+"following to your `_config.yml`"
+msgstr ""
+
+msgid ""
+"The Sphinx documentation [for available builders](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-latex_engine) contains"
+" a full list of supported `latex` builders."
+msgstr ""
+
+msgid "Other Sphinx LaTeX settings"
+msgstr ""
+
+msgid ""
+"Other [LaTeX settings](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-latex_engine) "
+"available to Sphinx can be passed through using the config section of "
+"`Sphinx` in the `_config.yml` file for your project."
+msgstr ""
+
+msgid ""
+"For example, if you would like to set the "
+"[latex_toplevel_sectioning](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-"
+"latex_toplevel_sectioning) option to use `part` instead of `chapter` you "
+"would use:"
+msgstr ""
+
+msgid "Advanced Sphinx usage"
+msgstr ""
+
+msgid ""
+"Jupyter Book uses the excellent documentation tool [Sphinx](http://www"
+".sphinx-doc.org/) to build your book and manage citations, cross-"
+"references, and extensibility."
+msgstr ""
+
+msgid ""
+"While Jupyter Book comes pre-configured with several Sphinx extensions, "
+"power-users may wish to add their own extensions and configuration. This "
+"page describes how to do so."
+msgstr ""
+
+msgid ""
+"Adding your own Sphinx configuration and extensions may cause Jupyter "
+"Book to behave unpredictably. Use at your own risk!"
+msgstr ""
+
+msgid "Custom Sphinx extensions"
+msgstr ""
+
+msgid ""
+"To enable your own Sphinx extensions when building a Jupyter Book, use "
+"the following configuration in your `_config.yml` file:"
+msgstr ""
+
+msgid ""
+"Any extensions that are listed will be appended to the list of Sphinx "
+"extensions at build time."
+msgstr ""
+
+msgid ""
+"Make sure that you have your extension installed on your machine, or "
+"Sphinx won't know how to build the extensions."
+msgstr ""
+
+msgid "An example: `sphinx-inline-tabs`"
+msgstr ""
+
+msgid ""
+"By default, Jupyter Book ships with [tabs via `sphinx-"
+"panels`](content:tabs). There are other packages for tabs in the Sphinx "
+"ecosystem with different functionality. One-such package is [`sphinx-"
+"inline-tabs`](https://sphinx-inline-tabs.readthedocs.io/en/latest/), "
+"which allows for _syncronized tabs_ in case you'd like your tabs to shift"
+" across the page at the same time."
+msgstr ""
+
+msgid ""
+"`sphinx-inline-tabs` is not included with Jupyter Book by default, but we"
+" can activate it with Jupyter Book like so:"
+msgstr ""
+
+msgid "**Install `sphinx-inline-tabs`**. Here's the command to do so:"
+msgstr ""
+
+msgid ""
+"**Add `sphinx-inline-tabs` content to your book**. Here's an example with"
+" MyST Markdown:"
+msgstr ""
+
+msgid ""
+"**Activate `sphinx-inline-tabs` in `_config.yml`**. [The `sphinx-inline-"
+"tabs` documentation](https://sphinx-inline-"
+"tabs.readthedocs.io/en/latest/) says we activate it in Sphinx by adding "
+"`extensions = [\"sphinx_inline_tabs\"]`, so we'll add it to our Jupyter "
+"Book like so:"
+msgstr ""
+
+msgid ""
+"Now, Jupyter Book will know how to interpret the `{tab}` directive (and "
+"any other directives that `sphinx-inline-tabs` supports)."
+msgstr ""
+
+msgid "For example, here is a rendered version of the tab code pasted above:"
+msgstr ""
+
+msgid "First two tabs showing off defining a function."
+msgstr ""
+
+msgid "Second two tabs showing off printing."
+msgstr ""
+
+msgid "Local Sphinx Extensions"
+msgstr ""
+
+msgid ""
+"[Sphinx is able to use local extensions](https://www.sphinx-"
+"doc.org/en/master/development/tutorials/helloworld.html#using-the-"
+"extension) by adding additional directories to the [Python "
+"path](https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH). "
+"You can use local extensions by specifying them as `local_extensions` in "
+"the `_config.yml` file."
+msgstr ""
+
+msgid "To add a local extension that requires a path, use:"
+msgstr ""
+
+msgid ""
+"This will **append to the list of extensions already loaded by Jupyter "
+"Book** and update the `sys.path` so the local extension can be found."
+msgstr ""
+
+msgid "Manual Sphinx configuration"
+msgstr ""
+
+msgid ""
+"You may also directly override the key-value pairs that Sphinx normally "
+"has you configure in `conf.py`. To do so, use the following section of "
+"`_config.yml`:"
+msgstr ""
+
+msgid ""
+"Any options set in this section will **override** default configurations "
+"set by Jupyter Book. Use at your own risk!"
+msgstr ""
+
+msgid ""
+"If you wish to inspect a `conf.py` representation of the generated "
+"configuration, which Jupyter Book will pass to Sphinx, you can run from "
+"the command-line:"
+msgstr ""
+
+msgid "Choose a custom Sphinx theme"
+msgstr ""
+
+msgid ""
+"Sphinx provides support for many different themes to control the look and"
+" feel of the output. Jupyter Book uses the [Sphinx Book Theme](https"
+"://sphinx-book-theme.readthedocs.io/) by default, but it is possible to "
+"use *any* Sphinx theme for your Jupyter Book by directly configuring "
+"Sphinx."
+msgstr ""
+
+msgid ""
+"For example, if you wished to use the [PyData Sphinx Theme](https"
+"://pydata-sphinx-theme.readthedocs.io/), you could install the theme "
+"with:"
+msgstr ""
+
+msgid "and then configure your book like so:"
+msgstr ""
+
+msgid ""
+"When you build your book, the PyData theme will be used. In this case, "
+"you should [consult the PyData theme documentation](https://pydata-"
+"sphinx-theme.readthedocs.io/en/latest/user_guide/index.html) for "
+"information about how to configure it."
+msgstr ""
+
+msgid ""
+"While you may choose any theme, there is some Jupyter Book configuration "
+"that only works with the Sphinx Book Theme, so some functionality may not"
+" be present if you choose a custom theme. For example, the [Launch "
+"Buttons](launchbuttons/binder) are not supported in most Sphinx themes."
+msgstr ""
+
+msgid "Fine control of parsing and execution"
+msgstr ""
+
+msgid ""
+"As discussed in [the components of Jupyter Book](intro/jupyter-book-"
+"components), two of the main components of Jupyter Book are Sphinx "
+"extensions; MyST-Parser for Markdown parsing, and MyST-NB for notebook "
+"execution and output rendering."
+msgstr ""
+
+msgid ""
+"These two extensions are highly customizable *via* Sphinx configuration. "
+"Some of their configuration is already exposed in the `_config.yml`, but "
+"you can also directly set configuration, see:"
+msgstr ""
+
+msgid "the [MyST-Parser configuration options](myst-parser:sphinx/config-options)"
+msgstr ""
+
+msgid "the [MyST-NB configuration options](myst-nb:config/reference)"
+msgstr ""
+
+msgid "Defining TeX macros"
+msgstr ""
+
+msgid ""
+"You can add LaTeX macros for the whole book by defining them under the "
+"`Macros` option of the `TeX` block. For example, the following two macros"
+" have been pre-defined in the Sphinx configuration"
+msgstr ""
+
+msgid ""
+"You can also define TeX macros for a specific file by introducing them at"
+" the beginning of the file under a `math` directive. For example"
+msgstr ""
+
+msgid ""
+"The commands can be used inside a `math` directive, `$$`, or in-line `$`."
+" For example,"
+msgstr ""
+
+msgid "will be rendered as:"
+msgstr ""
+
+msgid ""
+"\n"
+"A = \\bmat{} 1 & 1 \\\\ 2 & 1\\\\ 3 & 2 \\emat{},\\ b=\\bmat{} 2\\\\ 3 "
+"\\\\ 4\\emat{},\\ \\gamma = 0.5\n"
+msgstr ""
+
+msgid ""
+"[How MyST-Parser works with MathJax](myst-parser:syntax/mathjax), and the"
+" section on [math and equations](myst-content/math)."
+msgstr ""
+
+msgid ""
+"To have \"bare\" LaTeX rendered in HTML, enable the `amsmath` extension "
+"in your `_config.yml`:"
+msgstr ""
+
+msgid "Then you can include:"
+msgstr ""
+
+msgid "which renders as"
+msgstr ""
+
+msgid ""
+"\\begin{equation}\n"
+"  \\int_0^\\infty \\frac{x^3}{e^x-1}\\,dx = \\frac{\\pi^4}{15}\n"
+"\\end{equation}"
+msgstr ""
+
+msgid "Enable a custom Sphinx builder from the CLI"
+msgstr ""
+
+msgid "You can initiate builds for a custom builder using:"
+msgstr ""
+
+msgid ""
+"Advanced `sphinx` users may find an extension that builds a different "
+"type of output from the Sphinx AST such as [sphinx-"
+"tojupyter](https://github.com/QuantEcon/sphinx-tojupyter) which is an "
+"extension for building notebooks that only includes `basic` markdown."
+msgstr ""
+
+msgid ""
+"[sphinx-tojupyter](https://github.com/QuantEcon/sphinx-tojupyter) will be"
+" deprecated once `myst` syntax rendering support is available in jupyter "
+"notebooks."
+msgstr ""
+
+msgid "You can enable the `jupyter` builder by adding it to the `_config.yml`"
+msgstr ""
+
+msgid "and using the `custom` option via `jupyter-book`:"
+msgstr ""
+
+msgid ""
+"**Developers:** When using other output targets, the package will need to"
+" support specifying the `mime` type priority for `myst_nb` compatibility."
+msgstr ""
+
+msgid ""
+"See [this code](https://github.com/QuantEcon/sphinx-"
+"tojupyter/blob/ef85226e5e3e30903b62ddda24d8a32d36687944/sphinx_tojupyter/__init__.py#L124)"
+" for further details"
+msgstr ""
+
+msgid "Working on Windows"
+msgstr ""
+
+msgid ""
+"Jupyter Book is now also tested against a Windows environment on Python "
+"3.7 😀"
+msgstr ""
+
+msgid ""
+"For its specification, see the [`windows-latest` "
+"runner](https://docs.github.com/en/actions/reference/virtual-"
+"environments-for-github-hosted-runners#supported-runners-and-hardware-"
+"resources) used by GitHub CI."
+msgstr ""
+
+msgid ""
+"However, there is a known incompatibility for notebook execution, when "
+"using Python 3.8 (see this jupyter issue: "
+"[jupyter/nbclient#85](https://github.com/jupyter/nbclient/issues/85))"
+msgstr ""
+
+msgid ""
+"If you're running a recent version of Windows 10 and would like to build "
+"with Python 3.8 or encounter issues not covered in the tests, you may "
+"also wish to try [installing Windows Subsystem for "
+"Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)."
+msgstr ""
+

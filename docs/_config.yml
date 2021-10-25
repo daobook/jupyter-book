@@ -58,6 +58,11 @@ latex:
 
 sphinx:
   config:
+    # 支持 国际化
+    locale_dirs: ['locales/']
+    gettext_location: false
+    nb_render_priority:
+      gettext: {}
     nb_custom_formats:
       .Rmd:
         - jupytext.reads
@@ -106,7 +111,7 @@ sphinx:
       content-types/myst-notebooks.md: file-types/myst-notebooks.md
       content-types/jupytext.md: file-types/jupytext.Rmd
       content-types/restructuredtext.md: file-types/restructuredtext.md
-    language: en
+    language: zh_CN
     html_extra_path:
       - images/badge.svg
 

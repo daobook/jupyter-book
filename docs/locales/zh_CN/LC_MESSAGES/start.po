@@ -1,0 +1,859 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Build your book"
+msgstr ""
+
+msgid ""
+"Once you've added content and configured your book, it's time to build "
+"outputs for your book. We'll use the `jupyter-book build` command line "
+"tool for this."
+msgstr ""
+
+msgid ""
+"Currently, there are two kinds of supported outputs: an HTML website for "
+"your book, and a PDF that contains all of the pages of your book that is "
+"built from the book HTML. In this tutorial, we'll focus on building HTML "
+"outputs."
+msgstr ""
+
+msgid "Prerequisites"
+msgstr ""
+
+msgid ""
+"In order to build the HTML for each page, you should have followed the "
+"steps in [](overview.md) and [](create.md). You should have a collection "
+"of notebook/Markdown files in your `mybookname/` folder, a `_toc.yml` "
+"file that defines the structure of your book, and any configuration you'd"
+" like in the `_config.yml` file."
+msgstr ""
+
+msgid "Build your book's HTML"
+msgstr ""
+
+msgid ""
+"Now that your book's content is in your book folder and you've defined "
+"your book's structure in `_toc.yml`, you can build the HTML for your "
+"book."
+msgstr ""
+
+msgid "Do so by running the following command:"
+msgstr ""
+
+msgid ""
+"This will generate a fully-functioning HTML site using a **static site "
+"generator**. The site will be placed in the `_build/html` folder. You can"
+" then open the pages in the site by navigating to that folder and opening"
+" the `html` files with your web browser."
+msgstr ""
+
+msgid ""
+"You can also use the short-hand `jb` for `jupyter-book`. E.g.,: `jb build"
+" mybookname/`."
+msgstr ""
+
+msgid "Source vs build files"
+msgstr ""
+
+msgid ""
+"At this point, you have created a combination of Jupyter notebooks, "
+"markdown files, and configuration files, including `_toc.yml` and "
+"`_config.yml`. These files are your __source__ files. The __source__ "
+"files comprise all of the content and configuration that Jupyter Book "
+"needs to build your book."
+msgstr ""
+
+msgid ""
+"In addition, you have created a collection of _outputs_ in the `_build` "
+"folder. The `_build` folder contains all of your static website __build__"
+" files. The __build__ files contain all of the output from Jupyter Book's"
+" `build` command. These files are only used to view your content in a "
+"browser or to share with others."
+msgstr ""
+
+msgid ""
+"The best practice for publishing your book is to use separate branches "
+"for your __source__ and your __build__ files. For example, you may tell "
+"git to ignore your `_build` folder on your `main` branch, and push the "
+"outputs in your `_build` folder to a branch called `gh-pages`. We'll "
+"cover some of this later on."
+msgstr ""
+
+msgid "A note on page cacheing"
+msgstr ""
+
+msgid ""
+"By default, Jupyter Book will only build the HTML for pages that have "
+"been updated since the last time you built the book."
+msgstr ""
+
+msgid ""
+"If you'd like to force Jupyter Book to re-build a particular page, you "
+"can either edit the corresponding file in your book's folder, or delete "
+"that page's HTML in the `_build/html` folder."
+msgstr ""
+
+msgid "You can also signal a full re-build using the `--all` option:"
+msgstr ""
+
+msgid "Preview your built HTML"
+msgstr ""
+
+msgid ""
+"To preview your book, you can open the generated HTML files in your "
+"browser. Either double-click the html file in your local folder, or enter"
+" the absolute path to the file in your browser navigation bar adding "
+"`file://` at the beginning (e.g. "
+"`file://Users/my_path_to_book/_build/index.html`)."
+msgstr ""
+
+msgid ""
+"Take a look at the web page that was generated from the markdown page "
+"that you created. Note how the links you inserted were automatically "
+"**resolved** to point to the right place. This is how you can keep "
+"consistent pointers from one section of your book to another."
+msgstr ""
+
+msgid "Next step: publish your book"
+msgstr ""
+
+msgid ""
+"Now that you've created the HTML for your book, it's time to publish it "
+"online. That's covered in the [next section](./publish.md)."
+msgstr ""
+
+msgid "Create your book's source files"
+msgstr ""
+
+msgid ""
+"Now that we understand our book's structure, let's create a sample book "
+"to learn from."
+msgstr ""
+
+msgid "Quickly generate a sample book"
+msgstr ""
+
+msgid ""
+"Jupyter Book comes bundled with a lightweight sample book to help you "
+"understand a book's structure. Create a sample book by running the "
+"following command:"
+msgstr ""
+
+msgid ""
+"This will generate a mini Jupyter Book that you can both build and "
+"explore locally. It will have a few decisions made for you, and you can "
+"explore the configuration of the book in `_config.yml` and its structure "
+"in `_toc.yml`. Use this book as inspiration, or as a starting point to "
+"work from."
+msgstr ""
+
+msgid "Investigate your book's content files"
+msgstr ""
+
+msgid ""
+"First, note that there are at least two different kinds of content files:"
+" **markdown** files (ending in `.md`) and **Jupyter Notebooks** (ending "
+"in `.ipynb`)."
+msgstr ""
+
+msgid "We'll discuss each below."
+msgstr ""
+
+msgid "Markdown files (`.md`)"
+msgstr ""
+
+msgid ""
+"Markdown is an example of a [markup "
+"language](https://en.wikipedia.org/wiki/Markup_language) - a way to "
+"structure text with extra characters and syntax that give it extra "
+"meaning (e.g., using `**bold**` to denote **bold**). It is very popular "
+"and used across many different technology platforms."
+msgstr ""
+
+msgid ""
+"Markdown files come in slight variations, often called *flavors of "
+"markdown*. There are two flavors of markdown that Jupyter Book supports:"
+msgstr ""
+
+msgid ""
+"[CommonMark markdown](https://commonmark.org/) - a markdown standard that"
+" is very common."
+msgstr ""
+
+msgid ""
+"[MyST Markdown](../content/myst.md) - an extension of CommonMark with "
+"extra functionality for enriched documents."
+msgstr ""
+
+msgid ""
+"Let's take a look at one of the markdown files in the template book, "
+"`intro.md`:"
+msgstr ""
+
+msgid "Above you see several different kinds of structure:"
+msgstr ""
+
+msgid ""
+"`#` symbols denote **section headers** in CommonMark markdown. They "
+"define the section headers on this page, for example."
+msgstr ""
+
+msgid "`:::{note}` is a **directive** in MyST Markdown. It is rendered like this:"
+msgstr ""
+
+msgid "I'm a note!"
+msgstr ""
+
+msgid ""
+"` ``` ` denotes a **code block** in CommonMark markdown. It is rendered "
+"like this:"
+msgstr ""
+
+msgid ""
+"All content files must have a page title (specified as the first header)."
+" All subsequent headers must increase linearly (so no jumps from H1 to "
+"H3). See [](rules-all-content-types) for more rules that all content must"
+" adhere to."
+msgstr ""
+
+msgid ""
+"For more information about MyST markdown and all the things you can do "
+"with it, see [](../content/myst.md)."
+msgstr ""
+
+msgid "Jupyter Notebooks (`.ipynb`)"
+msgstr ""
+
+msgid ""
+"The other type of content we'll note is a **Jupyter Notebook**, ending in"
+" `.ipynb`. Jupyter Notebooks have a combination of computational content "
+"and narrative content. Each notebook is associated with a **kernel** "
+"(aka, Python, R, Julia, etc) that defines the language used to execute "
+"the notebook's computational content."
+msgstr ""
+
+msgid ""
+"By default, when Jupyter Book builds your book, **notebooks will be "
+"executed and their outputs cached**. On subsequent builds, notebook pages"
+" will be re-executed only if their code has changed."
+msgstr ""
+
+msgid "✨Notebooks with text files✨"
+msgstr ""
+
+msgid ""
+"You can also store Jupyter Notebooks as markdown files or other text "
+"files. See [](../file-types/myst-notebooks.md) and [](../file-"
+"types/jupytext.Rmd)."
+msgstr ""
+
+msgid ""
+"Any outputs generated by the notebook will be inserted into your built "
+"book (though they may not be in your input notebook). This way you do not"
+" need to store the notebook's outputs with your repository. See "
+"[](../content/execute.md) for more information."
+msgstr ""
+
+msgid ""
+"There are many other interesting things that you can do with notebook "
+"content as a part of your book. We recommend checking out [](../content"
+"/code-outputs.md) as well as [](../interactive/interactive.md) to get "
+"started with Jupyter notebooks."
+msgstr ""
+
+msgid "Inspect your configuration file"
+msgstr ""
+
+msgid ""
+"In addition to these content files, your book also has a **configuration "
+"file** (`_config.yml`). This controls the behavior of your book in many "
+"ways."
+msgstr ""
+
+msgid ""
+"A few decisions have been made for you. Let's take a look at a few "
+"examples:"
+msgstr ""
+
+msgid ""
+"This snippet configures some metadata about your book, and determins the "
+"logo displayed in the top left:"
+msgstr ""
+
+msgid ""
+"This configuration activates **citations** for your book (see "
+"[](../tutorials/references.md) for getting started with citations and "
+"references)."
+msgstr ""
+
+msgid ""
+"This configuration tells Jupyter Book to execute all of your Jupyter "
+"Notebook files **every time** the book is re-built, instead of cache-ing "
+"them."
+msgstr ""
+
+msgid ""
+"Check out the other content in your configuration file, and reference it "
+"against the pages in this documentation to see what it does."
+msgstr ""
+
+msgid "Your book's table of contents"
+msgstr ""
+
+msgid ""
+"Finally, your book also has a **Table of Contents** that tells Jupyter "
+"Book where each of your content source files should go."
+msgstr ""
+
+msgid ""
+"This is a simple table of contents, consisting of three pages. The first "
+"item of your ToC is always your book's **landing page** - the first page "
+"people will see when they look at your book."
+msgstr ""
+
+msgid ""
+"Subsequent pages are defined in sequential order. You can do a lot more "
+"than just define a single list of pages - see [](../customize/toc.md) for"
+" more information about structuring your book."
+msgstr ""
+
+msgid "Create your own content file"
+msgstr ""
+
+msgid "Now that you've seen a few sample content files, try creating your own!"
+msgstr ""
+
+msgid ""
+"In the folder with all of your sample book contents, create a new file "
+"called `mymarkdownfile.md`. Put the following content in it:"
+msgstr ""
+
+msgid ""
+"We've added two new pieces of markdown syntax, both of them are related "
+"to **cross-references**."
+msgstr ""
+
+msgid ""
+"`(section-label)=` is a label that's attached to a section header. It "
+"refers to whatever header follows, and allows you to refer to this label "
+"later on in your text."
+msgstr ""
+
+msgid ""
+"`[link text](link-target)` syntax is how you specify a link in markdown. "
+"Here we've linked to another page, as well as to the label we created "
+"above."
+msgstr ""
+
+msgid ""
+"When you build your book, you'll see how these links resolve in the "
+"output."
+msgstr ""
+
+msgid "Next step: build your book"
+msgstr ""
+
+msgid ""
+"Now that you've got a Jupyter Book folder structure, you can create the "
+"HTML (or PDF) for each of your book's pages. That's covered in the next "
+"section."
+msgstr ""
+
+msgid "Build a small example project"
+msgstr ""
+
+msgid ""
+"Now that you've built your first book, you may wish to get some "
+"inspiration from a more \"complete\" book example."
+msgstr ""
+
+msgid ""
+"This section describes the [QuantEcom mini "
+"book](https://executablebooks.github.io/quantecon-mini-"
+"example/docs/index.html) to show you how it's made."
+msgstr ""
+
+msgid "Some of the features on display include"
+msgstr ""
+
+msgid ""
+"[Jupyter Notebook-style inputs and "
+"outputs](https://executablebooks.github.io/quantecon-mini-"
+"example/docs/python_by_example.html#version-1)"
+msgstr ""
+
+msgid ""
+"[citations](https://executablebooks.github.io/quantecon-mini-"
+"example/docs/about_py.html#bibliography)"
+msgstr ""
+
+msgid ""
+"[numbered equations](https://executablebooks.github.io/quantecon-mini-"
+"example/docs/python_by_example.html#another-application)"
+msgstr ""
+
+msgid ""
+"[numbered figures](https://executablebooks.github.io/quantecon-mini-"
+"example/docs/getting_started.html#jupyter-notebooks) with captions and "
+"cross-referencing"
+msgstr ""
+
+msgid ""
+"For more inspiration and example books, see [the Jupyter Book "
+"gallery](https://executablebooks.org/en/latest/gallery.html)"
+msgstr ""
+
+msgid "Mini-book source files"
+msgstr ""
+
+msgid ""
+"The source files can be [found on "
+"GitHub](https://github.com/executablebooks/quantecon-mini-example/) in "
+"the [docs directory](https://github.com/executablebooks/quantecon-mini-"
+"example/tree/master/mini_book/docs). These files are written in [MyST "
+"Markdown](../content/myst.md), an extension of the Jupyter Notebook "
+"Markdown, that allows for additional scientific markup. They could "
+"alternatively have been written directly as Jupyter notebooks."
+msgstr ""
+
+msgid "Build the demo book"
+msgstr ""
+
+msgid ""
+"You can build this book locally on the command line via the following "
+"steps:"
+msgstr ""
+
+msgid ""
+"Ensure you have a recent version of [Anaconda "
+"Python](https://www.anaconda.com/distribution/) installed."
+msgstr ""
+
+msgid "Clone the repository containing the demo book source files"
+msgstr ""
+
+msgid "If you'd like to install Jupyter Book with `pip`, you can do so with:"
+msgstr ""
+
+msgid "See [the getting started page](../start/overview.md) for more information."
+msgstr ""
+
+msgid ""
+"Install the Python libraries needed to run the code in this particular "
+"example from [the `environment.yml` "
+"file](https://github.com/executablebooks/quantecon-mini-"
+"example/blob/master/environment.yml). This includes the latest version of"
+" Jupyter Book:"
+msgstr ""
+
+msgid "Run Jupyter Book over the source files"
+msgstr ""
+
+msgid "View the result through a browser --- try (with, say, firefox)"
+msgstr ""
+
+msgid "(or simply double-click on the `html` file)"
+msgstr ""
+
+msgid ""
+"Now you might like to try editing the files in ``mini_book/docs`` and "
+"then rebuilding."
+msgstr ""
+
+msgid "Further reading"
+msgstr ""
+
+msgid ""
+"See [the full QuantEcon example](https://executablebooks.github.io"
+"/quantecon-example/docs/index.html) for a longer Jupyter Book use case, "
+"drawn from the same source material."
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid ""
+"This is a short overview of the major components and steps in building a "
+"Jupyter Book. See the other pages in this guide for more in-depth "
+"information."
+msgstr ""
+
+msgid "Install Jupyter Book"
+msgstr ""
+
+msgid "You can install Jupyter Book [via `pip`](https://pip.pypa.io/en/stable/):"
+msgstr ""
+
+msgid "This will install everything you need to build a Jupyter Book locally."
+msgstr ""
+
+msgid "The Jupyter Book command-line interface"
+msgstr ""
+
+msgid ""
+"Jupyter Book uses a command-line interface to perform a variety of "
+"actions. For example, building and cleaning books. You can run the "
+"following command to see what options are at your control:"
+msgstr ""
+
+msgid ""
+"You can also use the short-hand `jb` for `jupyter-book`. E.g.,: `jb "
+"create mybookname`. We'll use `jupyter-book` for the rest of this guide."
+msgstr ""
+
+msgid "For more complete information about the CLI, see [](../reference/cli.md)."
+msgstr ""
+
+msgid "The book building process"
+msgstr ""
+
+msgid "Building a Jupyter Book broadly consists of these steps:"
+msgstr ""
+
+msgid ""
+"**Create your book's content**. You structure your book with a collection"
+" of folders, files, and configuration. See [](anatomy-of-a-book)."
+msgstr ""
+
+msgid ""
+"**Build your book**. Using Jupyter Book's command-line interface you can "
+"convert your pages into either an HTML or a PDF book. See [](build.md)."
+msgstr ""
+
+msgid ""
+"**Publish your book online**. Once your book is built, you can share it "
+"with others. Most common is to build HTML, and host it as a public "
+"website. See [](publish.md)."
+msgstr ""
+
+msgid ""
+"We will use the word \"book\" to describe the outputs generated by this "
+"tutorial, but you can also use Jupyter Book to build **articles**. See "
+"[](structure:article) for more information."
+msgstr ""
+
+msgid "Anatomy of a Jupyter Book"
+msgstr ""
+
+msgid "There are three things that you need in order to build a Jupyter Book:"
+msgstr ""
+
+msgid "A configuration file (`_config.yml`)"
+msgstr ""
+
+msgid "A table of contents file (`_toc.yml`)"
+msgstr ""
+
+msgid "Your book's content"
+msgstr ""
+
+msgid ""
+"For example, consider the following folder structure, which makes up a "
+"simple Jupyter Book."
+msgstr ""
+
+msgid ""
+"We'll cover each briefly below, and you can find more information about "
+"them elsewhere in this documentation."
+msgstr ""
+
+msgid "Book configuration (`_config.yml`)"
+msgstr ""
+
+msgid ""
+"All of the configuration for your book is in a YAML file called "
+"`_config.yml`."
+msgstr ""
+
+msgid ""
+"You can define metadata for your book (such as its title), add a book "
+"logo, turn on different \"interactive\" buttons (such as a {term}`Binder`"
+" button for pages built from a Jupyter Notebook), and more."
+msgstr ""
+
+msgid ""
+"For more information about your book's configuration file, see "
+"[](../customize/config.md)."
+msgstr ""
+
+msgid "Here's an example of a simple `_config.yml` file:"
+msgstr ""
+
+msgid ""
+"`title:` defines a title for the book. It will show up in the left "
+"sidebar."
+msgstr ""
+
+msgid ""
+"`logo:` defines a path to an image file for your book's logo (it will "
+"also show up in the sidebar)."
+msgstr ""
+
+msgid ""
+"`execute:` contains a collection of configuration options to control "
+"[execution and cacheing](../content/execute.md)."
+msgstr ""
+
+msgid ""
+"`execute_notebooks: \"off\"` tells Jupyter Book **not to execute** any "
+"computational content that it finds when building the book. By default, "
+"Jupyter Book executes and caches all book content."
+msgstr ""
+
+msgid "More about `_config.yml`"
+msgstr ""
+
+msgid ""
+"There is much more that you can do with the `_config.yml` file. For "
+"example, you can [](source-repository-button) or add "
+"[](../interactive/interactive.ipynb). For a complete list of fields for "
+"`_config.yml`, see [](../customize/config.md)."
+msgstr ""
+
+msgid "Table of Contents (`_toc.yml`)"
+msgstr ""
+
+msgid ""
+"Jupyter Book uses your Table of Contents to define the structure of your "
+"book. For example, your chapters, sub-chapters, etc."
+msgstr ""
+
+msgid ""
+"This is a YAML file with a collection of pages, each one linking to a "
+"file in your book. Here's an example of the two content files shown "
+"above."
+msgstr ""
+
+msgid ""
+"If you would like to quickly **generate a basic Table of Contents** YAML "
+"file, run the following command:"
+msgstr ""
+
+msgid ""
+"And it will generate a TOC for you. Note that there must be at least one "
+"content file in each folder in order for any sub-folders to be parsed."
+msgstr ""
+
+msgid ""
+"The `_toc.yml` is arranged with a `format` such as `jb-article`, or `jb-"
+"book`. The `root` item is considered the landing page (for `html` builds)"
+" and is used as front matter (for `latex` builds). For `jb-book`, "
+"subsequent chapters can be added under the `chapters:` section in the "
+"`yml` file."
+msgstr ""
+
+msgid ""
+"Each entry relates to a file, and they should be added as names with **no"
+" extensions** and **relative to your book's root folder.** The title of "
+"each chapter will be inferred from the title in your files."
+msgstr ""
+
+msgid "More about `_toc.yml`"
+msgstr ""
+
+msgid ""
+"You can specify more complex book configurations with your `_toc.yml` "
+"file. For example, you can specify **parts**, **sections**, and control "
+"**custom titles**. For more information about your book's table of "
+"contents file, see [](../customize/toc.md)."
+msgstr ""
+
+msgid "Book content"
+msgstr ""
+
+msgid ""
+"A collection of text files make up your book's content. These can be one "
+"of several types of files, such as markdown (`.md`), Jupyter Notebooks "
+"(`.ipynb`) or reStructuredText (`.rst`) files (see [](../file-"
+"types/index.md) for a full list)."
+msgstr ""
+
+msgid ""
+"In the above example, there were two files listed: a **markdown** file "
+"and a **Jupyter Notebook**. We'll cover each in the next section."
+msgstr ""
+
+msgid "Publish your book online"
+msgstr ""
+
+msgid ""
+"Once you've built the HTML for your book, you can host it online. The "
+"best way to do this is with a service that hosts **static websites** "
+"(because that's what you have just created with Jupyter Book). In this "
+"tutorial, we'll cover how to publish your book online with GitHub Pages, "
+"a popular and free online hosting platform."
+msgstr ""
+
+msgid "Create an online repository for your book"
+msgstr ""
+
+msgid ""
+"In order to connect your hosted book with your book's source content, you"
+" should put your book's source content in a public repository. This "
+"section describes one approach to create your own GitHub repository and "
+"add your book's content to it."
+msgstr ""
+
+msgid ""
+"First, log in to GitHub, then go to the \"create a new repository\" page:"
+" <https://github.com/new>"
+msgstr ""
+
+msgid ""
+"Next, give your online repository a name and a description. Make your "
+"repository public and do not initialize it with a README file, then click"
+" \"Create repository\"."
+msgstr ""
+
+msgid ""
+"Now, clone the (currently empty) online repository to a location on your "
+"local computer. You can do this via the command line with:"
+msgstr ""
+
+msgid ""
+"Copy all of your book files and folders into this newly cloned "
+"repository. For example, if you created your book locally with `jupyter-"
+"book create mylocalbook` and your new repository is called "
+"`myonlinebook`, you could do this via the command line with:"
+msgstr ""
+
+msgid ""
+"Now you need to sync your local and remote (i.e., online) repositories. "
+"You can do this with the following commands:"
+msgstr ""
+
+msgid "Publish your book online with GitHub Pages"
+msgstr ""
+
+msgid ""
+"We have just pushed the *source files* for our book into our GitHub "
+"repository. This makes it publicly accessible for you or others to see."
+msgstr ""
+
+msgid ""
+"Next, we'll publish the *build artifact* of our book online, so that it "
+"is rendered as a website."
+msgstr ""
+
+msgid ""
+"The easiest way to use GitHub Pages with your built HTML is to use the "
+"[`ghp-import`](https://github.com/davisp/ghp-import) package. `ghp-"
+"import` is a lightweight Python package that makes it easy to push HTML "
+"content to a GitHub repository."
+msgstr ""
+
+msgid ""
+"`ghp-import` works by copying *all* of the contents of your built book "
+"(i.e., the `_build/html` folder) to a branch of your repository called "
+"`gh-pages`, and pushes it to GitHub. The `gh-pages` branch will be "
+"created and populated automatically for you by `ghp-import`. To use `ghp-"
+"import` to host your book online with GitHub Pages follow the steps "
+"below:"
+msgstr ""
+
+msgid ""
+"Before performing the below steps, ensure that HTML has been built for "
+"each page of your book (see {doc}`the previous section "
+"<../start/build>`). There should be a collection of HTML files in your "
+"book's `_build/html` folder."
+msgstr ""
+
+msgid "Install `ghp-import`"
+msgstr ""
+
+msgid "Update the settings for your GitHub pages site:"
+msgstr ""
+
+msgid "a. Use the `gh-pages` branch to host your website."
+msgstr ""
+
+msgid ""
+"b. Choose root directory `/` if you're building the book in it's own "
+"repository.     Choose `/docs` directory if you're building documentation"
+" with jupyter-book."
+msgstr ""
+
+msgid ""
+"From the `main` branch of your book's root directory (which should "
+"contain the `_build/html` folder) call `ghp-import` and point it to your "
+"HTML files, like so:"
+msgstr ""
+
+msgid ""
+"Make sure that you included the `-n` - this tells GitHub *not* to build "
+"your book with [Jekyll](https://jekyllrb.com/), which we don't want "
+"because our HTML is already built!"
+msgstr ""
+
+msgid ""
+"Typically after a few minutes your site should be viewable online at a "
+"url such as: `https://<user>.github.io/<myonlinebook>/`. If not, check "
+"your repository settings under **Options** -> **GitHub Pages** to ensure "
+"that the `gh-pages` branch is configured as the build source for GitHub "
+"Pages and/or to find the url address GitHub is building for you."
+msgstr ""
+
+msgid ""
+"To update your online book, make changes to your book's content on the "
+"`main` branch of your repository, re-build your book with `jupyter-book "
+"build mybookname/` and then use `ghp-import -n -p -f "
+"mylocalbook/_build/html` as before to push the newly built HTML to the "
+"`gh-pages` branch."
+msgstr ""
+
+msgid ""
+"Note this warning from the [`ghp-import` GitHub "
+"repository](https://github.com/davisp/ghp-import):"
+msgstr ""
+
+#, python-format
+msgid ""
+"\"...*`ghp-import` will DESTROY your gh-pages branch... and assumes that "
+"the `gh-pages` branch is 100% derivative. You should never edit files in "
+"your `gh-pages` branch by hand if you're using this script...*\""
+msgstr ""
+
+msgid "Create your first book"
+msgstr ""
+
+msgid ""
+"In this tutorial, we'll cover the basics of the Jupyter Book ecosystem, "
+"and step you through creating, building, and publishing your first book."
+msgstr ""
+
+msgid "What you should already know"
+msgstr ""
+
+msgid ""
+"In order to complete this tutorial, you should be relatively familiar "
+"with using the command line, as well as using a text editor."
+msgstr ""
+
+msgid "A note for Windows users"
+msgstr ""
+
+msgid "Jupyter Book is now also tested against Windows OS 😀"
+msgstr ""
+
+msgid ""
+"However, there is a known incompatibility for notebook execution when "
+"using Python 3.8."
+msgstr ""
+
+msgid "See [](working-on-windows)"
+msgstr ""
+
+msgid "See the sections of this tutorial to the left to get started!"
+msgstr ""
+

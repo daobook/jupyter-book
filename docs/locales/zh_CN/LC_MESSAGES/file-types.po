@@ -1,0 +1,682 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Types of content source files"
+msgstr ""
+
+msgid ""
+"Jupyter Book supports many kinds of source files for your book's content."
+" These sections cover the major types of content and how you can control "
+"their behavior in Jupyter Book. See the list of sections to the left for "
+"information about each type."
+msgstr ""
+
+msgid "Section table of contents"
+msgstr ""
+
+msgid "Allowed content types"
+msgstr ""
+
+msgid ""
+"In general, these are the types of content supported by Jupyter Book "
+"(along with links to their section in this book):"
+msgstr ""
+
+msgid "[Markdown files](./markdown.md)"
+msgstr ""
+
+msgid "These are text files written in either CommonMark or in MyST Markdown."
+msgstr ""
+
+msgid "[Jupyter notebooks](./notebooks.md)"
+msgstr ""
+
+msgid ""
+"AKA, `.ipynb` files. These files can contain Markdown cells with MyST "
+"Markdown."
+msgstr ""
+
+msgid ""
+"A Jupyter notebook can utilise any program kernel that implements the "
+"[Jupyter messaging protocol](http://jupyter-"
+"client.readthedocs.io/en/latest/messaging.html) for executing code. There"
+" are kernels available for [Python](http://ipython.org/notebook.html), "
+"[Julia](https://github.com/JuliaLang/IJulia.jl), "
+"[Ruby](https://github.com/minad/iruby), "
+"[Haskell](https://github.com/gibiansky/IHaskell) and [many other "
+"languages](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)."
+msgstr ""
+
+msgid "[MyST Markdown notebooks](./myst-notebooks.md)"
+msgstr ""
+
+msgid ""
+"These are Markdown files (ending in `.md`) that will be *converted to a "
+"notebook and executed*."
+msgstr ""
+
+msgid "[reStructuredText](./restructuredtext.md)."
+msgstr ""
+
+msgid ""
+"These are text files used by the Sphinx documentation engine (which is "
+"used by Jupyter Book). It is recommended to use MyST Markdown instead."
+msgstr ""
+
+msgid "[Custom notebook formats](file-types:custom)"
+msgstr ""
+
+msgid ""
+"Any other file type can be *auto-converted* before execution by assigning"
+" it a custom Python function, for example those provided by the Jupytext "
+"conversion tool."
+msgstr ""
+
+msgid "Rules for all content types"
+msgstr ""
+
+msgid ""
+"There are a few things that are true for all content types. Here is a "
+"short list:"
+msgstr ""
+
+msgid ""
+"**Files must have a title**. Generally this means that they must begin "
+"with a line that starts with a single `#`"
+msgstr ""
+
+msgid ""
+"**Use only one top-level header**. Because each page must have a clear "
+"title, it must also only have one top-level header. You cannot have "
+"multiple headers with single `#` tag in them."
+msgstr ""
+
+msgid ""
+"**Headers should increase linearly**. If you're inside of a section with "
+"one `#`, then the next nested section should start with `##`. Avoid "
+"jumping straight from `#` to `###`."
+msgstr ""
+
+msgid "Two-way conversion between text-files and `.ipynb` files"
+msgstr ""
+
+msgid ""
+"For information about how to convert between text files and `.ipynb` "
+"files for use with Jupyter Book, see [](file-types:custom:jupytext)."
+msgstr ""
+
+msgid "Custom notebook formats and Jupytext"
+msgstr ""
+
+msgid ""
+"You can designate additional file types to be converted to notebooks and "
+"then executed/parsed in the same manner as regular notebooks."
+msgstr ""
+
+msgid ""
+"This page itself is written as an "
+"[RMarkdown](https://rmarkdown.rstudio.com/) notebook!"
+msgstr ""
+
+msgid ""
+"The string should be a Python function that will be loaded by `import "
+"mylibrary.converter_function`"
+msgstr ""
+
+msgid ""
+"The function should take a file's contents (as a `str`) and return an "
+"[nbformat.NotebookNode](nbformat:api)"
+msgstr ""
+
+msgid ""
+"If the function takes additional keyword arguments, then you can specify "
+"these as a dictionary in a second argument. For example this is what the "
+"default conversion would look like:"
+msgstr ""
+
+msgid ""
+"By default, Markdown cells in the notebook will be parsed using the same "
+"MyST parser configuration as for other Markdown files."
+msgstr ""
+
+msgid ""
+"But, if this is incompatible with your file format, then you can specify "
+"for the Markdown to be parsed as **strictly CommonMark**, using a third "
+"argument:"
+msgstr ""
+
+msgid ""
+"Finally, for text-based formats, MyST-NB also searches for an optional "
+"`source_map` key in the output notebook's metadata. This key should be a "
+"list mapping each cell to the starting line number in the original source"
+" file, for example for a notebook with three cells:"
+msgstr ""
+
+msgid ""
+"This mapping allows for \"true\" error reporting, as described in "
+"[](myst-nb:myst/error-reporting)."
+msgstr ""
+
+msgid "Using Jupytext"
+msgstr ""
+
+msgid ""
+"[Jupytext](https://jupytext.readthedocs.io/en/latest/) is an excellent "
+"Python tool for two-way conversion between Jupyter Notebook `.ipynb` "
+"files and [a variety of text-based "
+"files](https://jupytext.readthedocs.io/en/latest/formats.html)."
+msgstr ""
+
+msgid ""
+"Jupyter Book natively supports the Jupytext file format: [notebooks with "
+"MyST Markdown](./myst-notebooks.md), but you can add other formats like "
+"[RMarkdown](https://rmarkdown.rstudio.com/) or Python files."
+msgstr ""
+
+msgid "The configuration looks like:"
+msgstr ""
+
+msgid ""
+"Note that some execution features (such as in-line code execution in "
+"RMarkdown) are not available in Jupyter Book."
+msgstr ""
+
+msgid "Now you can use RMarkdown blocks:"
+msgstr ""
+
+msgid ""
+"For full compatibility with `myst-parser`, it is necessary to use "
+"`jupytext>=1.6.0`."
+msgstr ""
+
+msgid "Convert a Jupytext file into a MyST notebook"
+msgstr ""
+
+msgid ""
+"Alternatively, if you'd like to convert your pre-existing Jupytext files "
+"into the MyST notebook format, to use directly in your book, install "
+"Jupytext and then run the following command:"
+msgstr ""
+
+msgid ""
+"Note that you may also pass a wildcard that will be used to convert "
+"multiple files. For example:"
+msgstr ""
+
+msgid ""
+"See [the Jupytext CLI "
+"documentation](https://jupytext.readthedocs.io/en/latest/using-cli.html) "
+"for more information."
+msgstr ""
+
+msgid "Markdown files"
+msgstr ""
+
+msgid ""
+"You can write content in regular Markdown files (e.g., files ending in "
+"`.md`). Jupyter Book supports any Markdown syntax that is supported by "
+"Jupyter notebooks. Jupyter Notebook Markdown is an extension of a flavour"
+" of Markdown called [CommonMark Markdown](https://commonmark.org/). It "
+"has many elements for standard text processing, though it lacks a lot of "
+"features used for publishing and documentation."
+msgstr ""
+
+msgid ""
+"If you'd like a more in-depth overview and guide to CommonMark Markdown, "
+"see [the CommonMark Markdown "
+"tutorial](https://commonmark.org/help/tutorial/)."
+msgstr ""
+
+msgid ""
+"This page describes some basic features of the Jupyter Notebook Markdown,"
+" and how to include them with your book."
+msgstr ""
+
+msgid ""
+"Jupyter Book also supports a fancier version of Markdown called **MyST "
+"Markdown**. This is a slightly extended flavour of Jupyter Notebook "
+"Markdown. It allows you to include citations and cross-references, and "
+"control more complex functionality like adding content to the margin. For"
+" more information, check out {doc}`../content/myst`."
+msgstr ""
+
+msgid "Embedding media"
+msgstr ""
+
+msgid "Adding images"
+msgstr ""
+
+msgid ""
+"You can reference external media like images from your Markdown file. If "
+"you use relative paths, then they will continue to work when the Markdown"
+" files are copied over, so long as they point to a file that's inside of "
+"the repository."
+msgstr ""
+
+msgid "Here's an image relative to the book content root"
+msgstr ""
+
+msgid "![C-3PO_droid](../images/C-3PO_droid.png)"
+msgstr ""
+
+msgid "C-3PO_droid"
+msgstr ""
+
+msgid "It was generated with this code:"
+msgstr ""
+
+msgid "[](../content/figures.md) for more information."
+msgstr ""
+
+msgid "Adding movies"
+msgstr ""
+
+msgid ""
+"You can even embed references to movies on the web! For example, here's a"
+" little GIF for you!"
+msgstr ""
+
+msgid "![giphy](https://media.giphy.com/media/yoJC2A59OCZHs1LXvW/giphy.gif)"
+msgstr ""
+
+msgid "giphy"
+msgstr ""
+
+msgid "This will be included in your book when it is built."
+msgstr ""
+
+msgid "Mathematics"
+msgstr ""
+
+msgid ""
+"For HTML outputs, Jupyter Book uses the excellent "
+"[MathJax](http://docs.mathjax.org/en/latest/) library, along with the "
+"default Jupyter Notebook configuration, for rendering mathematics from "
+"LaTeX-style syntax."
+msgstr ""
+
+msgid "For example, here's a mathematical expression rendered with MathJax:"
+msgstr ""
+
+msgid ""
+"\n"
+"P(A_1 \\cup A_2 \\cup A_3)\n"
+"& = P(B \\cup A_3)  \\\\\n"
+"& = P(B) + P(A_3) - P(BA_3) \\\\\n"
+"&= P(A_1) + P(A_2) - P(A_1A_2) + P(A_3) - P(A_1A_3 \\cup A_2A_3) \\\\\n"
+"&= \\sum_{i=1}^3 P(A_i) - \\mathop{\\sum \\sum}_{1 \\le i < j \\le 3} "
+"P(A_iA_j) + P(A_1A_2A_3)\n"
+msgstr ""
+
+msgid "[](../content/math.md) for more information."
+msgstr ""
+
+msgid "Block-level mathematics"
+msgstr ""
+
+msgid ""
+"You can include block-level mathematics by wrapping your formulas in `$$`"
+" characters. For example, the following block:"
+msgstr ""
+
+msgid "Results in this output:"
+msgstr ""
+
+msgid ""
+"\n"
+"wow = its^{math}\n"
+msgstr ""
+
+msgid ""
+"You can also include math blocks by using LaTeX-style syntax using "
+"`\\begin{align*}`. For example, the following block:"
+msgstr ""
+
+msgid "Results in:"
+msgstr ""
+
+msgid ""
+"\\begin{align*}\n"
+"yep = its_{more}^{math}\n"
+"\\end{align*}"
+msgstr ""
+
+msgid "This requires the [`amsmath` MyST extension to be enabled](math:latex)."
+msgstr ""
+
+msgid "Extended Markdown with MyST Markdown"
+msgstr ""
+
+msgid ""
+"In addition to CommonMark Markdown, Jupyter Book also supports a more "
+"fully-featured version of Markdown called **MyST Markdown**. This is a "
+"superset of CommonMark that includes syntactic pieces that are useful for"
+" publishing computational narratives. For more information about MyST "
+"Markdown, see [](../content/myst.md)."
+msgstr ""
+
+msgid "Notebooks written entirely in Markdown"
+msgstr ""
+
+msgid ""
+"It is possible to store Jupyter notebooks in plain Markdown. This allows "
+"you to define a notebook structure entirely using MyST Markdown. For more"
+" information about MyST Markdown, see {doc}`../content/myst`."
+msgstr ""
+
+msgid ""
+"Notebooks with Markdown can be read in, executed, and cached by Jupyter "
+"Book (see {doc}`../content/execute` for information on how to cache "
+"pages). This allows you to store all of your notebook content in a text "
+"format that is much nicer for version control software, while still "
+"having all the functionality of a Jupyter notebook."
+msgstr ""
+
+msgid ""
+"MyST notebooks uses [MyST-NB to convert between ipynb and text files"
+"](myst-nb:index). See its documentation for more information."
+msgstr ""
+
+msgid ""
+"To see an example of a MyST notebook, you can look at [many of the pages "
+"of this documentation](https://github.com/executablebooks/jupyter-"
+"book/tree/master/docs). For example, see "
+"{download}`../interactive/hiding.md` and "
+"{download}`../content/layout.md`."
+msgstr ""
+
+msgid "Create a MyST notebook with Jupytext"
+msgstr ""
+
+msgid ""
+"The easiest way to create a MyST notebook is to use "
+"[Jupytext](https://jupytext.readthedocs.io), a tool that allows for two-"
+"way conversion between `.ipynb` and a variety of text files."
+msgstr ""
+
+msgid ""
+"You can convert an `.ipynb` file to a MyST notebook with the following "
+"command:"
+msgstr ""
+
+msgid ""
+"A resulting `mynotebook.md` file will be created. This can then be used "
+"as a page in your book."
+msgstr ""
+
+msgid ""
+"Jupytext can also **automatically synchronize an `.ipynb` file with your "
+"Markdown**. To do so, use a Jupyter interface such as Jupyter Lab or the "
+"classic notebook interface and follow the [Jupytext instructions for "
+"paired notebooks](https://jupytext.readthedocs.io/en/latest/paired-"
+"notebooks.html)."
+msgstr ""
+
+msgid "Markdown takes precedence"
+msgstr ""
+
+msgid ""
+"If **both** an `.ipynb` and a `.md` file exist in your book's folders, "
+"then the `.md` file will take precedence!"
+msgstr ""
+
+msgid "Convert a Markdown file into Jupytext MyST Markdown"
+msgstr ""
+
+msgid ""
+"Jupyter Book has a small CLI to provide common functionality for "
+"manipulating and creating MyST Markdown files that synchronize with "
+"Jupytext. To add Jupytext syntax to a Markdown file (that will tell "
+"Jupytext it is a MyST Markdown file), run the following command:"
+msgstr ""
+
+msgid ""
+"If you do not specify `--kernel`, then the default kernel will be used "
+"*if there is only one available*. If there are multiple kernels "
+"available, you must specify one manually."
+msgstr ""
+
+msgid "Structure of MyST notebooks"
+msgstr ""
+
+msgid ""
+"Let's take a look at the structure that Jupytext creates, which you may "
+"also use to create a MyST notebook from scratch. First, let's take a look"
+" at a simple MyST notebook:"
+msgstr ""
+
+msgid "There are three main sections to notice:"
+msgstr ""
+
+msgid "Frontmatter YAML"
+msgstr ""
+
+msgid ""
+"MyST notebooks need special frontmatter YAML to tell Jupytext that they "
+"can be converted to `.ipynb` files. The frontmatter YAML block"
+msgstr ""
+
+msgid ""
+"tells Jupytext that the file is in `myst` format, and that its code "
+"should be run with a Python 3 kernel."
+msgstr ""
+
+msgid ""
+"Remember that Jupyter always defines one, and only one, kernel per "
+"notebook."
+msgstr ""
+
+msgid "Code cells"
+msgstr ""
+
+msgid ""
+"Code blocks in MyST notebooks are defined with the following MyST "
+"directive:"
+msgstr ""
+
+msgid ""
+"You can optionally add extra metadata to the code cell, which will be "
+"converted into cell metadata in the `.ipynb` file. For example, you can "
+"add tags to your code cell like so:"
+msgstr ""
+
+msgid ""
+"You may also explicitly pass the kernel name after `{code-cell}` to make "
+"it clear which kernel you are running. For example:"
+msgstr ""
+
+msgid "However, remember that there is only one kernel allowed per page."
+msgstr ""
+
+msgid "Markdown content"
+msgstr ""
+
+msgid ""
+"Everything in-between your code cells is parsed as Markdown content using"
+" the [MyST Markdown parser](https://myst-parser.readthedocs.io/). See "
+"{doc}`../content/myst` for more information about MyST Markdown."
+msgstr ""
+
+msgid ""
+"To explicitly split up Markdown content into two Markdown cells, use the "
+"following pattern:"
+msgstr ""
+
+msgid ""
+"You may also attach metadata to the cell by adding a Python dictionary "
+"after the `+++`. For example, to add tags to the second cell above:"
+msgstr ""
+
+msgid ""
+"Please note that cell breaks and metadata specified in MyST files via the"
+" `+++` syntax only propagate to their `.ipynb` counterpart. When "
+"generating the book's HTML, *Markdown cell* information is discarded to "
+"avoid conflicting hierarchies in the structure of the document. In other "
+"words, only *code cell* tags have an effect on the generated HTML."
+msgstr ""
+
+msgid "Jupyter Notebook files"
+msgstr ""
+
+msgid ""
+"You can create content with Jupyter notebooks. For example, the content "
+"for the current page is contained in {download}`this notebook file "
+"<./notebooks.ipynb>`."
+msgstr ""
+
+msgid ""
+"If you'd like to write in plain-text files, but still keep a notebook "
+"structure, you can write Jupyter notebooks with MyST Markdown, which are "
+"then automatically converted to notebooks. See [](./myst-notebooks.md) "
+"for more details."
+msgstr ""
+
+msgid ""
+"Jupyter Book supports all Markdown that is supported by Jupyter Notebook."
+" This is mostly a flavour of Markdown called [CommonMark "
+"Markdown](https://commonmark.org/) with minor modifications. For more "
+"information about writing Jupyter-flavoured Markdown in Jupyter Book, see"
+" [](./markdown.md)."
+msgstr ""
+
+msgid "Code blocks and image outputs"
+msgstr ""
+
+msgid ""
+"Jupyter Book will also embed your code blocks and output in your book. "
+"For example, here's some sample Matplotlib code:"
+msgstr ""
+
+msgid "Note that the image above is captured and displayed in your site."
+msgstr ""
+
+msgid "**You can also pop out content to the side!**"
+msgstr ""
+
+msgid ""
+"For more information on how to do this, check out the "
+"{ref}`layout/sidebar` section."
+msgstr ""
+
+msgid "Removing content before publishing"
+msgstr ""
+
+msgid ""
+"You can also remove some content before publishing your book to the web."
+"  For reference, {download}`you can download the notebook content for "
+"this page <notebooks.ipynb>`."
+msgstr ""
+
+msgid ""
+"You can **remove only the code** so that images and other output still "
+"show up."
+msgstr ""
+
+msgid ""
+"Which works well if you'd like to quickly display cell output without "
+"cluttering your content with code. This works for any cell output, like a"
+" Pandas DataFrame."
+msgstr ""
+
+msgid ""
+"See {ref}`hiding/remove-content` for more information about hiding and "
+"removing content."
+msgstr ""
+
+msgid "Interactive outputs"
+msgstr ""
+
+msgid ""
+"We can do the same for *interactive* material. Below we'll display a map "
+"using [folium](https://python-visualization.github.io/folium/). When your"
+" book is built, the code for creating the interactive map is retained."
+msgstr ""
+
+msgid ""
+"**This will only work for some packages.** They need to be able to output"
+" standalone HTML/Javascript, and not depend on an underlying Python "
+"kernel to work."
+msgstr ""
+
+msgid "Rich outputs from notebook cells"
+msgstr ""
+
+msgid ""
+"Because notebooks have rich text outputs, you can store these in your "
+"Jupyter Book as well! For example, here is the command line help menu, "
+"see how it is nicely formatted."
+msgstr ""
+
+msgid ""
+"And here is an error. You can mark notebook cells as \"expected to "
+"error\" by adding a `raises-exception` tag to them."
+msgstr ""
+
+msgid "More features with Jupyter notebooks"
+msgstr ""
+
+msgid ""
+"There are many other features of Jupyter notebooks to take advantage of, "
+"such as automatically generating Binder links for notebooks or connecting"
+" your content with a kernel in the cloud. For more information browse the"
+" pages in this site, and [](content:code-outputs) in particular."
+msgstr ""
+
+msgid "reStructuredText files"
+msgstr ""
+
+msgid ""
+"In addition to writing your content in Markdown, Jupyter Book also "
+"supports writing content in "
+"[reStructuredText](https://docutils.sourceforge.io/rst.html), another "
+"markup language that is common in the Python documentation community."
+msgstr ""
+
+msgid ""
+"Writing content in reStructuredText is only recommended for users who are"
+" already familiar with it. For others, we recommend using [MyST "
+"Markdown](../content/myst.md), which has all of the same features of rST "
+"and Sphinx, but with a Markdown flavour."
+msgstr ""
+
+msgid ""
+"Because Jupyter Book uses Sphinx under the hood, any document that is "
+"written in rST for the Sphinx ecosystem should also work with Jupyter "
+"Book. This is particularly useful if you've already got a significant "
+"amount of documentation written in rST and you'd like to try it out with "
+"Jupyter Book."
+msgstr ""
+
+msgid ""
+"For more information on writing content with reStructuredText, we "
+"recommend reading [the Sphinx rST documentation](https://www.sphinx-"
+"doc.org/es/stable/rest.html)."
+msgstr ""
+
+msgid "Including reStructuredText in Markdown"
+msgstr ""
+
+msgid ""
+"To insert rST into Markdown, you can use the [eval-rst directive](myst-"
+"parser:syntax/directives/parsing):"
+msgstr ""
+
+msgid "A note written in reStructuredText."
+msgstr ""
+
+msgid ""
+"Hallo I'm from an rST file, :ref:`myst-parser:with a reference about "
+"using autodoc <howto/autodoc>`."
+msgstr ""
+

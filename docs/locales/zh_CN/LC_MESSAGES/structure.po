@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-26 01:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Configure the Table of Contents"
+msgstr ""
+
+msgid ""
+"This page covers some of the options you have available to control your "
+"book's behavior via the Table of Contents."
+msgstr ""
+
+msgid "Configure all entries in the TOC"
+msgstr ""
+
+msgid ""
+"To configure options for all entries of your TOC, use the `defaults:` "
+"configuration at the root of your Table of Contents. This configuration "
+"will be applied to every list of chapters or sections within your book."
+msgstr ""
+
+msgid "For example:"
+msgstr ""
+
+msgid "Configure a single top-level set of chapters/sections"
+msgstr ""
+
+msgid ""
+"If you're only using a single list of chapters, and not organizing them "
+"into parts, you can configure each with the `options:` key."
+msgstr ""
+
+msgid "Configure an individual Part"
+msgstr ""
+
+msgid ""
+"If you are organizing your book into **parts** (groups of chapters), you "
+"can configure each set of chapters separately by providing `key: value` "
+"pairs alongside each `part` entry, like so:"
+msgstr ""
+
+msgid ""
+"In this case, the `numbered:` option would *only apply to Part 1*, and "
+"not Part 2. If you would like numbering across your project you will need"
+" to add `numbered: true` to all `parts`."
+msgstr ""
+
+msgid ""
+"Currently there is no global setting to enable `numbered: true` across "
+"all parts."
+msgstr ""
+
+msgid "You cannot use"
+msgstr ""
+
+msgid ""
+"as sphinx will issue warnings due to `numbered` flag being set for "
+"substrees. It also causes unexpected output."
+msgstr ""
+
+msgid "Add captions to Parts"
+msgstr ""
+
+msgid ""
+"To add a caption to a Part (so that it shows up in the sidebar, for "
+"example) use the `caption:` option like so:"
+msgstr ""
+
+msgid "Specify alternate titles"
+msgstr ""
+
+msgid ""
+"If you'd like to specify an alternate title from the one defined within a"
+" file, you may do so with the `title:` key. For example:"
+msgstr ""
+
+msgid ""
+"Note that this only applies to the sidebar in the table of contents, it "
+"does not change the actual chapter/section title."
+msgstr ""
+
+msgid "Number your chapters and sections"
+msgstr ""
+
+msgid ""
+"You can automatically add numbers to each chapter of your book. To add "
+"numbers to **all chapters of your book**, add the `numbered: true` flag "
+"to your book's defaults, like so:"
+msgstr ""
+
+msgid ""
+"Numbers will follow a hierarchy according to the structure defined in "
+"your `_toc.yml` file."
+msgstr ""
+
+msgid ""
+"Continuous numbering is now the default behavior from `jupyter-"
+"book>=0.11.2`"
+msgstr ""
+
+msgid ""
+"By default, chapter numbering will be continuous between parts (i.e. they"
+" will not re-start each section at `1.` each time) using an extension "
+"called [sphinx-multitoc-numbering](https://github.com/executablebooks"
+"/sphinx-multitoc-numbering)."
+msgstr ""
+
+msgid ""
+"To **restart chapter numbering between parts**, use the following setting"
+" in your `_config.yml` file:"
+msgstr ""
+
+msgid "This was the **default behaviour** prior to `jupyter-book<0.11.2`."
+msgstr ""
+
+msgid "Limit the depth of numbering"
+msgstr ""
+
+msgid ""
+"If you'd like to limit the depth of numbering, use an **integer** for the"
+" `numbered` flag. This will be the depth of sub-sections to continue "
+"numbering. For example, `numbered: 3`."
+msgstr ""
+
+msgid ""
+"If you'd like to number **subsets of chapters**, group them into parts "
+"and apply the `numbered: true` flag to the parts whose chapters you wish "
+"to be numbered."
+msgstr ""
+
+msgid "A few caveats about numbering"
+msgstr ""
+
+msgid ""
+"Jupyter Book relies on {term}`Sphinx` to apply section numbering, and "
+"this has a few quirks to it. Here are a few gotchas:"
+msgstr ""
+
+msgid ""
+"**Numbering applies to _sections_ of your page**. Note that when you add "
+"numbering to a section, it will add numbers to *each header in a file*. "
+"This means that if you have headers in a top-level section, then its "
+"headers will become numbered as sub-sections, and any other _files_ "
+"underneath it will begin as third-level children. See [](toc/structure) "
+"for more information."
+msgstr ""
+
+msgid "jupyter-book < 0.11.2"
+msgstr ""
+
+msgid ""
+"**Numbering resets across parts**. If you specify groups of sections via "
+"`- part:` entries, then numbering will restart between them. That means "
+"if you have two `- part:` entries with 2 pages each, you will have two "
+"sets of `1.` and `2.` sections, one for each part."
+msgstr ""
+
+msgid "Add a table of contents to a page's content"
+msgstr ""
+
+msgid ""
+"If you'd like to add a table of contents for the sub-sections of a page "
+"*within the page content* (in-line with the content on the page), you may"
+" do so by using the `{tableofcontents}` directive. You can use it like "
+"so:"
+msgstr ""
+
+msgid ""
+"See the source of [the content types page](../file-types/index.md) for an"
+" example."
+msgstr ""
+
+msgid "Control the depth of the displayed Table of Contents"
+msgstr ""
+
+msgid ""
+"To control the maximum depth of the Table of Contents that you insert, "
+"use the `maxdepth:` option in your `_toc.yml` file. For example:"
+msgstr ""
+
+msgid "Exclude pages from your build"
+msgstr ""
+
+msgid ""
+"By default, Jupyter Book will build all content files that are found in "
+"your book's folder, even if they are not specified in `_toc.yml` (and "
+"will raise a warning if it finds a file that isn't listed there)."
+msgstr ""
+
+msgid ""
+"If you'd like Jupyter Book to skip a file entirely, you can do so with "
+"the following configuration in `_config.yml`:"
+msgstr ""
+
+msgid ""
+"Any files that match the patterns described there will be excluded from "
+"the build. If you'd like to exclude files from being *executed* but still"
+" wish for them to be built by Jupyter Book, see [](execute/exclude)."
+msgstr ""
+
+msgid "Disable building files that aren't in the Table of Contents"
+msgstr ""
+
+msgid ""
+"By default, Jupyter Book will build all files that are in your book's "
+"folder, regardless of whether they are specified in the Table of "
+"Contents. To disable this behavior and *only* build files that are "
+"specified in the TOC, use the following pattern in `_config.yml`:"
+msgstr ""
+
+msgid ""
+"Note that files that are in *hidden folders* (e.g. in `.github` or "
+"`.venv`) will still be built even if they are not specified in the TOC. "
+"You should exclude these files explicitly."
+msgstr ""
+
+msgid "How headers and sections map onto to book structure"
+msgstr ""
+
+msgid ""
+"Jupyter Book uses the {term}`Sphinx` documentation engine under the hood,"
+" which represents the structure of your book in a particular way. "
+"Different choices for the structure of `_toc.yml` and the header "
+"structures within your pages will result in different outcomes for your "
+"overall book structure. Here are some general tips and best-practices."
+msgstr ""
+
+msgid ""
+"This is particularly important when you [number your book's "
+"sections](toc/numbering) or when you [build a PDF of your book through "
+"Latex](pdf:latex)."
+msgstr ""
+
+msgid ""
+"**Chapters are at the top of your book hierarchy**. The top level of your"
+" `_toc.yml` contains a list of chapters. The title of each file will be "
+"the chapter's title."
+msgstr ""
+
+msgid ""
+"**Headers map onto sections**. Jupyter Book interprets your book as a "
+"collection of sections, and decides how those sections should be nested "
+"according to the hierarchy of `_toc.yml` and the hierarchy of headers in "
+"a page. Within a file, the first `## ` header it discovers will define "
+"the top-most section in the file, and any subsequent `### ` headers "
+"underneath will become sub-sections (until another `## ` section is "
+"encountered). This behavior is a bit different if the page is *nested* "
+"under another (see below)."
+msgstr ""
+
+msgid ""
+"**Nested files define sections _underneath_ the last section of their "
+"parent**. If you specify sections that are *nested* under a file (with "
+"the `sections:` key) then those sections will begin *underneath* the last"
+" headers of the parent page."
+msgstr ""
+
+msgid "For example, if your `_toc.yml` file looks like this:"
+msgstr ""
+
+msgid ""
+"Then the sections of `chapter1section` will begin **under** the sections "
+"of `chapter1`. Any headers in `chapter1section` will be treated as a "
+"\"next-header-deeper\" section in `chapter1`."
+msgstr ""
+
+msgid "In other words, if `chapter1` and `chapter1section` look like this:"
+msgstr ""
+
+msgid "`chapter1.md`"
+msgstr ""
+
+msgid "`chapter1section.md`"
+msgstr ""
+
+msgid "Then your book will treat them like so:"
+msgstr ""
+
+msgid "However, if `chapter1.md` had an extra third-level header, like so:"
+msgstr ""
+
+msgid "Then your book would treat them like so:"
+msgstr ""
+
+msgid "Keep this in mind when you design the structure of your files."
+msgstr ""
+
+msgid "A good rule of thumb is to take one of these two approaches:"
+msgstr ""
+
+msgid ""
+"**don't put headers in your introduction pages**. This is true for both "
+"the book's introduction, as well as for any chapter introductions. "
+"Instead, leave the headers to pages that have more content in them, and "
+"use **bolded text** where you would otherwise use headers."
+msgstr ""
+
+msgid ""
+"**Use a flat list of files instead of nested files**. This way the "
+"section hierarchy is defined only in a single file within each section. "
+"However, this means you will have longer files in general."
+msgstr ""
+
