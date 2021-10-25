@@ -21,15 +21,15 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r docs/requirements.txt
-          pip install jupyter-book
+          
           pip install sphinx-intl
-          conda install -c conda-forge pandoc
+         
           pip install sphinxcontrib-websupport
-          sudo apt update
-          sudo apt install -y graphviz
+         
           conda install -c glueviz
           conda install pandas matplotlib
           pip install bokeh --upgrade
+          pip install jupyter-book
 
       - name: Build the book
         run: |

@@ -18,16 +18,16 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 msgid "Tutorials"
-msgstr ""
+msgstr "教程"
 
 msgid "Topic Guides"
-msgstr ""
+msgstr "主题指南"
 
 msgid "Reference"
-msgstr ""
+msgstr "参考"
 
 msgid "About Jupyter Book"
-msgstr ""
+msgstr "关于 Jupyter Book"
 
 msgid "Books with Jupyter <img src=\"images/logo-square.svg\" width=40 />"
 msgstr ""

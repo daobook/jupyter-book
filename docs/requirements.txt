@@ -9,10 +9,8 @@ plotly
 sphinx-click
 sphinx_inline_tabs
 jupyter_bokeh
-sphinxext-rediraffe~=0.2.3
+sphinxext-rediraffe
 sympy
 sphinx-proof
-toolz
-importlib-metadata
 myst-nb
 matplotlib
