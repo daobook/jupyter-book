@@ -24,11 +24,12 @@ jobs:
           pip install jupyter-book
           pip install sphinx-intl
           conda install -c conda-forge pandoc
-          conda install -c conda-forge ipython
           pip install sphinxcontrib-websupport
           sudo apt update
           sudo apt install -y graphviz
-          conda install -c glueviz glueviz=1.2
+          conda install -c glueviz
+          conda install pandas matplotlib
+          pip install bokeh --upgrade
 
       - name: Build the book
         run: |

@@ -1,15 +1,18 @@
 # Copied from 'sphinx' extra of setup.cfg
 altair
-bokeh
 folium
 ipywidgets
-matplotlib
 nbclient
 numpy
 pandas
 plotly
 sphinx-click
 sphinx_inline_tabs
+jupyter_bokeh
 sphinxext-rediraffe~=0.2.3
 sympy
 sphinx-proof
+toolz
+importlib-metadata
+myst-nb
+matplotlib
