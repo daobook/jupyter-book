@@ -34,7 +34,7 @@ jobs:
           jb build --builder custom --custom-builder gettext --path-output _gettext .
           sphinx-intl update -p _gettext/_build/gettext -l zh_CN
           rm -rf _gettext/_build/.jupyter_cache/ _gettext/_build/jupyter_execute
-          jb build . -n -W --keep-going
+          jb build .
 
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.6.1
