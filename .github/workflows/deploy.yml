@@ -20,15 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r docs/requirements.txt
-          
           pip install sphinx-intl
-         
+          pip install -r docs/requirements.txt
           pip install sphinxcontrib-websupport
-         
-          conda install -c glueviz
-          conda install pandas matplotlib
-          pip install bokeh --upgrade
+          conda install -c glueviz glueviz
           pip install jupyter-book
 
       - name: Build the book
