@@ -1,0 +1,81 @@
+Traceback (most recent call last):
+  File "/usr/share/miniconda/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/usr/share/miniconda/lib/python3.9/site-packages/nbclient/client.py", line 1117, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/share/miniconda/lib/python3.9/site-packages/nbclient/util.py", line 78, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/usr/share/miniconda/lib/python3.9/site-packages/nbclient/util.py", line 57, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/share/miniconda/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/usr/share/miniconda/lib/python3.9/site-packages/nbclient/client.py", line 558, in async_execute
+    await self.async_execute_cell(
+  File "/usr/share/miniconda/lib/python3.9/site-packages/nbclient/client.py", line 862, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/usr/share/miniconda/lib/python3.9/site-packages/nbclient/client.py", line 765, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from bokeh.plotting import figure, show, output_notebook
+output_notebook()
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mImportError[0m                               Traceback (most recent call last)
+[0;32m/tmp/ipykernel_4479/2884614522.py[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0;32mfrom[0m [0mbokeh[0m[0;34m.[0m[0mplotting[0m [0;32mimport[0m [0mfigure[0m[0;34m,[0m [0mshow[0m[0;34m,[0m [0moutput_notebook[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0moutput_notebook[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda/lib/python3.9/site-packages/bokeh/plotting/__init__.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     18[0m [0;31m# this is just for testing, otherwise the figure module is shadowed[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     19[0m [0;31m# by the figure function and inacessible (needs happen up top)[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 20[0;31m [0;32mfrom[0m [0;34m.[0m [0;32mimport[0m [0mfigure[0m [0;32mas[0m [0m_figure[0m [0;34m;[0m [0m_figure[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     21[0m [0;34m[0m[0m
+[1;32m     22[0m [0;31m#-----------------------------------------------------------------------------[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda/lib/python3.9/site-packages/bokeh/plotting/figure.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     32[0m     [0mTuple[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     33[0m )
+[0;32m---> 34[0;31m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mmodels[0m [0;32mimport[0m [0mColumnDataSource[0m[0;34m,[0m [0mGraphRenderer[0m[0;34m,[0m [0mPlot[0m[0;34m,[0m [0mTitle[0m[0;34m,[0m [0mTool[0m[0;34m,[0m [0mglyphs[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     35[0m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mmodels[0m[0;34m.[0m[0mtools[0m [0;32mimport[0m [0mDrag[0m[0;34m,[0m [0mInspectTool[0m[0;34m,[0m [0mScroll[0m[0;34m,[0m [0mTap[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     36[0m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mtransform[0m [0;32mimport[0m [0mlinear_cmap[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda/lib/python3.9/site-packages/bokeh/models/__init__.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     30[0m [0;31m# Bokeh imports[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     31[0m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mcore[0m[0;34m.[0m[0mproperty[0m[0;34m.[0m[0mdataspec[0m [0;32mimport[0m [0mexpr[0m[0;34m,[0m [0mfield[0m[0;34m,[0m [0mvalue[0m  [0;31m# Legacy API[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 32[0;31m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mmodel[0m [0;32mimport[0m [0mModel[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     33[0m [0;32mfrom[0m [0;34m.[0m[0mannotations[0m [0;32mimport[0m [0;34m*[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     34[0m [0;32mfrom[0m [0;34m.[0m[0marrow_heads[0m [0;32mimport[0m [0;34m*[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda/lib/python3.9/site-packages/bokeh/model/__init__.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     23[0m [0;34m[0m[0m
+[1;32m     24[0m [0;31m# Bokeh imports[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 25[0;31m [0;32mfrom[0m [0;34m.[0m[0mdata_model[0m [0;32mimport[0m [0mDataModel[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     26[0m [0;32mfrom[0m [0;34m.[0m[0mmodel[0m [0;32mimport[0m [0mModel[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     27[0m [0;32mfrom[0m [0;34m.[0m[0mutil[0m [0;32mimport[0m [0mQualified[0m[0;34m,[0m [0mcollect_models[0m[0;34m,[0m [0mget_class[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda/lib/python3.9/site-packages/bokeh/model/data_model.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     23[0m [0;31m# Bokeh imports[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     24[0m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mcore[0m[0;34m.[0m[0mhas_props[0m [0;32mimport[0m [0mabstract[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 25[0;31m [0;32mfrom[0m [0;34m.[0m[0mmodel[0m [0;32mimport[0m [0mModel[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     26[0m [0;34m[0m[0m
+[1;32m     27[0m [0;31m#-----------------------------------------------------------------------------[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda/lib/python3.9/site-packages/bokeh/model/model.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     49[0m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mutil[0m[0;34m.[0m[0mcallback_manager[0m [0;32mimport[0m [0mEventCallbackManager[0m[0;34m,[0m [0mPropertyCallbackManager[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     50[0m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mutil[0m[0;34m.[0m[0mserialization[0m [0;32mimport[0m [0mmake_id[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 51[0;31m [0;32mfrom[0m [0;34m.[0m[0mdocs[0m [0;32mimport[0m [0mhtml_repr[0m[0;34m,[0m [0mprocess_example[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     52[0m from .util import (
+[1;32m     53[0m     [0mHasDocumentRef[0m[0;34m,[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda/lib/python3.9/site-packages/bokeh/model/docs.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     27[0m [0;31m# Bokeh imports[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     28[0m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mutil[0m[0;34m.[0m[0mserialization[0m [0;32mimport[0m [0mmake_id[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 29[0;31m [0;32mfrom[0m [0;34m.[0m[0;34m.[0m[0mutil[0m[0;34m.[0m[0mstring[0m [0;32mimport[0m [0mappend_docstring[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     30[0m [0;34m[0m[0m
+[1;32m     31[0m [0;32mif[0m [0mTYPE_CHECKING[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mImportError[0m: cannot import name 'append_docstring' from 'bokeh.util.string' (/usr/share/miniconda/lib/python3.9/site-packages/bokeh/util/string.py)
+ImportError: cannot import name 'append_docstring' from 'bokeh.util.string' (/usr/share/miniconda/lib/python3.9/site-packages/bokeh/util/string.py)
+
