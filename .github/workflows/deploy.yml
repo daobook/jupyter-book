@@ -23,8 +23,10 @@ jobs:
           pip install sphinx-intl
           pip install -r docs/requirements.txt
           pip install sphinxcontrib-websupport
-          conda install -c glueviz glueviz
           pip install jupyter-book
+          conda install ipykernel
+          python -m ipykernel install --user --name ai --display-name "ai"
+          conda install -c glueviz glueviz
 
       - name: Build the book
         run: |

@@ -27,10 +27,10 @@ msgid "Reference"
 msgstr ""
 
 msgid "About Jupyter Book"
-msgstr ""
+msgstr "关于 Jupyter Book"
 
 msgid "Books with Jupyter <img src=\"images/logo-square.svg\" width=40 />"
-msgstr ""
+msgstr "带有 Jupyter 的书籍 <img src=\"images/logo-square.svg\" width=40 />"
 
 msgid ""
 "[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg)](https://doi.org/10.5281/zenodo.2561065)"
