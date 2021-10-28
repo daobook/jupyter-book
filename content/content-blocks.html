@@ -47,6 +47,8 @@
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -928,8 +930,8 @@ See <a class="reference internal" href="../interactive/hiding.html"><span class=
 </div>
 <p>Then, you may define admonitions in your book like so:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="8d9a6c51-295f-496b-879f-bad6a52785fd" name="a776d242-6574-4df0-9020-acf7e1c0cc67" type="radio">
-</input><label class="tabbed-label" for="8d9a6c51-295f-496b-879f-bad6a52785fd">
+<input checked="checked" id="b2216b23-fa19-4320-9985-6aab382ce8b9" name="bf346c09-a8c0-4def-91b5-d53ba9814af6" type="radio">
+</input><label class="tabbed-label" for="b2216b23-fa19-4320-9985-6aab382ce8b9">
 Markdown Input</label><div class="tabbed-content docutils">
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;admonition note&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;html-admonition&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background: lightgreen; padding: 10px&quot;</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;title&quot;</span><span class="p">&gt;</span>This is the **title**<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
@@ -938,8 +940,8 @@ This is the *content*
 </pre></div>
 </div>
 </div>
-<input id="b707e268-be2f-47cd-bfdb-fab68ea1e005" name="a776d242-6574-4df0-9020-acf7e1c0cc67" type="radio">
-</input><label class="tabbed-label" for="b707e268-be2f-47cd-bfdb-fab68ea1e005">
+<input id="71229912-ce6a-4710-b938-0066064664d3" name="bf346c09-a8c0-4def-91b5-d53ba9814af6" type="radio">
+</input><label class="tabbed-label" for="71229912-ce6a-4710-b938-0066064664d3">
 Rendered Output</label><div class="tabbed-content docutils">
 <div class="admonition note" id="html-admonition">
 <p class="admonition-title">This is the <strong>title</strong></p>
@@ -1451,8 +1453,8 @@ becomes <a class="reference internal" href="#term-A-second-term"><span class="xr
 This allows you to display a variety of tabbed content blocks that users can click on.</p>
 <p>For example, here’s a group of tabs showing off code in a few different languages:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="854ea7c6-9424-4cdb-9e9a-13805ddda421" name="01f600a1-8902-4983-bee8-6c7e036b0188" type="radio">
-</input><label class="tabbed-label" for="854ea7c6-9424-4cdb-9e9a-13805ddda421">
+<input checked="checked" id="cc668514-67ad-4d9a-9682-90d711a17800" name="7cdf525e-3fa5-4887-b547-4cd73aa23920" type="radio">
+</input><label class="tabbed-label" for="cc668514-67ad-4d9a-9682-90d711a17800">
 c++</label><div class="tabbed-content docutils">
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
@@ -1460,16 +1462,16 @@ c++</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="b1c32358-e340-48ed-8fdf-112af0d85f09" name="01f600a1-8902-4983-bee8-6c7e036b0188" type="radio">
-</input><label class="tabbed-label" for="b1c32358-e340-48ed-8fdf-112af0d85f09">
+<input id="4a05894b-0e8e-48c6-97d2-f4bc836b4d25" name="7cdf525e-3fa5-4887-b547-4cd73aa23920" type="radio">
+</input><label class="tabbed-label" for="4a05894b-0e8e-48c6-97d2-f4bc836b4d25">
 python</label><div class="tabbed-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span>
 </pre></div>
 </div>
 </div>
-<input id="4ff84b4a-64b1-4b20-8a30-9cb7758cb71c" name="01f600a1-8902-4983-bee8-6c7e036b0188" type="radio">
-</input><label class="tabbed-label" for="4ff84b4a-64b1-4b20-8a30-9cb7758cb71c">
+<input id="e3ede067-94a5-46a9-9181-d6135472cc72" name="7cdf525e-3fa5-4887-b547-4cd73aa23920" type="radio">
+</input><label class="tabbed-label" for="e3ede067-94a5-46a9-9181-d6135472cc72">
 java</label><div class="tabbed-content docutils">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
@@ -1478,16 +1480,16 @@ java</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="94a62986-1a7e-48c9-86c9-5f7bcf5cdb92" name="01f600a1-8902-4983-bee8-6c7e036b0188" type="radio">
-</input><label class="tabbed-label" for="94a62986-1a7e-48c9-86c9-5f7bcf5cdb92">
+<input id="8dd1c659-bc9c-4a16-aa87-90282d32a94f" name="7cdf525e-3fa5-4887-b547-4cd73aa23920" type="radio">
+</input><label class="tabbed-label" for="8dd1c659-bc9c-4a16-aa87-90282d32a94f">
 julia</label><div class="tabbed-content docutils">
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="n">main</span><span class="p">()</span>
 <span class="k">end</span>
 </pre></div>
 </div>
 </div>
-<input id="2fcb72f4-f135-46ea-8ab7-b0b71bfe98c5" name="01f600a1-8902-4983-bee8-6c7e036b0188" type="radio">
-</input><label class="tabbed-label" for="2fcb72f4-f135-46ea-8ab7-b0b71bfe98c5">
+<input id="6ee14853-300f-4e94-b19b-0d094887fddf" name="7cdf525e-3fa5-4887-b547-4cd73aa23920" type="radio">
+</input><label class="tabbed-label" for="6ee14853-300f-4e94-b19b-0d094887fddf">
 fortran</label><div class="tabbed-content docutils">
 <div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span>
 <span class="k">END PROGRAM </span><span class="n">main</span>
@@ -1508,13 +1510,13 @@ My second tab with `some code`!
 </div>
 <p>produces</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="2098825a-0ffb-4198-850f-47c16ec6416d" name="4ff0fee6-01f9-4d50-a2b3-691499f4135a" type="radio">
-</input><label class="tabbed-label" for="2098825a-0ffb-4198-850f-47c16ec6416d">
+<input checked="checked" id="ef131ab0-de9d-4883-977c-2d104403f768" name="f7ec74e9-a452-4583-8a6c-1e9c0dafd9c4" type="radio">
+</input><label class="tabbed-label" for="ef131ab0-de9d-4883-977c-2d104403f768">
 Tab 1 title</label><div class="tabbed-content docutils">
 <p>My first tab</p>
 </div>
-<input id="ddba565c-053d-41bb-bc84-09d61fd1ef9f" name="4ff0fee6-01f9-4d50-a2b3-691499f4135a" type="radio">
-</input><label class="tabbed-label" for="ddba565c-053d-41bb-bc84-09d61fd1ef9f">
+<input id="a7b4f89e-9e91-45bb-b69b-78450f5cda5a" name="f7ec74e9-a452-4583-8a6c-1e9c0dafd9c4" type="radio">
+</input><label class="tabbed-label" for="a7b4f89e-9e91-45bb-b69b-78450f5cda5a">
 Tab 2 title</label><div class="tabbed-content docutils">
 <p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
 </div>
@@ -1522,8 +1524,8 @@ Tab 2 title</label><div class="tabbed-content docutils">
 <p><strong>Insert code outputs in your tabs</strong> with the <a class="reference internal" href="executable/output-insert.html#glue-gluing"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">glue</span></code> functionality</span></a>.</p>
 <p>For example, the following tabs use this functionality to glue images and tables generated somewhere else in these docs:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="dbfe2d8b-81bb-43cc-be97-6cfe4409d1e2" name="e7c8e3a0-7602-46ff-9df8-36e2b41ab128" type="radio">
-</input><label class="tabbed-label" for="dbfe2d8b-81bb-43cc-be97-6cfe4409d1e2">
+<input checked="checked" id="76bb699b-c40c-4d10-879d-12ba5c8c5a96" name="09c0e060-ec45-4ee3-9084-bf62c825d183" type="radio">
+</input><label class="tabbed-label" for="76bb699b-c40c-4d10-879d-12ba5c8c5a96">
 A histogram</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="fig-boot-tab" style="width: 300px">
 <div class="cell_output docutils container">
@@ -1532,8 +1534,8 @@ A histogram</label><div class="tabbed-content docutils">
 <p class="caption"><span class="caption-number">图 1 </span><span class="caption-text">This is a <strong>caption</strong>, with an embedded <code class="docutils literal notranslate"><span class="pre">{glue:text}</span></code> element: <span class="pasted-text">3.00</span>!</span><a class="headerlink" href="#fig-boot-tab" title="永久链接至图片">¶</a></p>
 </div>
 </div>
-<input id="99234357-f774-4583-83ab-2fd5fcfe2b48" name="e7c8e3a0-7602-46ff-9df8-36e2b41ab128" type="radio">
-</input><label class="tabbed-label" for="99234357-f774-4583-83ab-2fd5fcfe2b48">
+<input id="79a46d66-18a2-4c78-a252-1c5181972bac" name="09c0e060-ec45-4ee3-9084-bf62c825d183" type="radio">
+</input><label class="tabbed-label" for="79a46d66-18a2-4c78-a252-1c5181972bac">
 A table</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="tbl-df-tab" style="width: 300px">
 <div class="cell_output docutils container">
@@ -1563,33 +1565,33 @@ A table</label><div class="tabbed-content docutils">
   <tbody>
     <tr>
       <th>0</th>
-      <td>2.965895</td>
-      <td>2.968567</td>
-      <td>2.651574</td>
+      <td>3.190639</td>
+      <td>2.884537</td>
+      <td>3.047161</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.896489</td>
-      <td>2.852333</td>
-      <td>2.697607</td>
+      <td>2.908707</td>
+      <td>2.953743</td>
+      <td>3.132833</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3.036953</td>
-      <td>3.036288</td>
-      <td>2.811553</td>
+      <td>3.222379</td>
+      <td>2.917609</td>
+      <td>2.897001</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2.590551</td>
-      <td>2.847721</td>
-      <td>2.668688</td>
+      <td>2.542179</td>
+      <td>2.846755</td>
+      <td>2.899113</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>3.087717</td>
-      <td>3.117325</td>
-      <td>3.195316</td>
+      <td>3.073539</td>
+      <td>2.994201</td>
+      <td>3.394521</td>
     </tr>
   </tbody>
 </table>
@@ -1597,8 +1599,8 @@ A table</label><div class="tabbed-content docutils">
 <p class="caption"><span class="caption-number">图 2 </span><span class="caption-text">A caption for a pandas table.</span><a class="headerlink" href="#tbl-df-tab" title="永久链接至图片">¶</a></p>
 </div>
 </div>
-<input id="9e3087dc-fd1a-4826-bb23-1341ddbba48b" name="e7c8e3a0-7602-46ff-9df8-36e2b41ab128" type="radio">
-</input><label class="tabbed-label" for="9e3087dc-fd1a-4826-bb23-1341ddbba48b">
+<input id="a69ba21f-2714-491a-996e-06bb8d2706ef" name="09c0e060-ec45-4ee3-9084-bf62c825d183" type="radio">
+</input><label class="tabbed-label" for="a69ba21f-2714-491a-996e-06bb8d2706ef">
 Code to generate this</label><div class="tabbed-content docutils">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{tabbed} A histogram
 ```{glue:figure} boot_fig
@@ -1648,8 +1650,8 @@ A caption for a pandas table.
 </div>
 <p>You can use these substitutions inline or as blocks, and you can even nest substitutions in other substitutions (but circular references are prohibited):</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="2cc9de84-99a0-4550-949c-6db0ef0eb17d" name="5e572dc3-f432-4b21-bea9-e58bdbd0a527" type="radio">
-</input><label class="tabbed-label" for="2cc9de84-99a0-4550-949c-6db0ef0eb17d">
+<input checked="checked" id="394a552b-9fc4-4cc4-b26c-c2f43b965d65" name="fbe413d9-c2ee-4d72-9287-ac2945a0d885" type="radio">
+</input><label class="tabbed-label" for="394a552b-9fc4-4cc4-b26c-c2f43b965d65">
 Markdown Input</label><div class="tabbed-content docutils">
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Inline: {{ key1 }}
 
@@ -1659,8 +1661,8 @@ Block level:
 </pre></div>
 </div>
 </div>
-<input id="e6373e6d-04dc-492a-b7f0-b8f0a5c1baff" name="5e572dc3-f432-4b21-bea9-e58bdbd0a527" type="radio">
-</input><label class="tabbed-label" for="e6373e6d-04dc-492a-b7f0-b8f0a5c1baff">
+<input id="698f8818-5cc5-4c4f-9c9f-e86e7051b4cc" name="fbe413d9-c2ee-4d72-9287-ac2945a0d885" type="radio">
+</input><label class="tabbed-label" for="698f8818-5cc5-4c4f-9c9f-e86e7051b4cc">
 Rendered Output</label><div class="tabbed-content docutils">
 <p>Inline: I’m a <strong>substitution</strong></p>
 <p>Block level:</p>
@@ -1672,8 +1674,8 @@ Rendered Output</label><div class="tabbed-content docutils">
 </div>
 <p>You can also insert substitutions inside of other markdown structures like tables:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="ae533585-8090-4eb5-878e-811efaee45ba" name="a7a4e884-07fd-4fcf-9069-3f7ac0c6ee19" type="radio">
-</input><label class="tabbed-label" for="ae533585-8090-4eb5-878e-811efaee45ba">
+<input checked="checked" id="c411da88-8372-4f4d-929c-2c4bb441d83c" name="7ee01b16-4169-4526-8285-6727527aecae" type="radio">
+</input><label class="tabbed-label" for="c411da88-8372-4f4d-929c-2c4bb441d83c">
 Markdown Input</label><div class="tabbed-content docutils">
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>| col1     | col2      |
 | -------- | --------- |
@@ -1681,8 +1683,8 @@ Markdown Input</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="9dd86d33-1bed-4248-9d37-eae48a447fde" name="a7a4e884-07fd-4fcf-9069-3f7ac0c6ee19" type="radio">
-</input><label class="tabbed-label" for="9dd86d33-1bed-4248-9d37-eae48a447fde">
+<input id="15ca4339-f351-4feb-b0f6-558a406e72f3" name="7ee01b16-4169-4526-8285-6727527aecae" type="radio">
+</input><label class="tabbed-label" for="15ca4339-f351-4feb-b0f6-558a406e72f3">
 Rendered Output</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -1720,8 +1722,8 @@ Rendered Output</label><div class="tabbed-content docutils">
 <h3>Formatting substitutions<a class="headerlink" href="#formatting-substitutions" title="永久链接至标题">¶</a></h3>
 <p>MyST substitutions use <a class="reference external" href="https://jinja.palletsprojects.com/en/2.11.x/">Jinja templates</a> in order to substite in key / values. This means that you can apply any standard Jinja formatting to your substitutions. For example, you can <strong>replace text in your substitutions</strong> like so:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="3ba3faa0-c017-417f-80c0-fb4cc0457f1c" name="0be8508e-6776-4ead-8fca-1aeeb4e2d0fc" type="radio">
-</input><label class="tabbed-label" for="3ba3faa0-c017-417f-80c0-fb4cc0457f1c">
+<input checked="checked" id="6b992186-0dde-4432-80b6-143431d0bb86" name="5390d000-d831-412c-b68d-01cf8ac3241d" type="radio">
+</input><label class="tabbed-label" for="6b992186-0dde-4432-80b6-143431d0bb86">
 Markdown Input</label><div class="tabbed-content docutils">
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>The original key1: {{ key1 }}
 
@@ -1729,8 +1731,8 @@ Markdown Input</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="8dc8fddc-d05b-40fc-ad9d-d201d4003e78" name="0be8508e-6776-4ead-8fca-1aeeb4e2d0fc" type="radio">
-</input><label class="tabbed-label" for="8dc8fddc-d05b-40fc-ad9d-d201d4003e78">
+<input id="8da7f921-dc18-40c0-8892-ba6de517159b" name="5390d000-d831-412c-b68d-01cf8ac3241d" type="radio">
+</input><label class="tabbed-label" for="8da7f921-dc18-40c0-8892-ba6de517159b">
 Rendered Output</label><div class="tabbed-content docutils">
 <p>The original key1: I’m a <strong>substitution</strong></p>
 <p>I’m <strong>the best substitution</strong></p>
@@ -1743,8 +1745,8 @@ Rendered Output</label><div class="tabbed-content docutils">
 <ol>
 <li><p><strong>Define the entire markdown link as a variable</strong>. For example:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0749fb11-933c-42fd-a36f-fc004ff337e6" name="003a534c-ef59-4fec-b9d9-468599eb156e" type="radio">
-</input><label class="tabbed-label" for="0749fb11-933c-42fd-a36f-fc004ff337e6">
+<input checked="checked" id="6d9aad39-bc2b-4a32-aff8-b321cc24efda" name="b4ad2985-7d2b-4fa7-8e5e-f5331fba0aff" type="radio">
+</input><label class="tabbed-label" for="6d9aad39-bc2b-4a32-aff8-b321cc24efda">
 Markdown Input</label><div class="tabbed-content docutils">
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">substitutions</span><span class="p">:</span>
   <span class="nt">repo_url</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">my repo url</span><span class="p p-Indicator">]</span><span class="l l-Scalar l-Scalar-Plain">(https://github.com/executablebooks/jupyter-book)</span>
@@ -1754,8 +1756,8 @@ Markdown Input</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="2481893c-d400-4186-a516-2698794d2a3d" name="003a534c-ef59-4fec-b9d9-468599eb156e" type="radio">
-</input><label class="tabbed-label" for="2481893c-d400-4186-a516-2698794d2a3d">
+<input id="e1f41a4f-f694-4011-b368-a123fe550186" name="b4ad2985-7d2b-4fa7-8e5e-f5331fba0aff" type="radio">
+</input><label class="tabbed-label" for="e1f41a4f-f694-4011-b368-a123fe550186">
 Rendered Output</label><div class="tabbed-content docutils">
 <p>Here’s my link: <a class="reference external" href="https://github.com/executablebooks/jupyter-book">my repo url</a></p>
 </div>
@@ -1765,8 +1767,8 @@ Rendered Output</label><div class="tabbed-content docutils">
 Because substitutions use <a class="reference external" href="https://jinja.palletsprojects.com/en/2.11.x/">Jinja templates</a>, you also have access to <strong>Python formatting</strong> operations in your substitution.
 For example:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="3b506079-904f-40e9-abf2-8ded5f36e39c" name="3e340a78-6c6b-4c61-a60f-7c15a1364fa8" type="radio">
-</input><label class="tabbed-label" for="3b506079-904f-40e9-abf2-8ded5f36e39c">
+<input checked="checked" id="4007fdf0-1d21-4f73-8be0-c76ec02ebb7e" name="bfbfa3e6-056f-416f-be08-b4cb28c3bebd" type="radio">
+</input><label class="tabbed-label" for="4007fdf0-1d21-4f73-8be0-c76ec02ebb7e">
 Markdown Input</label><div class="tabbed-content docutils">
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">substitutions</span><span class="p">:</span>
   <span class="nt">repo_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jupyter-book</span>
@@ -1776,8 +1778,8 @@ Markdown Input</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="2c47af0a-cfc1-47f1-85b0-529ee04577ae" name="3e340a78-6c6b-4c61-a60f-7c15a1364fa8" type="radio">
-</input><label class="tabbed-label" for="2c47af0a-cfc1-47f1-85b0-529ee04577ae">
+<input id="5ec09d7c-b857-45d8-aee9-6b0b6bd99b12" name="bfbfa3e6-056f-416f-be08-b4cb28c3bebd" type="radio">
+</input><label class="tabbed-label" for="5ec09d7c-b857-45d8-aee9-6b0b6bd99b12">
 Rendered Output</label><div class="tabbed-content docutils">
 <p>Here’s my link: <a class="reference external" href="https://github.com/executablebooks/jupyter-book">my repo: <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code></a></p>
 </div>

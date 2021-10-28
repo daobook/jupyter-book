@@ -47,6 +47,8 @@
     <script src="_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -593,12 +595,12 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#find-the-right-documentation-resources">
-   Find the right documentation resources
+   找到正确的文档资源
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#acknowledgements">
-   Acknowledgements
+   致谢
   </a>
  </li>
 </ul>
@@ -616,116 +618,108 @@
 <h1>带有 Jupyter 的书籍 <a class="reference internal" href="_images/logo-square.svg"><img alt="_images/logo-square.svg" src="_images/logo-square.svg" width="40" /></a><a class="headerlink" href="#books-with-jupyter" title="永久链接至标题">¶</a></h1>
 <p><a class="reference external" href="https://doi.org/10.5281/zenodo.2561065"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.2561065.svg" /></a>
 <a class="reference external" href="https://jupyterbook.org"><img alt="Jupyter Book Badge" src="_images/badge.svg" /></a></p>
-<p>Jupyter Book is an open source project for building beautiful,
-publication-quality books and documents from computational material.</p>
-<p>Here are some of the features of Jupyter Book:</p>
+<p>Jupyter Book 是一个开源项目，用于从计算材料中构建漂亮的、具有出版质量的书籍和文档。</p>
+<p>以下是 Jupyter Book 的一些特点：</p>
 <div class="sphinx-bs container pb-4 full-width text-center docutils">
 <div class="row docutils">
 <div class="d-flex col-lg-6 px-2 py-2 docutils">
 <div class="card w-100 docutils">
 <div class="card-header docutils">
-<p class="card-text"><strong><a class="reference internal" href="file-types/markdown.html#file-types-markdown"><span class="std std-ref">Publication-quality content</span></a></strong> ✍</p>
+<p class="card-text"><strong><a class="reference internal" href="file-types/markdown.html#file-types-markdown"><span class="std std-ref">出版质量内容</span></a></strong> ✍</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text">Write in either Jupyter Markdown, MyST Markdown for more <a class="reference internal" href="content/myst.html"><span class="doc std std-doc">publishing features</span></a>, <a class="reference internal" href="file-types/restructuredtext.html#file-types-rst"><span class="std std-ref">reStructuredText</span></a>, <a class="reference internal" href="file-types/notebooks.html#file-types-notebooks"><span class="std std-ref">Jupyter Notebooks</span></a>, or <a class="reference internal" href="file-types/jupytext.html#file-types-custom"><span class="std std-ref">any Jupytext format</span></a>.
-Includes support for rich syntax such as <a class="reference internal" href="content/citations.html"><span class="doc std std-doc">citations and cross-references</span></a>, <a class="reference internal" href="content/math.html"><span class="doc std std-doc">math and equations</span></a>, and <a class="reference internal" href="content/figures.html"><span class="doc std std-doc">figures</span></a>.</p>
+<p class="card-text">使用 Jupyter Markdown, MyST Markdown，以及更多 <a class="reference internal" href="content/myst.html"><span class="doc std std-doc">发布功能</span></a> 的 <a class="reference internal" href="file-types/restructuredtext.html#file-types-rst"><span class="std std-ref">reStructuredText</span></a>，<a class="reference internal" href="file-types/notebooks.html#file-types-notebooks"><span class="std std-ref">Jupyter Notebooks</span></a>，或 <a class="reference internal" href="file-types/jupytext.html#file-types-custom"><span class="std std-ref">任何 Jupytext 格式</span></a>。包括对富文本语法的支持，如<a class="reference internal" href="content/citations.html"><span class="doc std std-doc">引用和交叉引用</span></a>、<a class="reference internal" href="content/math.html"><span class="doc std std-doc">数学和等式</span></a>，以及 <a class="reference internal" href="content/figures.html"><span class="doc std std-doc">图像</span></a>。</p>
 </div>
 </div>
 </div>
 <div class="d-flex col-lg-6 px-2 py-2 docutils">
 <div class="card w-100 docutils">
 <div class="card-header docutils">
-<p class="card-text"><strong><a class="reference internal" href="content/execute.html"><span class="doc std std-doc">Execute, cache, and insert computational content</span></a></strong> 🚀</p>
+<p class="card-text"><strong><a class="reference internal" href="content/execute.html"><span class="doc std std-doc">执行、缓存和插入可计算性内容</span></a></strong> 🚀</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text">Execute notebook cells, then <a class="reference internal" href="content/code-outputs.html#content-code-outputs"><span class="std std-ref">format and insert the latest outputs</span></a> into your book.
-<a class="reference internal" href="content/execute.html#execute-cache"><span class="std std-ref">Cache outputs to save time in re-building later</span></a>.
-Even <a class="reference internal" href="content/executable/output-insert.html#content-code-outputs-glue"><span class="std std-ref">save notebook outputs and insert them into other pages</span></a>.</p>
+<p class="card-text">执行笔记本单元格，然后<a class="reference internal" href="content/code-outputs.html#content-code-outputs"><span class="std std-ref">格式化并将最新输出插入</span></a>到您的书中。<a class="reference internal" href="content/execute.html#execute-cache"><span class="std std-ref">缓存输出以节省稍后重建的时间</span></a>。甚至<a class="reference internal" href="content/executable/output-insert.html#content-code-outputs-glue"><span class="std std-ref">保存笔记本输出并插入到其他页面</span></a>。</p>
 </div>
 </div>
 </div>
 <div class="d-flex col-lg-6 px-2 py-2 docutils">
 <div class="card w-100 docutils">
 <div class="card-header docutils">
-<p class="card-text"><strong><a class="reference internal" href="interactive/launchbuttons.html"><span class="doc std std-doc">Add interactivity to content and outputs</span></a></strong> ✨</p>
+<p class="card-text"><strong><a class="reference internal" href="interactive/launchbuttons.html"><span class="doc std std-doc">向内容和输出添加交互性</span></a></strong> ✨</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text">Create interactive content blocks such as <a class="reference internal" href="content/content-blocks.html#content-tabs"><span class="std std-ref">Tabbed content</span></a>, <a class="reference internal" href="content/content-blocks.html#content-dropdowns"><span class="std std-ref">Dropdowns</span></a>. <a class="reference internal" href="interactive/hiding.html"><span class="doc std std-doc">Toggle cell visibility</span></a> and include <a class="reference internal" href="interactive/interactive.html"><span class="doc std std-doc">interactive cell outputs</span></a> with Jupyter notebooks. <a class="reference internal" href="interactive/launchbuttons.html"><span class="doc std std-doc">Launch interactive sessions</span></a> with Binder or Colab, <a class="reference internal" href="interactive/thebe.html#launch-thebe"><span class="std std-ref">make your code executable with Thebe</span></a>, or <a class="reference internal" href="interactive/comments.html#interactive-comments"><span class="std std-ref">connect with commenting services like Hypothes.is</span></a>.</p>
+<p class="card-text">创建交互式内容块，如 <a class="reference internal" href="content/content-blocks.html#content-tabs"><span class="std std-ref">Tabbed content</span></a>、<a class="reference internal" href="content/content-blocks.html#content-dropdowns"><span class="std std-ref">Dropdowns</span></a>。<a class="reference internal" href="interactive/hiding.html"><span class="doc std std-doc">切换单元格可见性</span></a>，并包含与 Jupyter 笔记本 <a class="reference internal" href="interactive/interactive.html"><span class="doc std std-doc">交互的单元格输出</span></a>。使用 Binder 或 Colab <a class="reference internal" href="interactive/launchbuttons.html"><span class="doc std std-doc">启动互动会话</span></a>，<a class="reference internal" href="interactive/thebe.html#launch-thebe"><span class="std std-ref">让你的代码在 Thebe 上可执行</span></a>，或 <a class="reference internal" href="interactive/comments.html#interactive-comments"><span class="std std-ref">与像 Hypothes.is 这样的评论服务连接</span></a>。</p>
 </div>
 </div>
 </div>
 <div class="d-flex col-lg-6 px-2 py-2 docutils">
 <div class="card w-100 docutils">
 <div class="card-header docutils">
-<p class="card-text"><strong><a class="reference internal" href="start/build.html"><span class="doc std std-doc">Build books and articles in many formats</span></a></strong> 🎁</p>
+<p class="card-text"><strong><a class="reference internal" href="start/build.html"><span class="doc std std-doc">构建多种格式的书籍和文章</span></a></strong> 🎁</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text">Build <a class="reference internal" href="customize/toc.html#structure-book"><span class="std std-ref">multi-page books</span></a> or <a class="reference internal" href="customize/toc.html#structure-article"><span class="std std-ref">single articles</span></a>, and generate many kinds of outputs from them, such as <a class="reference internal" href="start/build.html"><span class="doc std std-doc">HTML websites</span></a> or <a class="reference internal" href="advanced/pdf.html"><span class="doc std std-doc">PDF outputs</span></a>. Jupyter Book uses <a class="reference external" href="https://sphinx-doc.org">the Sphinx Documentation engine</a> which supports <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/builders/index.html">a variety of output types</a>.</p>
+<p class="card-text">构建<a class="reference internal" href="customize/toc.html#structure-book"><span class="std std-ref">多页的书籍</span></a>或<a class="reference internal" href="customize/toc.html#structure-article"><span class="std std-ref">单页文章</span></a>，并从中生成多种输出，如 <a class="reference internal" href="start/build.html"><span class="doc std std-doc">HTML 网站</span></a> 或 <a class="reference internal" href="advanced/pdf.html"><span class="doc std std-doc">PDF 输出</span></a>。Jupyter Book 使用 <a class="reference external" href="https://sphinx-doc.org">Sphinx 文档引擎</a>，支持<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/builders/index.html">多种输出类型</a>。</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p>This documentation is organized into a few major sections.</p>
+<p>本文档分为几个主要部分。</p>
 <ul class="simple">
-<li><p><strong>Tutorials</strong> are step-by-step introductory guides to Jupyter Book.</p></li>
-<li><p><strong>Topic Guides</strong> cover specific areas in more depth, and are organized as discrete “how-to” sections.</p></li>
-<li><p><strong>Reference</strong> sections describe the API/syntax/etc of Jupyter Book in detail.</p></li>
+<li><p><strong>教程</strong>是 Jupyter Book 的由浅入深的介绍性指南。</p></li>
+<li><p><strong>主题指南</strong>更深入地涵盖了特定领域，并被组织为离散的“如何做”部分。</p></li>
+<li><p><strong>参考</strong>章节详细描述了 Jupyter Book 的 API/语法 等细节。</p></li>
 </ul>
-<p>This website is built with Jupyter Book!
-Explore the chapters to the left to learn more!</p>
+<p>这个网站就是 Jupyter Book 建立的！探索左边的章节来了解更多！</p>
 <div class="tip full-width admonition">
-<p class="admonition-title">Learn more and get involved</p>
+<p class="admonition-title">了解更多并参与其中</p>
 <dl class="simple myst">
-<dt>💡 <a class="reference external" href="https://github.com/executablebooks/jupyter-book/issues/new/choose">Open an issue</a></dt><dd><p>We track enhancement requests, bug-reports, and to-do items via GitHub issues.</p>
+<dt>💡 <a class="reference external" href="https://github.com/executablebooks/jupyter-book/issues/new/choose">打开议题</a></dt><dd><p>通过 GitHub issue 跟踪增强请求、bug 报告和待办事项。</p>
 </dd>
-<dt>💬 <a class="reference external" href="https://github.com/executablebooks/meta/discussions">Join the discussion</a></dt><dd><p>We have community discussions, talk about ideas, and share general questions and feedback in our <a class="reference external" href="https://github.com/executablebooks/meta/discussions">community forum</a>.</p>
+<dt>💬 <a class="reference external" href="https://github.com/executablebooks/meta/discussions">加入讨论</a></dt><dd><p>在<a class="reference external" href="https://github.com/executablebooks/meta/discussions">社区论坛</a>上进行社区议论，讨论想法，分享一般性问题和反馈。</p>
 </dd>
-<dt>👍 <a class="reference external" href="https://executablebooks.org/en/latest/feature-vote.html#feature-note" title="(在 Executable Book Project)"><span class="xref myst">Vote for new features</span></a></dt><dd><p>The community provides feedback by adding a 👍 reaction to issues in our repositories.
-You can find a list of the top issues <a class="reference external" href="https://executablebooks.org/en/latest/feature-vote.html#feature-note" title="(在 Executable Book Project)"><span class="xref myst">in the Executable Books issue leader board</span></a>.</p>
+<dt>👍 <a class="reference external" href="https://executablebooks.org/en/latest/feature-vote.html#feature-note" title="(在 Executable Book Project)"><span class="xref myst">为新功能投票</span></a></dt><dd><p>社区通过在我们的存储库中添加👍对问题的反应来提供反馈。您可以在 <a class="reference external" href="https://executablebooks.org/en/latest/feature-vote.html#feature-note" title="(在 Executable Book Project)"><span class="xref myst">Executable Books 问题排行榜</span></a> 中找到一个最重要的问题列表。</p>
 </dd>
-<dt>🙌 <a class="reference internal" href="contribute/intro.html"><span class="doc std std-doc">Join the community</span></a></dt><dd><p>Jupyter Book is developed by the <a class="reference external" href="https://executablebooks.org">Executable Books community</a>.
-We welcome anyone to join us in improving Jupyter Book and helping one another learn and create their books.
-To join, check out our <a class="reference internal" href="contribute/intro.html"><span class="doc std std-doc">contributing guide</span></a>.</p>
+<dt>🙌 <a class="reference internal" href="contribute/intro.html"><span class="doc std std-doc">对 Jupyter Book 有所贡献</span></a></dt><dd><p>Jupyter Book 是由 <a class="reference external" href="https://executablebooks.org">可执行书籍社区</a> 开发的。我们欢迎任何人加入我们，改善 Jupyter Book，并帮助彼此学习和创建他们的书。要加入，请查看我们的 <a class="reference internal" href="contribute/intro.html"><span class="doc std std-doc">贡献指南</span></a>。</p>
 </dd>
 </dl>
 </div>
 <div class="section" id="find-the-right-documentation-resources">
-<h2>Find the right documentation resources<a class="headerlink" href="#find-the-right-documentation-resources" title="永久链接至标题">¶</a></h2>
-<p>Here are a few pointers to help you get started.</p>
+<h2>找到正确的文档资源<a class="headerlink" href="#find-the-right-documentation-resources" title="永久链接至标题">¶</a></h2>
+<p>这里有一些建议可以帮助你开始。</p>
 <div class="sphinx-bs container pb-4 full-width docutils">
 <div class="row docutils">
 <div class="d-flex col-lg-4 px-2 py-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-header bg-jb-one docutils">
-<p class="card-text"><strong>Get started</strong></p>
+<p class="card-text"><strong>快速入门</strong></p>
 </div>
 <div class="card-body docutils">
-<p class="card-text"><strong><a class="reference internal" href="start/your-first-book.html"><span class="doc std std-doc">Create your first book</span></a></strong>: a step-by-step tutorial to get started.</p>
-<p class="card-text"><strong><a class="reference internal" href="basics/create.html#create-a-template-book"><span class="std std-ref">Create books automatically</span></a></strong>: get started with a simple template book.</p>
+<p class="card-text"><strong><a class="reference internal" href="start/your-first-book.html"><span class="doc std std-doc">Create your first book</span></a></strong>：一个循序渐进的入门教程。</p>
+<p class="card-text"><strong><a class="reference internal" href="basics/create.html#create-a-template-book"><span class="std std-ref">Create books automatically</span></a></strong>：从一本简单的模板书开始。</p>
 </div>
 </div>
 </div>
 <div class="d-flex col-lg-4 px-2 py-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-header bg-jb-two docutils">
-<p class="card-text"><strong>Learn more</strong></p>
+<p class="card-text"><strong>了解更多</strong></p>
 </div>
 <div class="card-body docutils">
-<p class="card-text"><strong><a class="reference internal" href="basics/organize.html#structure-index"><span class="std std-ref">Structure and organize your content</span></a></strong>: Learn how to structure and organize your content.</p>
-<p class="card-text"><strong><a class="reference internal" href="content/index.html"><span class="doc std std-doc">Write narrative content</span></a></strong>: Learn how to write rich narrative content.</p>
-<p class="card-text"><strong><a class="reference internal" href="content/executable/index.html"><span class="doc std std-doc">Write executable content</span></a></strong>: Write computational content.</p>
+<p class="card-text"><strong><a class="reference internal" href="basics/organize.html#structure-index"><span class="std std-ref">Structure and organize your content</span></a></strong>：学习如何结构化和组织内容。</p>
+<p class="card-text"><strong><a class="reference internal" href="content/index.html"><span class="doc std std-doc">Write narrative content</span></a></strong>：学习如何写丰富的叙事性内容。</p>
+<p class="card-text"><strong><a class="reference internal" href="content/executable/index.html"><span class="doc std std-doc">Write executable content</span></a></strong>：编写计算性内容。</p>
 </div>
 </div>
 </div>
 <div class="d-flex col-lg-4 px-2 py-2 docutils">
 <div class="card w-100 shadow docutils">
 <div class="card-header bg-jb-three docutils">
-<p class="card-text"><strong>Be inspired</strong></p>
+<p class="card-text">灵感</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text"><a class="reference external" href="http://gallery.jupyterbook.org"><strong>The Jupyter Book Gallery</strong></a>: A gallery of community books that have been created with Jupyter Book.</p>
-<p class="card-text"><a class="reference external" href="https://python.quantecon.org/intro.html"><strong>The QuantEcon Python Lectures</strong></a>: A full mathematical textbook built with a customer Jupyter Book theme.</p>
+<p class="card-text"><a class="reference external" href="http://gallery.jupyterbook.org"><strong>The Jupyter Book Gallery</strong></a>：包含大量由 Jupyter Book 创建书籍的社区画廊。</p>
+<p class="card-text"><a class="reference external" href="https://python.quantecon.org/intro.html"><strong>The QuantEcon Python Lectures</strong></a>：一个由自定义 Jupyter Book 主题构建的完整的数学教科书。</p>
 </div>
 </div>
 </div>
@@ -733,10 +727,10 @@ To join, check out our <a class="reference internal" href="contribute/intro.html
 </div>
 </div>
 <div class="section" id="acknowledgements">
-<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="永久链接至标题">¶</a></h2>
-<p>Jupyter Book is supported by an <a class="reference external" href="https://github.com/executablebooks/jupyter-book/graphs/contributors">open community of contributors</a>, many of whom come from <a class="reference external" href="https://executablebooks.org">the Executable Books Community</a> and <a class="reference external" href="https://jupyter.org/community">the Jupyter community</a>.</p>
+<h2>致谢<a class="headerlink" href="#acknowledgements" title="永久链接至标题">¶</a></h2>
+<p>Jupyter Book 由一个 <a class="reference external" href="https://github.com/executablebooks/jupyter-book/graphs/contributors">开放的贡献者社区</a> 支持，其中很多人来自 <a class="reference external" href="https://executablebooks.org">可执行书籍社区</a> 和 <a class="reference external" href="https://jupyter.org/community">Jupyter 社区</a>。</p>
 <a class="float-left mr-2 rounded reference internal image-reference" href="https://sloan.org/storage/app/media/uploaded-files/Logo-1B-SMALL-Gold-Blue.png"><img alt="https://sloan.org/storage/app/media/uploaded-files/Logo-1B-SMALL-Gold-Blue.png" class="float-left mr-2 rounded" src="https://sloan.org/storage/app/media/uploaded-files/Logo-1B-SMALL-Gold-Blue.png" style="width: 150px;" /></a>
-<p>Many thanks to the Sloan Foundation, which <a class="reference external" href="https://sloan.org/grant-detail/9231">provides support for the Executable Books Project</a>.</p>
+<p>非常感谢 Sloan 基金会<a class="reference external" href="https://sloan.org/grant-detail/9231">为可执行图书项目提供支持</a>。</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
