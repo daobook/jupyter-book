@@ -26,7 +26,7 @@ html:
   baseurl: https://jupyterbook.org/
 
 repository:
-  url: https://github.com/executablebooks/jupyter-book
+  url: https://github.com/daobook/jupyter-book
   branch: master
   path_to_book: docs
 
