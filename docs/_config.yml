@@ -59,7 +59,7 @@ latex:
 sphinx:
   config:
     # 支持 国际化
-    locale_dirs: ['locales/']
+    locale_dirs: ['../locales/']
     gettext_location: false
     nb_render_priority:
       gettext: {}
