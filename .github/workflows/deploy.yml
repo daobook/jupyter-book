@@ -27,6 +27,7 @@ jobs:
           conda install ipykernel
           python -m ipykernel install --user --name ai --display-name "ai"
           conda install -c glueviz glueviz
+          pip install --upgrade setuptools
 
       - name: Build the book
         run: |
