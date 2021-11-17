@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Build a small example project</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -63,8 +63,21 @@
     <link rel="next" title="Get started with references" href="../tutorials/references.html" />
     <link rel="prev" title="Publish your book online" href="publish.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="zh_CN">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-52617120-7', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -93,7 +106,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Tutorials
  </span>
@@ -142,7 +155,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Topic Guides
  </span>
@@ -150,7 +163,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../basics/organize.html">
-   Structure and organize your content
+   Structure and organize content
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -308,7 +321,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../basics/building/index.html">
-   Build your book outputs
+   Build and publish outputs
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
@@ -318,8 +331,35 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../basics/build.html">
-     Use the Build command line interface
+     Build from the command line
     </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../publish/web.html">
+     Publish your book on the internet
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../publish/gh-pages.html">
+       GitHub Pages and Actions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../publish/netlify.html">
+       Netlify
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../publish/readthedocs.html">
+       Read the Docs
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../advanced/pdf.html">
@@ -332,8 +372,8 @@
   <a class="reference internal" href="../web/index.html">
    Web and internet features
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -362,8 +402,8 @@
     <a class="reference internal" href="../interactive/comments.html">
      Commenting and annotating
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -381,33 +421,6 @@
     </ul>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../web/badge.html">
-     Generate a badge for your book
-    </a>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../publish/web.html">
-     Host your book on the internet
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-    <label for="toctree-checkbox-9">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../publish/gh-pages.html">
-       GitHub Pages and Actions
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../publish/netlify.html">
-       Publish with Netlify
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../advanced/html.html">
      Advanced HTML outputs
     </a>
@@ -415,8 +428,8 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../advanced/index.html">
-   Advanced Jupyter Book Usage
+  <a class="reference internal" href="../sphinx/index.html">
+   Sphinx usage and customization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
   <label for="toctree-checkbox-10">
@@ -435,13 +448,25 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../advanced/windows.html">
-     Working on Windows
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../explain/sphinx.html">
      How Jupyter Book and Sphinx relate to one another
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/index.html">
+   Advanced Jupyter Book Usage
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/windows.html">
+     Working on Windows
     </a>
    </li>
   </ul>
@@ -452,7 +477,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reference
  </span>
@@ -470,7 +495,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/cli.html">
-   The command-line interface
+   Command-line interface reference
   </a>
  </li>
  <li class="toctree-l1">
@@ -479,7 +504,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About Jupyter Book
  </span>
@@ -562,14 +587,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/daobook/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fstart/example-book.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/daobook/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fstart/example-book.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/jupyter-book/edit/master/docs/start/example-book.md"><button
+        <a class="edit-button" href="https://github.com/daobook/jupyter-book/edit/master/docs/start/example-book.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -696,7 +721,7 @@ for a longer Jupyter Book use case, drawn from the same source material.</p>
     {
         requestKernel: true,
         binderOptions: {
-            repo: "executablebooks/jupyter-book",
+            repo: "daobook/jupyter-book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -715,31 +740,22 @@ for a longer Jupyter Book use case, drawn from the same source material.</p>
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="publish.html" title="上一页 页">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">Publish your book online</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="publish.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Publish your book online</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../tutorials/references.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Get started with references</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="../tutorials/references.html" title="下一页 页">
-            <div class="prevnext-info">
-                <p class="prevnext-label">下一页</p>
-                <p class="prevnext-title">Get started with references</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -760,18 +776,7 @@ for a longer Jupyter Book use case, drawn from the same source material.</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-52617120-7', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

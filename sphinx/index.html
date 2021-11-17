@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generate a badge for your book</title>
+    <title>Sphinx usage and customization</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -56,15 +56,28 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://jupyterbook.org/web/badge.html" />
+    <link rel="canonical" href="https://jupyterbook.org/sphinx/index.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Host your book on the internet" href="../publish/web.html" />
-    <link rel="prev" title="Utterances" href="../interactive/comments/utterances.html" />
+    <link rel="next" title="Advanced Sphinx usage" href="../advanced/sphinx.html" />
+    <link rel="prev" title="Advanced HTML outputs" href="../advanced/html.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="zh_CN">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-52617120-7', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -93,7 +106,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Tutorials
  </span>
@@ -142,7 +155,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Topic Guides
  </span>
@@ -150,7 +163,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../basics/organize.html">
-   Structure and organize your content
+   Structure and organize content
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -308,7 +321,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../basics/building/index.html">
-   Build your book outputs
+   Build and publish outputs
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
@@ -318,8 +331,35 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../basics/build.html">
-     Use the Build command line interface
+     Build from the command line
     </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../publish/web.html">
+     Publish your book on the internet
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../publish/gh-pages.html">
+       GitHub Pages and Actions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../publish/netlify.html">
+       Netlify
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../publish/readthedocs.html">
+       Read the Docs
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../advanced/pdf.html">
@@ -328,16 +368,16 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="index.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../web/index.html">
    Web and internet features
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../basics/repository.html">
      Connect your book to a code repository
@@ -362,8 +402,8 @@
     <a class="reference internal" href="../interactive/comments.html">
      Commenting and annotating
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -380,33 +420,6 @@
      </li>
     </ul>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Generate a badge for your book
-    </a>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../publish/web.html">
-     Host your book on the internet
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-    <label for="toctree-checkbox-9">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../publish/gh-pages.html">
-       GitHub Pages and Actions
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../publish/netlify.html">
-       Publish with Netlify
-      </a>
-     </li>
-    </ul>
-   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../advanced/html.html">
      Advanced HTML outputs
@@ -414,11 +427,11 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../advanced/index.html">
-   Advanced Jupyter Book Usage
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Sphinx usage and customization
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
   <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
@@ -435,13 +448,25 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../advanced/windows.html">
-     Working on Windows
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../explain/sphinx.html">
      How Jupyter Book and Sphinx relate to one another
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/index.html">
+   Advanced Jupyter Book Usage
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/windows.html">
+     Working on Windows
     </a>
    </li>
   </ul>
@@ -452,7 +477,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reference
  </span>
@@ -470,7 +495,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/cli.html">
-   The command-line interface
+   Command-line interface reference
   </a>
  </li>
  <li class="toctree-l1">
@@ -479,7 +504,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About Jupyter Book
  </span>
@@ -546,7 +571,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/web/badge.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/sphinx/index.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -562,14 +587,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/daobook/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fweb/badge.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/daobook/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsphinx/index.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/jupyter-book/edit/master/docs/web/badge.md"><button
+        <a class="edit-button" href="https://github.com/daobook/jupyter-book/edit/master/docs/sphinx/index.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -589,6 +614,26 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#convert-your-jupyter-book-into-a-sphinx-website">
+   Convert your Jupyter Book into a Sphinx website
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#automate-conversion-with-a-pre-commit-hook">
+     Automate conversion with a pre-commit hook
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -597,21 +642,76 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="generate-a-badge-for-your-book">
-<h1>Generate a badge for your book<a class="headerlink" href="#generate-a-badge-for-your-book" title="永久链接至标题">¶</a></h1>
-<p>You can generate a badge like this so that others know your repository and content files are built for Jupyter Book.
-Here’s what the badge looks like (only visible on HTML):</p>
-<p><a class="reference external" href="https://jupyterbook.org"><img alt="Jupyter Book Badge" src="../_images/badge.svg" /></a></p>
-<p>To generate the badge, copy the code block below, and replace <code class="docutils literal notranslate"><span class="pre">&lt;YOUR</span> <span class="pre">URL</span> <span class="pre">HERE&gt;</span></code> with the URL of your choice.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](&lt;YOUR URL HERE&gt;)
+  <div class="tex2jax_ignore mathjax_ignore section" id="sphinx-usage-and-customization">
+<h1>Sphinx usage and customization<a class="headerlink" href="#sphinx-usage-and-customization" title="永久链接至标题">¶</a></h1>
+<p>Jupyter Book uses <a class="reference external" href="https://sphinx-doc.org">the Sphinx documentation engine</a> to build a rich document model from your source files.
+This also allows for some extra customization under the hood.
+This chapter covers a few ways to customize Sphinx or to directly use it in building your book.</p>
+<div class="admonition caution">
+<p class="admonition-title">小心</p>
+<p>Manually customizing Sphinx is considered <strong>advanced usage</strong> - it is highly recommended that you read the <a class="reference external" href="https://sphinx-doc.org">Sphinx documentation</a>.</p>
+</div>
+<div class="section" id="convert-your-jupyter-book-into-a-sphinx-website">
+<span id="sphinx-convert"></span><h2>Convert your Jupyter Book into a Sphinx website<a class="headerlink" href="#convert-your-jupyter-book-into-a-sphinx-website" title="永久链接至标题">¶</a></h2>
+<p>It is possible to <em>convert</em> a Jupyter Book into a structure that is directly compatible with Sphinx.
+This allows you to directly build the book with Sphinx commands, like <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code>.
+It is useful if you wish to use services that directly support Sphinx builds, like <a class="reference external" href="https://readthedocs.org">ReadTheDocs</a>, or if you wish to use sphinx-specific commands like <a class="reference external" href="https://github.com/executablebooks/sphinx-autobuild"><code class="docutils literal notranslate"><span class="pre">sphinx-autobuild</span></code></a>.</p>
+<p>The only file that Sphinx requires to build a Jupyter Book is <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.
+To generate one from your book’s <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file, run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book config sphinx path/to/book
 </pre></div>
 </div>
-<p>Additionally, you can generate a badge directly from <a class="reference external" href="https://shields.io">shields.io</a>.
-Here’s the URL to auto-generate the badge above, using a base64-encoded version of the Jupyter Book logo.
-Feel free to modify this as you wish!</p>
-<div class="seealso admonition">
-<p class="admonition-title"><a class="reference external" href="http://Shields.io">Shields.io</a> badge link</p>
-<p><a class="reference external" href="https://img.shields.io/badge/jupyter-book-orange?logo=data:image/png%3Bbase64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAMAAAAVHr4VAAAAXVBMVEX////v7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/v7+/zdybv7+/zdybv7+/v7+/zdybv7+/zdybv7+/zdyaSmqV2AAAAHXRSTlMAEBAgIDAwQEBQUGBgcHCAgJCQoLCwwMDQ4ODw8MDkUIUAAADJSURBVHjaddAFkgNBCAXQP+7uAvc/5tLFVseYF8crUB0560r/5gwvjYYm8gq8QJoyIJNwlnUH0WEnART6YSezV6c5tjOTaoKdfGXtnclFlEBEXVd8JzG4pa/LDql9Jff/ZCC/h2zSqF5bzf4vqkgNwEzeClUd8uMadLE6OnhBFsES5niQh2BOYUqZsfGdmrmbN+TMvPROHUOkde8sEs6Bnr0tDDf2Roj6fmVfubuGyttejCeLc+xFm+NLuLnJeFAyl3gS932MF/wBoukfUcwI05kAAAAASUVORK5CYII=">https://img.shields.io/badge/jupyter-book-orange?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAMAAAAVHr4VAAAAXVBMVEX////v7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/zdybv7+/v7+/zdybv7+/zdybv7+/v7+/zdybv7+/zdybv7+/zdyaSmqV2AAAAHXRSTlMAEBAgIDAwQEBQUGBgcHCAgJCQoLCwwMDQ4ODw8MDkUIUAAADJSURBVHjaddAFkgNBCAXQP+7uAvc/5tLFVseYF8crUB0560r/5gwvjYYm8gq8QJoyIJNwlnUH0WEnART6YSezV6c5tjOTaoKdfGXtnclFlEBEXVd8JzG4pa/LDql9Jff/ZCC/h2zSqF5bzf4vqkgNwEzeClUd8uMadLE6OnhBFsES5niQh2BOYUqZsfGdmrmbN+TMvPROHUOkde8sEs6Bnr0tDDf2Roj6fmVfubuGyttejCeLc+xFm+NLuLnJeFAyl3gS932MF/wBoukfUcwI05kAAAAASUVORK5CYII=</a></p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>See <a class="reference internal" href="../reference/cli.html"><span class="doc std std-doc">Command-line interface reference</span></a> for more usage information of this command.</p>
+</div>
+<p>This will use your <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file along with your <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file to generate the appropriate <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.
+After doing so, you can build your book with the standard Sphinx build commands.
+For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-build path/to/book path/to/book/_build/html -b html
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Don’t manually edit your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.
+Instead, update your <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file and re-run <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">config</span> <span class="pre">sphinx</span></code> to make sure the two configuration files stay in-sync.
+Alternatively, <a class="reference internal" href="#sphinx-convert-pre-commit"><span class="std std-ref">automate this with a pre-commit hook</span></a>.</p>
+</div>
+<div class="section" id="automate-conversion-with-a-pre-commit-hook">
+<span id="sphinx-convert-pre-commit"></span><h3>Automate conversion with a pre-commit hook<a class="headerlink" href="#automate-conversion-with-a-pre-commit-hook" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://pre-commit.com/">pre-commit</a> is a useful tool for automating common tasks with a git repository.
+It will automatically run commands when you make a commit in <code class="docutils literal notranslate"><span class="pre">git</span></code>.</p>
+<p>Follow these steps to use a <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> hook that converts your Jupyter Book into a Sphinx site, to ensure that they remain in-sync:</p>
+<ol>
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>. Follow the <a class="reference external" href="https://pre-commit.com/#install">pre-commit install instructions</a>.</p></li>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">.pre-commit-config.yaml</span></code> file. This is the file that tells <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> which hooks to install as a part of your project.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>See <a class="reference external" href="https://pre-commit.com/#pre-commit-configyaml---hooks">the pre-commit instructions</a> for more information on this file.</p>
+</div>
+</li>
+<li><p>Add the <em>Jupyter Book to Sphinx</em> conversion hook by adding the following config to <code class="docutils literal notranslate"><span class="pre">pre-commit-config.yaml</span></code>:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">repos</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">repo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/executablebooks/jupyter-book</span>
+  <span class="nt">rev</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">v0.11.2</span>
+  <span class="nt">hooks</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jb-to-sphinx</span>
+    <span class="nt">args</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;path/to/book&quot;</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">path/to/book</span></code> is the path to your book’s source files, relative to the repository root.</p>
+</li>
+<li><p>Initialize <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> for your repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pre-commit install
+</pre></div>
+</div>
+<p>This will install the pre-commit hook that you’ve configed above.</p>
+</li>
+<li><p>Make a commit to your repository, and confirm that the <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">config</span> <span class="pre">sphinx</span></code> command is automatically run.</p></li>
+</ol>
+</div>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -619,7 +719,7 @@ Feel free to modify this as you wish!</p>
     {
         requestKernel: true,
         binderOptions: {
-            repo: "executablebooks/jupyter-book",
+            repo: "daobook/jupyter-book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -628,7 +728,7 @@ Feel free to modify this as you wish!</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./web"
+            path: "./sphinx"
         },
         predefinedOutput: true
     }
@@ -638,31 +738,22 @@ Feel free to modify this as you wish!</p>
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../interactive/comments/utterances.html" title="上一页 页">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">Utterances</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../advanced/html.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Advanced HTML outputs</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../advanced/sphinx.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Advanced Sphinx usage</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="../publish/web.html" title="下一页 页">
-            <div class="prevnext-info">
-                <p class="prevnext-label">下一页</p>
-                <p class="prevnext-title">Host your book on the internet</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -683,18 +774,7 @@ Feel free to modify this as you wish!</p>
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-52617120-7', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

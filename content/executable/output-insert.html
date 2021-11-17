@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store code outputs and insert into content</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -49,7 +49,7 @@
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
@@ -65,8 +65,21 @@
     <link rel="next" title="Interactive data visualizations" href="../../interactive/interactive.html" />
     <link rel="prev" title="Formatting code outputs" href="../code-outputs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="zh_CN">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-52617120-7', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -95,7 +108,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Tutorials
  </span>
@@ -144,7 +157,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Topic Guides
  </span>
@@ -152,7 +165,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../basics/organize.html">
-   Structure and organize your content
+   Structure and organize content
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -310,7 +323,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../basics/building/index.html">
-   Build your book outputs
+   Build and publish outputs
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
@@ -320,8 +333,35 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../basics/build.html">
-     Use the Build command line interface
+     Build from the command line
     </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../publish/web.html">
+     Publish your book on the internet
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../publish/gh-pages.html">
+       GitHub Pages and Actions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../publish/netlify.html">
+       Netlify
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../publish/readthedocs.html">
+       Read the Docs
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../advanced/pdf.html">
@@ -334,8 +374,8 @@
   <a class="reference internal" href="../../web/index.html">
    Web and internet features
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -364,8 +404,8 @@
     <a class="reference internal" href="../../interactive/comments.html">
      Commenting and annotating
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -383,33 +423,6 @@
     </ul>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../web/badge.html">
-     Generate a badge for your book
-    </a>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../../publish/web.html">
-     Host your book on the internet
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-    <label for="toctree-checkbox-9">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../publish/gh-pages.html">
-       GitHub Pages and Actions
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../publish/netlify.html">
-       Publish with Netlify
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../../advanced/html.html">
      Advanced HTML outputs
     </a>
@@ -417,8 +430,8 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../advanced/index.html">
-   Advanced Jupyter Book Usage
+  <a class="reference internal" href="../../sphinx/index.html">
+   Sphinx usage and customization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
   <label for="toctree-checkbox-10">
@@ -437,13 +450,25 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../advanced/windows.html">
-     Working on Windows
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../../explain/sphinx.html">
      How Jupyter Book and Sphinx relate to one another
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../advanced/index.html">
+   Advanced Jupyter Book Usage
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../advanced/windows.html">
+     Working on Windows
     </a>
    </li>
   </ul>
@@ -454,7 +479,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reference
  </span>
@@ -472,7 +497,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../reference/cli.html">
-   The command-line interface
+   Command-line interface reference
   </a>
  </li>
  <li class="toctree-l1">
@@ -481,7 +506,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About Jupyter Book
  </span>
@@ -567,14 +592,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/daobook/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/executable/output-insert.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/daobook/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/executable/output-insert.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/executablebooks/jupyter-book/edit/master/docs/content/executable/output-insert.md"><button
+        <a class="edit-button" href="https://github.com/daobook/jupyter-book/edit/master/docs/content/executable/output-insert.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -594,7 +619,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/content/executable/output-insert.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/daobook/jupyter-book/master?urlpath=tree/docs/content/executable/output-insert.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -808,13 +833,13 @@ to focus on the glueing part.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0023143386320257
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.003189232559927
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.9900534329052153
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.9905834469475963
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0144762677144983
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.015400103499179
 </pre></div>
 </div>
 </div>
@@ -893,33 +918,33 @@ use the <code class="docutils literal notranslate"><span class="pre">display=Fal
   <tbody>
     <tr>
       <th>0</th>
-      <td>3.190639</td>
-      <td>2.884537</td>
-      <td>3.047161</td>
+      <td>2.919498</td>
+      <td>2.884211</td>
+      <td>2.542970</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.908707</td>
-      <td>2.953743</td>
-      <td>3.132833</td>
+      <td>2.698673</td>
+      <td>3.257676</td>
+      <td>2.686916</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3.222379</td>
-      <td>2.917609</td>
-      <td>2.897001</td>
+      <td>3.060479</td>
+      <td>3.269723</td>
+      <td>2.857485</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2.542179</td>
-      <td>2.846755</td>
-      <td>2.899113</td>
+      <td>2.876021</td>
+      <td>2.770880</td>
+      <td>3.269300</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>3.073539</td>
-      <td>2.994201</td>
-      <td>3.394521</td>
+      <td>2.999150</td>
+      <td>2.801242</td>
+      <td>2.861891</td>
     </tr>
   </tbody>
 </table>
@@ -961,7 +986,7 @@ Simply add this:</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>In-line text; {glue:}`boot_mean`, and a figure: {glue:}`boot_fig`.
 </pre></div>
 </div>
-<p>In-line text; <span class="pasted-inline"><code class="output text_plain docutils literal notranslate"><span class="pre">3.0023143386320257</span></code></span>, and a figure: <span class="pasted-inline"><img alt="../../_images/output-insert_10_0.png" src="../../_images/output-insert_10_0.png" /></span>.</p>
+<p>In-line text; <span class="pasted-inline"><code class="output text_plain docutils literal notranslate"><span class="pre">3.003189232559927</span></code></span>, and a figure: <span class="pasted-inline"><img alt="../../_images/output-insert_10_0.png" src="../../_images/output-insert_10_0.png" /></span>.</p>
 <div class="admonition tip">
 <p class="admonition-title">小技巧</p>
 <p>We recommend using wider, shorter figures when plotting in-line, with a ratio
@@ -992,7 +1017,7 @@ For example, the following text:</p>
 </pre></div>
 </div>
 <p>Is rendered as:
-The mean of the bootstrapped distribution was <span class="pasted-text">3.0023143386320257</span> (95% confidence interval <span class="pasted-text">2.9900534329052153</span>/<span class="pasted-text">3.0144762677144983</span>)</p>
+The mean of the bootstrapped distribution was <span class="pasted-text">3.003189232559927</span> (95% confidence interval <span class="pasted-text">2.9905834469475963</span>/<span class="pasted-text">3.015400103499179</span>)</p>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
 <p><code class="docutils literal notranslate"><span class="pre">glue:text</span></code> only works with glued variables that contain a <code class="docutils literal notranslate"><span class="pre">text/plain</span></code> output.</p>
@@ -1003,7 +1028,7 @@ want to round the results. To add formatting, use this syntax:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">{glue:text}`mykey:formatstring`</span></code></p></li>
 </ul>
-<p>For example, <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">rounded</span> <span class="pre">mean:</span> <span class="pre">{glue:text}`boot_mean:.2f`</span> </code> will be rendered like this: My rounded mean: <span class="pasted-text">3.00</span> (95% CI: <span class="pasted-text">2.99</span>/<span class="pasted-text">3.01</span>).</p>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">rounded</span> <span class="pre">mean:</span> <span class="pre">{glue:text}`boot_mean:.2f`</span> </code> will be rendered like this: My rounded mean: <span class="pasted-text">3.00</span> (95% CI: <span class="pasted-text">2.99</span>/<span class="pasted-text">3.02</span>).</p>
 </div>
 <div class="section" id="the-glue-figure-directive">
 <h3>The <code class="docutils literal notranslate"><span class="pre">glue:figure</span></code> directive<a class="headerlink" href="#the-glue-figure-directive" title="永久链接至标题">¶</a></h3>
@@ -1068,33 +1093,33 @@ A caption for a pandas table.
   <tbody>
     <tr>
       <th>0</th>
-      <td>3.190639</td>
-      <td>2.884537</td>
-      <td>3.047161</td>
+      <td>2.919498</td>
+      <td>2.884211</td>
+      <td>2.542970</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.908707</td>
-      <td>2.953743</td>
-      <td>3.132833</td>
+      <td>2.698673</td>
+      <td>3.257676</td>
+      <td>2.686916</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3.222379</td>
-      <td>2.917609</td>
-      <td>2.897001</td>
+      <td>3.060479</td>
+      <td>3.269723</td>
+      <td>2.857485</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2.542179</td>
-      <td>2.846755</td>
-      <td>2.899113</td>
+      <td>2.876021</td>
+      <td>2.770880</td>
+      <td>3.269300</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>3.073539</td>
-      <td>2.994201</td>
-      <td>3.394521</td>
+      <td>2.999150</td>
+      <td>2.801242</td>
+      <td>2.861891</td>
     </tr>
   </tbody>
 </table>
@@ -1165,13 +1190,13 @@ that were generated in other cells or other notebooks. For example, the followin
 <tbody>
 <tr class="row-even"><td class="text-align:center"><p>histogram and raw text</p></td>
 <td class="text-align:center"><p><span class="pasted-inline"><img alt="../../_images/output-insert_10_0.png" src="../../_images/output-insert_10_0.png" /></span></p></td>
-<td><p><span class="pasted-inline"><code class="output text_plain docutils literal notranslate"><span class="pre">3.0023143386320257</span></code></span></p></td>
-<td><p><span class="pasted-inline"><code class="output text_plain docutils literal notranslate"><span class="pre">2.9900534329052153</span></code></span>-<span class="pasted-inline"><code class="output text_plain docutils literal notranslate"><span class="pre">3.0144762677144983</span></code></span></p></td>
+<td><p><span class="pasted-inline"><code class="output text_plain docutils literal notranslate"><span class="pre">3.003189232559927</span></code></span></p></td>
+<td><p><span class="pasted-inline"><code class="output text_plain docutils literal notranslate"><span class="pre">2.9905834469475963</span></code></span>-<span class="pasted-inline"><code class="output text_plain docutils literal notranslate"><span class="pre">3.015400103499179</span></code></span></p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:center"><p>sorted means and formatted text</p></td>
 <td class="text-align:center"><p><span class="pasted-inline"><img alt="../../_images/output-insert_10_1.png" src="../../_images/output-insert_10_1.png" /></span></p></td>
-<td><p><span class="pasted-text">3.002</span></p></td>
-<td><p><span class="pasted-text">2.990</span>-<span class="pasted-text">3.014</span></p></td>
+<td><p><span class="pasted-text">3.003</span></p></td>
+<td><p><span class="pasted-text">2.991</span>-<span class="pasted-text">3.015</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -1183,7 +1208,7 @@ that were generated in other cells or other notebooks. For example, the followin
     {
         requestKernel: true,
         binderOptions: {
-            repo: "executablebooks/jupyter-book",
+            repo: "daobook/jupyter-book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -1202,31 +1227,22 @@ that were generated in other cells or other notebooks. For example, the followin
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../code-outputs.html" title="上一页 页">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">Formatting code outputs</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../code-outputs.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Formatting code outputs</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../../interactive/interactive.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Interactive data visualizations</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="../../interactive/interactive.html" title="下一页 页">
-            <div class="prevnext-info">
-                <p class="prevnext-label">下一页</p>
-                <p class="prevnext-title">Interactive data visualizations</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -1247,18 +1263,7 @@ that were generated in other cells or other notebooks. For example, the followin
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-52617120-7', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
